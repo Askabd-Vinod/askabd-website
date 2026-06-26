@@ -70,7 +70,7 @@
           
           <div class="form-group">
             <label for="phone">Phone Number</label>
-            <input type="tel" id="phone" name="phone" placeholder="+91 1234567890" pattern="[\+]?[0-9\s]{7,15}" title="Enter phone number with country code (e.g. +91 1234567890)" oninput="this.value=this.value.replace(/[^0-9+\s]/g,'')">
+            <input type="tel" id="phone" name="phone" placeholder="+91 1234567890" pattern="\+[0-9][0-9\s]{7,15}" title="Country code is required (e.g. +91 1234567890)" oninput="this.value=this.value.replace(/[^0-9+\s]/g,'')" onblur="if(this.value && !this.value.startsWith('+')){this.setCustomValidity('Please include country code (e.g. +91)');this.reportValidity()}else{this.setCustomValidity('')}">
           </div>
           
           <div class="form-group">
