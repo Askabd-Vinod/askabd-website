@@ -209,10 +209,20 @@
   border-color: #3B82F6;
 }
 .solution-card:hover::before { opacity: 1; }
+.sol-img-wrap { position: relative; overflow: hidden; border-radius: 14px; margin-bottom: 1.3rem; }
 .sol-img {
-  width: 100%; height: 180px; object-fit: cover; border-radius: 14px;
-  margin-bottom: 1.3rem;
+  width: 100%; height: 180px; object-fit: cover; display: block;
+  transition: transform 0.4s;
 }
+.sol-overlay {
+  position: absolute; inset: 0; border-radius: 14px;
+  background: linear-gradient(180deg, rgba(37,99,235,0.9), rgba(124,58,237,0.9));
+  display: flex; align-items: center; justify-content: center; padding: 1.2rem;
+  opacity: 0; transition: opacity 0.35s;
+}
+.sol-overlay p { color: #fff; font-size: 0.85rem; font-weight: 500; text-align: center; line-height: 1.5; }
+.solution-card:hover .sol-img { transform: scale(1.08); }
+.solution-card:hover .sol-overlay { opacity: 1; }
 .solution-card h3 { font-size: 1.05rem; font-weight: 700; color: #0F172A; margin-bottom: 0.4rem; }
 .solution-card p { font-size: 0.85rem; color: #64748B; line-height: 1.5; }
 
