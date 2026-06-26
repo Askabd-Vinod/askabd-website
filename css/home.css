@@ -295,20 +295,23 @@
 .help-btn:hover { transform: translateY(-2px); box-shadow: 0 12px 32px rgba(239,68,68,0.6); background: linear-gradient(135deg, #EF4444, #F87171); }
 
 /* ===== CLARITY + OPTIMIZE (light, two columns) ===== */
-.clarity-section { background: var(--gray-bg); color: #0d1330; padding: 4.5rem 0; }
-.clarity-grid { max-width: 1440px; margin: 0 auto; padding: 0 1.5rem; display: grid; grid-template-columns: 1fr 1fr; gap: 2.5rem; }
-.clarity-col { background: #fff; border: 1px solid var(--border-soft); border-radius: 16px; padding: 2rem; }
-.optimize-col { background: linear-gradient(160deg, #0B1338, #0A0E2A); border: 1px solid rgba(91,141,239,0.2); border-radius: 16px; padding: 2rem; }
-.clarity-col .sec-title-sm { color: #0d1330; }
+.clarity-section { background: #F1F5F9; color: #0d1330; padding: 5rem 0; }
+.clarity-grid { max-width: 1440px; margin: 0 auto; padding: 0 1.5rem; display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; }
+.clarity-col { background: #fff; border: 1.5px solid #E2E8F0; border-radius: 20px; padding: 2.5rem; box-shadow: 0 4px 20px rgba(0,0,0,0.04); }
+.optimize-col { background: linear-gradient(160deg, #0B1338, #070B22); border: 1.5px solid rgba(96,165,250,0.3); border-radius: 20px; padding: 2.5rem; position: relative; overflow: hidden; box-shadow: 0 20px 50px rgba(0,0,0,0.3); }
+.optimize-col::before { content: ''; position: absolute; top: 0; left: 10%; right: 10%; height: 1.5px; background: linear-gradient(90deg, transparent, rgba(96,165,250,0.8), transparent); }
+.clarity-col .sec-title-sm { color: #0F172A; }
 .optimize-col .sec-title-sm { color: #fff; }
-.optimize-col .tag-blue { color: var(--blue-bright); }
-.doc-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 0.9rem; }
-.doc-item { display: flex; align-items: center; gap: 0.7rem; font-size: 0.82rem; color: var(--gray-text); background: var(--gray-bg); border: 1px solid var(--border-soft); border-radius: 10px; padding: 0.7rem; }
-.doc-ic { width: 34px; height: 34px; border-radius: 8px; background: rgba(45,91,227,0.1); display: flex; align-items: center; justify-content: center; font-size: 0.95rem; flex-shrink: 0; }
-.opt-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 0.7rem 1.2rem; margin-bottom: 1.5rem; }
-.opt-item { display: flex; align-items: center; gap: 0.6rem; font-size: 0.85rem; color: var(--text-light); }
-.opt-item i { width: 20px; height: 20px; border-radius: 50%; background: rgba(52,211,153,0.18); color: #34D399; font-style: normal; font-size: 0.7rem; display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
-.opt-visual { background: linear-gradient(135deg, #2D5BE3, #4F7BF7); border-radius: 12px; padding: 1.6rem; text-align: center; font-size: 2.2rem; }
+.optimize-col .tag-blue { color: #60A5FA; }
+.doc-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
+.doc-item { display: flex; align-items: center; gap: 0.8rem; font-size: 0.85rem; color: #475569; font-weight: 500; background: #F8FAFC; border: 1.5px solid #E2E8F0; border-radius: 14px; padding: 1rem; transition: all 0.3s; }
+.doc-item:hover { border-color: #3B82F6; transform: translateY(-2px); box-shadow: 0 8px 20px rgba(59,130,246,0.12); }
+.doc-ic { width: 40px; height: 40px; border-radius: 12px; flex-shrink: 0; background: linear-gradient(135deg, #EFF6FF, #DBEAFE); border: 1px solid #BFDBFE; display: flex; align-items: center; justify-content: center; font-size: 1.1rem; }
+.opt-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 0.9rem 1.5rem; margin-bottom: 2rem; }
+.opt-item { display: flex; align-items: center; gap: 0.7rem; font-size: 0.9rem; color: #E2E8F0; font-weight: 500; }
+.opt-item i { width: 24px; height: 24px; border-radius: 50%; flex-shrink: 0; font-style: normal; font-size: 0.7rem; background: linear-gradient(135deg, #10B981, #059669); color: #fff; display: flex; align-items: center; justify-content: center; box-shadow: 0 4px 10px rgba(16,185,129,0.3); }
+.opt-visual { background: linear-gradient(135deg, #2563EB, #3B82F6); border-radius: 16px; padding: 2rem; text-align: center; font-size: 2.8rem; box-shadow: 0 12px 30px rgba(37,99,235,0.4); position: relative; overflow: hidden; }
+.opt-visual::before { content: ''; position: absolute; inset: 0; background: linear-gradient(160deg, rgba(255,255,255,0.15), transparent 50%); }
 
 @media (max-width: 900px) {
   .losing-content, .clarity-grid { grid-template-columns: 1fr; }
