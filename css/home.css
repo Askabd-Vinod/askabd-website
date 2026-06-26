@@ -33,7 +33,7 @@
 @keyframes floaty { 0%,100% { transform: translateY(0); opacity: 0.5; } 50% { transform: translateY(-14px); opacity: 1; } }
 
 .hero-content {
-  max-width: 1360px; margin: 0 auto; padding: 1rem 1.5rem 3rem;
+  max-width: 1440px; margin: 0 auto; padding: 1rem 1.5rem 3rem;
   display: grid; grid-template-columns: 45% 55%; gap: 2.5rem; align-items: center;
   position: relative; z-index: 2;
 }
@@ -41,7 +41,7 @@
   font-size: 0.74rem; letter-spacing: 0.2em; font-weight: 700;
   color: var(--blue-bright); margin-bottom: 1.3rem;
 }
-.hero h1 { font-size: clamp(2.6rem, 5.6vw, 4.5rem); font-weight: 800; line-height: 1.04; margin-bottom: 1.4rem; letter-spacing: -0.02em; }
+.hero h1 { font-size: clamp(2.1rem, 3.6vw, 3.3rem); font-weight: 800; line-height: 1.08; margin-bottom: 1.4rem; letter-spacing: -0.02em; }
 .gradient-text {
   background: linear-gradient(100deg, #3B82F6, #818CF8 60%, #A855F7);
   -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;
@@ -141,10 +141,10 @@
 .sec-title { font-size: clamp(2rem, 3.4vw, 2.6rem); font-weight: 800; line-height: 1.15; letter-spacing: -0.01em; }
 .sec-title-sm { font-size: clamp(1.6rem, 2.6vw, 2.1rem); font-weight: 800; line-height: 1.2; margin-bottom: 1.4rem; letter-spacing: -0.01em; }
 .section-head-row {
-  max-width: 1360px; margin: 0 auto 2.2rem; padding: 0 1.5rem;
+  max-width: 1440px; margin: 0 auto 2.2rem; padding: 0 1.5rem;
   display: flex; justify-content: space-between; align-items: flex-end; gap: 1rem;
 }
-.section-head.center { text-align: center; max-width: 1360px; margin: 0 auto 2.5rem; padding: 0 1.5rem; }
+.section-head.center { text-align: center; max-width: 1440px; margin: 0 auto 2.5rem; padding: 0 1.5rem; }
 .section-head.center .tag-blue { margin-bottom: 0.5rem; }
 .view-all { color: var(--blue); font-size: 0.85rem; font-weight: 600; white-space: nowrap; }
 
@@ -152,7 +152,7 @@
 .solutions-section { background: var(--white); color: #0d1330; padding: 4.5rem 0; }
 .solutions-section .sec-title { color: #0F172A; }
 .solutions-grid {
-  max-width: 1360px; margin: 0 auto; padding: 0 1.5rem;
+  max-width: 1440px; margin: 0 auto; padding: 0 1.5rem;
   display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.3rem;
 }
 .solution-card {
@@ -172,7 +172,7 @@
 .industry-section { background: var(--gray-bg); color: #0d1330; padding: 4.5rem 0; }
 .industry-section .sec-title { color: #0F172A; max-width: 540px; }
 .industry-grid {
-  max-width: 1360px; margin: 0 auto; padding: 0 1.5rem;
+  max-width: 1440px; margin: 0 auto; padding: 0 1.5rem;
   display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem;
 }
 .ind-card { border: 1px solid var(--border-soft); border-radius: 14px; overflow: hidden; background: #fff; transition: all 0.25s; }
@@ -196,7 +196,7 @@
 /* ===== IS YOUR BUSINESS LOSING MONEY (dark) ===== */
 .losing-section { background: var(--navy-section); padding: 4.5rem 0; }
 .losing-content {
-  max-width: 1360px; margin: 0 auto; padding: 0 1.5rem;
+  max-width: 1440px; margin: 0 auto; padding: 0 1.5rem;
   display: grid; grid-template-columns: 1fr 1.15fr; gap: 3rem; align-items: center;
 }
 .losing-left h2 { font-size: clamp(1.7rem, 3vw, 2.4rem); font-weight: 800; line-height: 1.2; margin-bottom: 1rem; }
@@ -224,7 +224,7 @@
 
 /* ===== CLARITY + OPTIMIZE (light, two columns) ===== */
 .clarity-section { background: var(--gray-bg); color: #0d1330; padding: 4.5rem 0; }
-.clarity-grid { max-width: 1360px; margin: 0 auto; padding: 0 1.5rem; display: grid; grid-template-columns: 1fr 1fr; gap: 2.5rem; }
+.clarity-grid { max-width: 1440px; margin: 0 auto; padding: 0 1.5rem; display: grid; grid-template-columns: 1fr 1fr; gap: 2.5rem; }
 .clarity-col { background: #fff; border: 1px solid var(--border-soft); border-radius: 16px; padding: 2rem; }
 .optimize-col { background: linear-gradient(160deg, #0B1338, #0A0E2A); border: 1px solid rgba(91,141,239,0.2); border-radius: 16px; padding: 2rem; }
 .clarity-col .sec-title-sm { color: #0d1330; }
@@ -249,7 +249,7 @@
 .process-section { background: #fff; color: #0d1330; padding: 4.5rem 0; }
 .process-section .sec-title { color: #0d1330; }
 .process-row {
-  max-width: 1360px; margin: 0 auto; padding: 0 1.5rem;
+  max-width: 1440px; margin: 0 auto; padding: 0 1.5rem;
   display: grid; grid-template-columns: repeat(7, 1fr); gap: 0.8rem; position: relative;
 }
 .process-row::before {
@@ -268,7 +268,7 @@
 
 /* ===== TECH + INDUSTRY FORWARD (two-column light band) ===== */
 .tf-section { background: var(--gray-bg); color: #0d1330; padding: 4.5rem 0; }
-.tf-grid { max-width: 1360px; margin: 0 auto; padding: 0 1.5rem; display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; align-items: start; }
+.tf-grid { max-width: 1440px; margin: 0 auto; padding: 0 1.5rem; display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; align-items: start; }
 .tf-tech .sec-title-sm, .tf-forward .sec-title-sm { color: #0d1330; }
 .tf-tech { background: #fff; border: 1px solid var(--border-soft); border-radius: 16px; padding: 2rem; }
 .tech-group { display: flex; align-items: center; gap: 1rem; margin-bottom: 1rem; }
@@ -317,7 +317,7 @@
 /* ===== FOOTER ===== */
 .footer { background: var(--navy-deep); padding: 3.5rem 0 0; }
 .footer-top {
-  max-width: 1360px; margin: 0 auto; padding: 0 1.5rem 2.5rem;
+  max-width: 1440px; margin: 0 auto; padding: 0 1.5rem 2.5rem;
   display: grid; grid-template-columns: 1.6fr 1fr 1fr 1fr 1fr 1.2fr; gap: 2rem;
 }
 .footer-brand img { height: 46px; background: #fff; padding: 4px 8px; border-radius: 10px; margin-bottom: 1rem; }
@@ -335,7 +335,7 @@
 .footer-col a:hover { color: var(--blue-bright); }
 .footer-contact li { font-size: 0.82rem; color: var(--text-gray); margin-bottom: 0.6rem; }
 .footer-bottom-bar {
-  max-width: 1360px; margin: 0 auto; padding: 1.3rem 1.5rem;
+  max-width: 1440px; margin: 0 auto; padding: 1.3rem 1.5rem;
   border-top: 1px solid rgba(91,141,239,0.12);
   display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 0.8rem;
 }
