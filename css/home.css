@@ -216,11 +216,12 @@
 }
 .sol-overlay {
   position: absolute; inset: 0; border-radius: 14px;
-  background: linear-gradient(180deg, rgba(37,99,235,0.9), rgba(124,58,237,0.9));
-  display: flex; align-items: center; justify-content: center; padding: 1.2rem;
+  background: rgba(10, 14, 40, 0.92);
+  display: flex; align-items: center; justify-content: center; padding: 1.5rem;
   opacity: 0; transition: opacity 0.35s;
+  backdrop-filter: blur(4px);
 }
-.sol-overlay p { color: #fff; font-size: 0.85rem; font-weight: 500; text-align: center; line-height: 1.5; }
+.sol-overlay p { color: #fff; font-size: 1rem; font-weight: 600; text-align: center; line-height: 1.6; text-shadow: 0 2px 8px rgba(0,0,0,0.5); }
 .solution-card:hover .sol-img { transform: scale(1.08); }
 .solution-card:hover .sol-overlay { opacity: 1; }
 .solution-card h3 { font-size: 1.05rem; font-weight: 700; color: #0F172A; margin-bottom: 0.4rem; }
