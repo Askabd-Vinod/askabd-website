@@ -1,18 +1,18 @@
 /* AskABD Technologies - Reference Replica */
 :root {
-  --navy-dark: #0A0E2A;
-  --navy-deep: #070B22;
-  --navy-section: #0B1338;
-  --blue: #2D5BE3;
-  --blue-light: #4F7BF7;
-  --blue-bright: #5B8DEF;
-  --text-light: #E8ECF5;
-  --text-gray: #9AA3B8;
+  --navy-dark: #0A0E27;
+  --navy-deep: #060818;
+  --navy-section: #0E1430;
+  --blue: #2563EB;
+  --blue-light: #3B82F6;
+  --blue-bright: #60A5FA;
+  --text-light: #E8EDF7;
+  --text-gray: #94A3B8;
   --white: #FFFFFF;
-  --gray-bg: #F5F7FB;
-  --gray-text: #4B5568;
-  --gray-soft: #6B7488;
-  --border-soft: #E3E8F0;
+  --gray-bg: #F8FAFC;
+  --gray-text: #475569;
+  --gray-soft: #64748B;
+  --border-soft: #E2E8F0;
 }
 
 * { margin: 0; padding: 0; box-sizing: border-box; }
