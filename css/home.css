@@ -48,10 +48,10 @@
 }
 .hero-tag {
   font-size: 0.74rem; letter-spacing: 0.2em; font-weight: 700;
-  color: var(--blue-bright); margin-bottom: 1.3rem;
+  color: #60A5FA; margin-bottom: 1.3rem;
 }
-.hero h1 { font-size: clamp(2.4rem, 4.2vw, 3.9rem); font-weight: 800; line-height: 1.07; margin-bottom: 1.4rem; letter-spacing: -0.02em; }
-.hero p { font-size: 1.08rem; color: var(--text-gray); max-width: 540px; margin-bottom: 1.6rem; }
+.hero h1 { font-size: clamp(2.4rem, 4.2vw, 3.9rem); font-weight: 800; line-height: 1.07; margin-bottom: 1.4rem; letter-spacing: -0.02em; color: #FFFFFF; }
+.hero p { font-size: 1.08rem; color: #CBD5E1; max-width: 540px; margin-bottom: 1.6rem; }
 .gradient-text {
   background: linear-gradient(100deg, #3B82F6, #818CF8 60%, #A855F7);
   -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;
@@ -66,22 +66,20 @@
 .dash-main {
   width: 100%; max-width: 560px; position: relative;
   background: linear-gradient(160deg, rgba(15,25,65,0.95), rgba(8,12,36,0.96));
-  border: 1px solid transparent; border-radius: 18px; padding: 1.5rem;
+  border: 1px solid rgba(96,165,250,0.45); border-radius: 18px; padding: 1.5rem;
   box-shadow:
     0 50px 110px rgba(0,0,0,0.55),
-    0 0 60px rgba(59,130,246,0.6),
-    0 0 120px rgba(168,85,247,0.35),
+    0 0 60px rgba(59,130,246,0.5),
+    0 0 120px rgba(168,85,247,0.3),
     inset 0 1px 0 rgba(255,255,255,0.12);
   backdrop-filter: blur(12px); margin-right: 36px; overflow: hidden;
   transform: perspective(1400px) rotateY(-12deg) rotateX(4deg); transform-style: preserve-3d;
-  background-clip: padding-box;
 }
 .dash-main::before {
-  content: ''; position: absolute; inset: -2px; border-radius: 20px; z-index: -1; pointer-events: none;
-  background: conic-gradient(from 0deg, #3B82F6, #8B5CF6, #EC4899, #22D3EE, #3B82F6);
-  animation: spinGlow 5s linear infinite; filter: blur(6px); opacity: 0.85;
+  content: ''; position: absolute; top: 0; left: 0; right: 0; height: 1.5px;
+  background: linear-gradient(90deg, transparent 5%, rgba(96,165,250,0.9) 40%, rgba(168,85,247,0.9) 70%, transparent 95%);
+  z-index: 4;
 }
-@keyframes spinGlow { to { transform: rotate(360deg); } }
 .dash-main::after {
   content: ''; position: absolute; top: 0; left: -70%; width: 55%; height: 100%; z-index: 5; pointer-events: none;
   background: linear-gradient(100deg, transparent, rgba(255,255,255,0.14), transparent);
