@@ -53,7 +53,7 @@
 .hero h1 { font-size: clamp(2.4rem, 4.2vw, 3.9rem); font-weight: 800; line-height: 1.07; margin-bottom: 1.4rem; letter-spacing: -0.02em; color: #FFFFFF; }
 .hero p { font-size: 1.12rem; color: #E2E8F0; max-width: 540px; margin-bottom: 1.6rem; font-weight: 500; line-height: 1.75; }
 .gradient-text {
-  background: linear-gradient(100deg, #3B82F6, #818CF8 60%, #A855F7);
+  background: linear-gradient(100deg, #22D3EE 0%, #3B82F6 35%, #A855F7 70%, #EC4899 100%);
   -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;
 }
 .hero-features { display: flex; flex-wrap: nowrap; gap: 0.5rem 1.2rem; margin-bottom: 2rem; }
