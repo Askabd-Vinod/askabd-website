@@ -56,8 +56,8 @@
   background: linear-gradient(100deg, #3B82F6, #818CF8 60%, #A855F7);
   -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;
 }
-.hero-features { display: flex; flex-wrap: wrap; gap: 0.7rem 1.6rem; margin-bottom: 2rem; }
-.hero-features span { font-size: 0.95rem; color: #F1F5F9; font-weight: 600; display: flex; align-items: center; gap: 0.55rem; }
+.hero-features { display: flex; flex-wrap: nowrap; gap: 0.5rem 1.2rem; margin-bottom: 2rem; }
+.hero-features span { font-size: 0.85rem; color: #F1F5F9; font-weight: 600; display: flex; align-items: center; gap: 0.45rem; white-space: nowrap; }
 .hero-features span::before { content: '✓'; width: 20px; height: 20px; border-radius: 50%; flex-shrink: 0; border: 2px solid #60A5FA; color: #60A5FA; font-size: 0.65rem; font-weight: 700; display: flex; align-items: center; justify-content: center; }
 .hero-buttons { display: flex; gap: 1rem; flex-wrap: wrap; }
 
