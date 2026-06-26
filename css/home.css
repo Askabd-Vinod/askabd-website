@@ -308,8 +308,16 @@
 .optimize-col .sec-title-sm { color: #fff; }
 .optimize-col .tag-blue { color: #60A5FA; }
 .clarity-tags { display: flex; flex-wrap: wrap; gap: 0.6rem; }
-.clarity-tags span { background: #F1F5F9; border: 1px solid #E2E8F0; border-radius: 8px; padding: 0.5rem 1rem; font-size: 0.85rem; font-weight: 500; color: #475569; transition: all 0.2s; }
-.clarity-tags span:hover { background: #EFF6FF; border-color: #3B82F6; color: #2563EB; }
+.clarity-tags span { background: #F1F5F9; border: 1px solid #E2E8F0; border-radius: 8px; padding: 0.5rem 1rem; font-size: 0.85rem; font-weight: 500; color: #475569; transition: all 0.2s; position: relative; cursor: pointer; }
+.clarity-tags span:hover { background: #EFF6FF; border-color: #3B82F6; color: #2563EB; transform: translateY(-2px); }
+.clarity-tags span::after {
+  content: attr(title); position: absolute; bottom: calc(100% + 8px); left: 50%; transform: translateX(-50%);
+  background: #0F172A; color: #E2E8F0; font-size: 0.75rem; font-weight: 400; padding: 0.5rem 0.8rem;
+  border-radius: 8px; white-space: nowrap; max-width: 250px; white-space: normal; text-align: center;
+  opacity: 0; pointer-events: none; transition: opacity 0.2s; z-index: 10;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+}
+.clarity-tags span:hover::after { opacity: 1; }
 .opt-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 0.8rem; }
 .opt-item { display: flex; align-items: center; gap: 0.7rem; font-size: 0.88rem; color: #E2E8F0; font-weight: 500; }
 .opt-item i { width: 22px; height: 22px; border-radius: 50%; flex-shrink: 0; font-style: normal; font-size: 0.65rem; background: linear-gradient(135deg, #10B981, #059669); color: #fff; display: flex; align-items: center; justify-content: center; box-shadow: 0 3px 8px rgba(16,185,129,0.3); }
