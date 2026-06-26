@@ -11,10 +11,10 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/pages.css">
+  <link rel="stylesheet" href="css/services.css">
 </head>
 <body>
 
-<!-- Navigation -->
 <nav>
   <div class="nav-container">
     <div class="logo">
@@ -30,13 +30,10 @@
       <a href="contact.html">Contact</a>
     </div>
     <a href="contact.html"><button class="btn-primary">Get Free Consultation →</button></a>
-    <button class="hamburger">
-      <span></span><span></span><span></span>
-    </button>
+    <button class="hamburger"><span></span><span></span><span></span></button>
   </div>
 </nav>
 
-<!-- Page Header -->
 <section class="page-header">
   <div class="page-header-content">
     <h1>Our Services</h1>
@@ -44,171 +41,110 @@
   </div>
 </section>
 
-<!-- Services Content -->
-<section class="content-section">
-  <div class="content-container">
-    <div class="legal-content" style="max-width:1200px">
-      
-      <h2>🛒 E-Commerce Development</h2>
-      <p>We build scalable online stores with seamless shopping experiences, payment integrations, and inventory management systems that drive conversions.</p>
-      <ul>
-        <li>Custom e-commerce platforms (Shopify, WooCommerce, custom-built)</li>
-        <li>Multi-vendor marketplace development</li>
-        <li>Payment gateway integration (Stripe, Razorpay, PayPal)</li>
-        <li>Cart abandonment solutions and recommendation engines</li>
-        <li>Inventory and order management systems</li>
-      </ul>
-      
-      <h2>📱 Mobile App Development</h2>
-      <p>High-performance native and cross-platform mobile applications with intuitive UX, built for iOS and Android.</p>
-      <ul>
-        <li>Native iOS (Swift) and Android (Kotlin) development</li>
-        <li>Cross-platform apps with React Native and Flutter</li>
-        <li>App Store Optimization (ASO)</li>
-        <li>Push notifications, offline-first architecture</li>
-        <li>Wearable and IoT companion apps</li>
-      </ul>
-      
-      <h2>🤖 AI & Machine Learning</h2>
-      <p>Intelligent automation and data-driven insights that help businesses make smarter decisions faster.</p>
-      <ul>
-        <li>Natural Language Processing (NLP) and chatbots</li>
-        <li>Computer vision and image recognition</li>
-        <li>Predictive analytics and forecasting models</li>
-        <li>Recommendation engines</li>
-        <li>MLOps and model deployment pipelines</li>
-      </ul>
-      
-      <h2>📊 Business Intelligence & Analytics</h2>
-      <p>Transform raw data into actionable insights with custom dashboards, automated reporting, and advanced analytics.</p>
-      <ul>
-        <li>Real-time dashboards and visualizations</li>
-        <li>Data warehouse design and ETL pipelines</li>
-        <li>Custom reporting and KPI tracking</li>
-        <li>Data lake architecture</li>
-        <li>Self-service analytics platforms</li>
-      </ul>
-      
-      <h2>🏢 Enterprise Solutions</h2>
-      <p>Custom ERP, CRM, and enterprise software tailored to your unique business processes and workflows.</p>
-      <ul>
-        <li>Custom ERP system development</li>
-        <li>CRM platforms and customer management</li>
-        <li>Workflow automation and BPM solutions</li>
-        <li>Document management systems</li>
-        <li>Enterprise integration (SAP, Salesforce, Oracle)</li>
-      </ul>
-      
-      <h2>☁️ SaaS Platform Development</h2>
-      <p>Build scalable multi-tenant SaaS products with subscription billing, analytics, and API-first architecture.</p>
-      <ul>
-        <li>Multi-tenancy architecture design</li>
-        <li>Subscription and billing management</li>
-        <li>API-first development and documentation</li>
-        <li>Usage metering and analytics</li>
-        <li>White-labeling and customization frameworks</li>
-      </ul>
-      
-      <h2>🔌 API & Custom Integrations</h2>
-      <p>RESTful APIs, GraphQL services, and custom integrations to connect your entire tech ecosystem.</p>
-      <ul>
-        <li>REST and GraphQL API development</li>
-        <li>Microservices architecture</li>
-        <li>Third-party API integrations</li>
-        <li>Webhook systems and event-driven architecture</li>
-        <li>API gateway and rate limiting</li>
-      </ul>
-      
-      <h2>🛡️ Cyber Security & DevSecOps</h2>
-      <p>Protect your digital assets with comprehensive security solutions integrated into your development workflow.</p>
-      <ul>
-        <li>Penetration testing and vulnerability assessments</li>
-        <li>Security audit and compliance (GDPR, HIPAA, SOC 2)</li>
-        <li>DevSecOps pipeline integration</li>
-        <li>Identity and access management (IAM)</li>
-        <li>Incident response planning</li>
-      </ul>
-      
-      <h2>📄 Documentation & Architecture</h2>
-      <p>Comprehensive technical documentation, system architecture blueprints, and API docs that make onboarding effortless.</p>
-      <ul>
-        <li>API documentation (Swagger/OpenAPI)</li>
-        <li>System architecture and design documents</li>
-        <li>Technical specifications and PRDs</li>
-        <li>Developer onboarding guides</li>
-        <li>Knowledge base and wiki setup</li>
-      </ul>
-      
-      <div class="cta-box" style="margin-top:3rem;justify-content:center">
-        <a href="contact.html"><button class="btn-primary btn-large">Discuss Your Project →</button></a>
-        <a href="index.html#portfolio"><button class="btn-outline btn-large">View Our Work ↗</button></a>
+<section class="srv-section">
+  <div class="srv-grid">
+
+    <div class="srv-card" style="--accent:#2563EB">
+      <div class="srv-img-wrap"><img src="assets/img/ecommerce.jpg" alt="E-Commerce"></div>
+      <div class="srv-body">
+        <h3>E-Commerce Development</h3>
+        <p>We build scalable online stores with seamless shopping experiences and payment integrations.</p>
+        <ul><li>Custom platforms (Shopify, WooCommerce, custom)</li><li>Multi-vendor marketplaces</li><li>Payment gateway integration (Stripe, Razorpay)</li><li>Cart solutions & recommendation engines</li><li>Inventory & order management</li></ul>
       </div>
     </div>
+
+    <div class="srv-card" style="--accent:#0EA5E9">
+      <div class="srv-img-wrap"><img src="assets/img/mobileapps.jpg" alt="Mobile Apps"></div>
+      <div class="srv-body">
+        <h3>Mobile App Development</h3>
+        <p>High-performance native and cross-platform mobile applications with intuitive UX.</p>
+        <ul><li>Native iOS (Swift) & Android (Kotlin)</li><li>Cross-platform: React Native, Flutter</li><li>App Store Optimization (ASO)</li><li>Push notifications, offline-first</li><li>Wearable & IoT companion apps</li></ul>
+      </div>
+    </div>
+
+    <div class="srv-card" style="--accent:#8B5CF6">
+      <div class="srv-img-wrap"><img src="assets/img/ai.jpg" alt="AI"></div>
+      <div class="srv-body">
+        <h3>AI & Machine Learning</h3>
+        <p>Intelligent automation and data-driven insights for smarter decisions.</p>
+        <ul><li>NLP & chatbots</li><li>Computer vision & image recognition</li><li>Predictive analytics & forecasting</li><li>Recommendation engines</li><li>MLOps & model deployment</li></ul>
+      </div>
+    </div>
+
+    <div class="srv-card" style="--accent:#10B981">
+      <div class="srv-img-wrap"><img src="assets/img/dashboards.jpg" alt="BI"></div>
+      <div class="srv-body">
+        <h3>Business Intelligence & Analytics</h3>
+        <p>Transform raw data into actionable insights with custom dashboards.</p>
+        <ul><li>Real-time dashboards & visualizations</li><li>Data warehouse & ETL pipelines</li><li>Custom reporting & KPI tracking</li><li>Self-service analytics platforms</li></ul>
+      </div>
+    </div>
+
+    <div class="srv-card" style="--accent:#F59E0B">
+      <div class="srv-img-wrap"><img src="assets/img/enterprise.jpg" alt="Enterprise"></div>
+      <div class="srv-body">
+        <h3>Enterprise Solutions</h3>
+        <p>Custom ERP, CRM, and enterprise software tailored to your workflows.</p>
+        <ul><li>Custom ERP systems</li><li>CRM & customer management</li><li>Workflow automation & BPM</li><li>Document management</li><li>Enterprise integration (SAP, Salesforce)</li></ul>
+      </div>
+    </div>
+
+    <div class="srv-card" style="--accent:#06B6D4">
+      <div class="srv-img-wrap"><img src="assets/img/saas.jpg" alt="SaaS"></div>
+      <div class="srv-body">
+        <h3>SaaS Platform Development</h3>
+        <p>Build scalable multi-tenant SaaS products with subscription billing.</p>
+        <ul><li>Multi-tenancy architecture</li><li>Subscription & billing management</li><li>API-first development</li><li>Usage metering & analytics</li><li>White-labeling frameworks</li></ul>
+      </div>
+    </div>
+
+    <div class="srv-card" style="--accent:#6366F1">
+      <div class="srv-img-wrap"><img src="assets/img/api.jpg" alt="API"></div>
+      <div class="srv-body">
+        <h3>API & Custom Integrations</h3>
+        <p>RESTful APIs, microservices, and integrations to connect your ecosystem.</p>
+        <ul><li>REST & GraphQL APIs</li><li>Microservices architecture</li><li>Third-party integrations</li><li>Webhooks & event-driven systems</li><li>API gateway & rate limiting</li></ul>
+      </div>
+    </div>
+
+    <div class="srv-card" style="--accent:#EF4444">
+      <div class="srv-img-wrap"><img src="assets/img/security.jpg" alt="Security"></div>
+      <div class="srv-body">
+        <h3>Cyber Security & DevSecOps</h3>
+        <p>Protect your digital assets with comprehensive security solutions.</p>
+        <ul><li>Penetration testing & vulnerability assessment</li><li>Security audit & compliance (GDPR, HIPAA)</li><li>DevSecOps pipeline integration</li><li>IAM & access management</li><li>Incident response planning</li></ul>
+      </div>
+    </div>
+
+    <div class="srv-card" style="--accent:#14B8A6">
+      <div class="srv-img-wrap"><img src="assets/img/documentation.jpg" alt="Docs"></div>
+      <div class="srv-body">
+        <h3>Documentation & Architecture</h3>
+        <p>Comprehensive technical documentation and architecture blueprints.</p>
+        <ul><li>API documentation (Swagger/OpenAPI)</li><li>System architecture & design docs</li><li>Technical specs & PRDs</li><li>Developer onboarding guides</li><li>Knowledge base & wiki setup</li></ul>
+      </div>
+    </div>
+
+  </div>
+
+  <div style="text-align:center;padding:3rem 0">
+    <a href="contact.html"><button class="btn-primary btn-large">Discuss Your Project →</button></a>
   </div>
 </section>
 
-<!-- Footer -->
 <footer class="footer">
-  <div class="footer-content">
-    <div class="footer-columns">
-      <div class="footer-col">
-        <h4>Services</h4>
-        <ul>
-          <li><a href="index.html#services">E-Commerce Development</a></li>
-          <li><a href="index.html#services">Mobile Apps</a></li>
-          <li><a href="index.html#services">AI & Machine Learning</a></li>
-          <li><a href="index.html#services">Business Intelligence</a></li>
-          <li><a href="index.html#services">Enterprise Solutions</a></li>
-        </ul>
-      </div>
-      <div class="footer-col">
-        <h4>Solutions</h4>
-        <ul>
-          <li><a href="index.html#solutions">SaaS Platforms</a></li>
-          <li><a href="index.html#solutions">API Development</a></li>
-          <li><a href="index.html#solutions">Cloud Migration</a></li>
-          <li><a href="index.html#solutions">DevSecOps</a></li>
-          <li><a href="index.html#solutions">Technical Documentation</a></li>
-        </ul>
-      </div>
-      <div class="footer-col">
-        <h4>Industries</h4>
-        <ul>
-          <li><a href="index.html#industries">Finance & Banking</a></li>
-          <li><a href="index.html#industries">Healthcare</a></li>
-          <li><a href="index.html#industries">Retail & E-Commerce</a></li>
-          <li><a href="index.html#industries">Education</a></li>
-          <li><a href="index.html#industries">Manufacturing</a></li>
-        </ul>
-      </div>
-      <div class="footer-col">
-        <h4>Company</h4>
-        <ul>
-          <li><a href="about.html">About AskABD</a></li>
-          <li><a href="index.html#portfolio">Portfolio</a></li>
-          <li><a href="contact.html">Contact Us</a></li>
-          <li><a href="privacy.html">Privacy Policy</a></li>
-          <li><a href="terms.html">Terms of Service</a></li>
-        </ul>
-      </div>
+  <div class="footer-top">
+    <div class="footer-brand">
+      <img src="assets/logo.png" alt="AskABD Technologies">
+      <p>We help businesses analyze, build, optimize and scale digital solutions.</p>
+      <div class="footer-social"><a href="#">in</a><a href="#">𝕏</a><a href="#">f</a><a href="#">⚡</a></div>
     </div>
-    <div class="footer-bottom">
-      <div class="footer-logo">
-        <img src="assets/logo.png" alt="AskABD Technologies">
-        <p>Transforming Business Challenges Into Digital Solutions</p>
-      </div>
-      <div class="footer-social">
-        <a href="#" aria-label="LinkedIn">in</a>
-        <a href="#" aria-label="Twitter">𝕏</a>
-        <a href="#" aria-label="GitHub">⚡</a>
-      </div>
-    </div>
-    <div class="footer-copyright">
-      <p>&copy; 2024 AskABD Technologies. All rights reserved. | Hyderabad, Telangana, India</p>
-    </div>
+    <div class="footer-col"><h4>Services</h4><ul><li><a href="#">Web Development</a></li><li><a href="#">Mobile Apps</a></li><li><a href="#">AI Solutions</a></li><li><a href="#">Cloud Solutions</a></li></ul></div>
+    <div class="footer-col"><h4>Company</h4><ul><li><a href="about.html">About Us</a></li><li><a href="contact.html">Contact</a></li><li><a href="privacy.html">Privacy</a></li><li><a href="terms.html">Terms</a></li></ul></div>
+    <div class="footer-col"><h4>Contact</h4><ul class="footer-contact"><li>📍 Bangalore, Karnataka</li><li>📞 +91 83090 78107</li><li>✉️ hello@askabd.com</li></ul></div>
   </div>
+  <div class="footer-bottom-bar"><p>&copy; 2024 AskABD Technologies. All rights reserved.</p><div class="footer-legal"><a href="privacy.html">Privacy</a><a href="terms.html">Terms</a></div></div>
 </footer>
-
 <script src="js/main.js"></script>
 </body>
 </html>
