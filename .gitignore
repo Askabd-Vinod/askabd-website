@@ -1,5 +1,6 @@
 # Helper / build scripts (not part of the website)
 _setup.ps1
+_push.ps1
 COMPLETE-REBUILD-PLAN.md
 UPLOAD-TO-GITHUB.md
 DEPLOY-NO-GIT.md
