@@ -60,14 +60,14 @@
 .hero-buttons { display: flex; gap: 1rem; flex-wrap: wrap; }
 
 /* ===== Hero dashboard ===== */
-.hero-visual { position: relative; display: flex; justify-content: flex-end; align-items: center; min-height: 460px; }
+.hero-visual { position: relative; display: flex; justify-content: flex-end; align-items: center; min-height: 520px; }
 .dash-main {
-  width: 100%; max-width: 500px; position: relative;
+  width: 100%; max-width: 560px; position: relative;
   background: linear-gradient(160deg, rgba(30,42,95,0.92), rgba(11,17,46,0.94));
-  border: 1px solid rgba(96,165,250,0.3); border-radius: 18px; padding: 1.4rem;
-  box-shadow: 0 40px 90px rgba(0,0,0,0.5), 0 0 80px rgba(37,99,235,0.28), inset 0 1px 0 rgba(255,255,255,0.08);
-  backdrop-filter: blur(10px); margin-right: 40px;
-  transform: perspective(1700px) rotateY(-7deg) rotateX(2deg);
+  border: 1px solid rgba(96,165,250,0.3); border-radius: 18px; padding: 1.5rem;
+  box-shadow: 0 50px 110px rgba(0,0,0,0.55), 0 0 90px rgba(37,99,235,0.3), inset 0 1px 0 rgba(255,255,255,0.08);
+  backdrop-filter: blur(10px); margin-right: 36px;
+  transform: perspective(1400px) rotateY(-12deg) rotateX(4deg); transform-style: preserve-3d;
 }
 .dash-main::before {
   content: ''; position: absolute; inset: 0; border-radius: 18px; pointer-events: none;
@@ -114,11 +114,11 @@
 
 /* Floating phone overlapping dashboard */
 .dash-phone {
-  position: absolute; right: 0; bottom: -30px; width: 168px; z-index: 3;
+  position: absolute; right: -4px; bottom: -34px; width: 186px; z-index: 3;
   background: linear-gradient(165deg, #1a2566, #0c1240);
-  border: 1px solid rgba(96,165,250,0.35); border-radius: 24px; padding: 1rem;
-  box-shadow: 0 35px 70px rgba(0,0,0,0.6), 0 0 40px rgba(168,85,247,0.2);
-  transform: perspective(1200px) rotateY(-6deg);
+  border: 1px solid rgba(96,165,250,0.35); border-radius: 26px; padding: 1.1rem;
+  box-shadow: 0 40px 80px rgba(0,0,0,0.65), 0 0 50px rgba(168,85,247,0.25);
+  transform: perspective(1100px) rotateY(-10deg); transform-style: preserve-3d;
 }
 .dash-phone::before { content: ''; position: absolute; top: 8px; left: 50%; transform: translateX(-50%); width: 46px; height: 5px; border-radius: 3px; background: rgba(255,255,255,0.18); }
 .phone-status { display: flex; justify-content: space-between; align-items: center; font-size: 0.55rem; color: var(--text-gray); margin-bottom: 0.5rem; }
