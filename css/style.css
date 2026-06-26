@@ -41,6 +41,7 @@ nav {
   display: flex; align-items: center; justify-content: space-between;
 }
 .logo { display: flex; align-items: center; gap: 0.7rem; }
+.logo a { display: flex; align-items: center; gap: 0.7rem; text-decoration: none; }
 .logo img {
   height: 66px; width: auto;
   background: #fff; padding: 7px; border-radius: 14px;
