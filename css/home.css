@@ -126,7 +126,7 @@
 }
 .ind-card { border: 1px solid var(--border-soft); border-radius: 14px; overflow: hidden; background: #fff; transition: all 0.25s; }
 .ind-card:hover { transform: translateY(-4px); box-shadow: 0 16px 34px rgba(13,19,48,0.12); }
-.ind-photo { height: 140px; }
+.ind-photo { height: 160px; width: 100%; object-fit: cover; display: block; }
 .ind-body { padding: 1.3rem; }
 .ind-body h3 { font-size: 1.1rem; font-weight: 700; color: #0d1330; margin-bottom: 0.8rem; }
 .ind-body ul { display: flex; flex-direction: column; gap: 0.4rem; margin-bottom: 1rem; }
