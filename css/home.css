@@ -67,12 +67,17 @@
 .dash-stats { display: grid; grid-template-columns: 1fr 1fr; gap: 0.9rem; margin-bottom: 0.9rem; }
 .dash-stat { background: rgba(96,165,250,0.07); border: 1px solid rgba(96,165,250,0.16); border-radius: 12px; padding: 0.9rem; position: relative; overflow: hidden; }
 .dash-stat small { font-size: 0.68rem; color: var(--text-gray); display: block; }
+.ds-top { display: flex; justify-content: space-between; align-items: center; }
+.ds-top em { font-size: 0.7rem; font-style: normal; font-weight: 700; }
+.ds-mid { display: flex; align-items: flex-end; justify-content: space-between; gap: 0.5rem; margin: 0.2rem 0 0.15rem; }
+.ds-mid strong { font-size: 1.5rem; font-weight: 800; line-height: 1; }
+.spark { width: 66px; height: 26px; flex-shrink: 0; }
+.spark polyline { fill: none; stroke: #60A5FA; stroke-width: 2.5; stroke-linejoin: round; stroke-linecap: round; }
 .dash-row { display: flex; align-items: baseline; gap: 0.5rem; margin: 0.25rem 0 0.1rem; }
 .dash-row strong { font-size: 1.5rem; font-weight: 800; }
 .dash-row em { font-size: 0.72rem; font-style: normal; font-weight: 700; }
 .up { color: #34D399; }
 .dash-sub { font-size: 0.62rem; color: var(--text-gray); }
-.spark { height: 26px; margin-top: 0.4rem; background: linear-gradient(to top, rgba(96,165,250,0.3), transparent); clip-path: polygon(0 75%,20% 55%,40% 65%,60% 40%,80% 50%,100% 22%,100% 100%,0 100%); }
 .dash-lower { display: grid; grid-template-columns: 0.78fr 1.4fr; gap: 0.9rem; }
 .dash-box { background: rgba(96,165,250,0.07); border: 1px solid rgba(96,165,250,0.16); border-radius: 12px; padding: 0.9rem; }
 .dash-box small { font-size: 0.68rem; color: var(--text-gray); display: block; }
@@ -88,13 +93,11 @@
 .dash-tabs { display: flex; gap: 0.3rem; }
 .dash-tabs span { font-size: 0.6rem; color: var(--text-gray); padding: 0.15rem 0.45rem; border-radius: 5px; }
 .dash-tabs span.on { background: rgba(96,165,250,0.2); color: #fff; }
-.dash-chart { height: 88px; background: rgba(96,165,250,0.05); border-radius: 10px; position: relative; overflow: hidden; }
-.dash-chart span {
-  position: absolute; inset: 0;
-  background: linear-gradient(to top, rgba(59,130,246,0.4), transparent);
-  clip-path: polygon(0 80%,12% 62%,24% 70%,36% 48%,48% 58%,60% 38%,72% 46%,84% 26%,100% 18%,100% 100%,0 100%);
-}
-.dash-pill { display: inline-block; margin-top: 0.5rem; background: rgba(52,211,153,0.15); color: #34D399; font-size: 0.68rem; font-weight: 700; padding: 0.25rem 0.6rem; border-radius: 20px; }
+.dash-chart { height: 110px; background: rgba(96,165,250,0.05); border-radius: 10px; position: relative; overflow: hidden; padding: 6px; }
+.dash-chart svg { width: 100%; height: 100%; display: block; }
+.dash-chart .ax { stroke: rgba(255,255,255,0.06); stroke-width: 1; }
+.dash-chart .ln { fill: none; stroke: #3B82F6; stroke-width: 2.5; stroke-linejoin: round; stroke-linecap: round; filter: drop-shadow(0 0 4px rgba(59,130,246,0.5)); }
+.dash-pill { position: absolute; right: 10px; bottom: 10px; background: rgba(52,211,153,0.18); color: #34D399; font-size: 0.66rem; font-weight: 700; padding: 0.25rem 0.55rem; border-radius: 20px; }
 .dash-pill em { font-style: normal; color: var(--text-gray); font-weight: 500; }
 
 /* Floating phone overlapping dashboard */
@@ -105,16 +108,24 @@
   box-shadow: 0 35px 70px rgba(0,0,0,0.6), 0 0 40px rgba(168,85,247,0.2);
 }
 .dash-phone::before { content: ''; position: absolute; top: 8px; left: 50%; transform: translateX(-50%); width: 46px; height: 5px; border-radius: 3px; background: rgba(255,255,255,0.18); }
-.phone-top { display: flex; justify-content: space-between; align-items: center; margin-top: 0.4rem; margin-bottom: 0.7rem; }
+.phone-status { display: flex; justify-content: space-between; align-items: center; font-size: 0.55rem; color: var(--text-gray); margin-bottom: 0.5rem; }
+.phone-status .phone-ic { letter-spacing: 1px; }
+.phone-top { display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.7rem; }
 .phone-top small { font-size: 0.78rem; font-weight: 700; color: #fff; }
 .phone-dot { color: var(--blue-bright); font-size: 0.8rem; }
 .phone-label { font-size: 0.64rem; color: var(--text-gray); }
+.dash-phone .dash-row { margin: 0.15rem 0 0; }
 .dash-phone .dash-row strong { font-size: 1.25rem; }
-.phone-chart { height: 54px; margin: 0.5rem 0 0.8rem; background: rgba(96,165,250,0.06); border-radius: 8px; position: relative; overflow: hidden; }
-.phone-chart span { position: absolute; inset: 0; background: linear-gradient(to top, rgba(59,130,246,0.4), transparent); clip-path: polygon(0 70%,20% 55%,40% 62%,60% 35%,80% 48%,100% 20%,100% 100%,0 100%); }
+.phone-sub { font-size: 0.55rem; color: var(--text-gray); display: block; }
+.phone-line { width: 100%; height: 48px; margin: 0.4rem 0 0.7rem; display: block; }
+.phone-line polyline { fill: none; stroke: #60A5FA; stroke-width: 2.5; stroke-linejoin: round; stroke-linecap: round; }
 .phone-services { font-size: 0.6rem; color: var(--text-gray); margin-bottom: 0.5rem; }
-.phone-item { display: flex; justify-content: space-between; align-items: center; font-size: 0.64rem; padding: 0.3rem 0; border-top: 1px solid rgba(255,255,255,0.06); }
-.phone-item b { color: var(--blue-bright); }
+.phone-item { display: flex; align-items: center; gap: 0.4rem; font-size: 0.58rem; padding: 0.32rem 0; }
+.phone-item i { width: 16px; height: 16px; border-radius: 50%; background: linear-gradient(135deg,#3B82F6,#A855F7); flex-shrink: 0; }
+.phone-item span { flex: 1; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; color: var(--text-light); }
+.phone-item .bar { width: 34px; height: 4px; border-radius: 3px; background: rgba(255,255,255,0.12); overflow: hidden; flex-shrink: 0; }
+.phone-item .bar b { display: block; height: 100%; background: #60A5FA; }
+.phone-item u { text-decoration: none; color: var(--text-gray); font-size: 0.55rem; width: 22px; text-align: right; }
 
 /* Premium CTA banner below hero */
 .hero-strip {
