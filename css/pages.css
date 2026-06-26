@@ -2,24 +2,14 @@
 
 /* Page Header */
 .page-header {
-  min-height: 32vh;
+  min-height: 28vh;
   display: flex;
   align-items: center;
   justify-content: center;
-  background: linear-gradient(160deg, #04071A 0%, #0B1130 50%, #04071A 100%);
+  background: transparent;
   position: relative;
-  padding-top: 80px;
-  overflow: hidden;
-}
-.page-header::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: radial-gradient(ellipse at 50% 50%, rgba(37,99,235,0.2), transparent 70%);
-  pointer-events: none;
+  padding-top: 100px;
+  padding-bottom: 2rem;
 }
 .page-header-content {
   text-align: center;
@@ -29,17 +19,14 @@
   z-index: 1;
 }
 .page-header h1 {
-  font-size: clamp(2.5rem, 5vw, 3.5rem);
+  font-size: clamp(2.2rem, 4vw, 3.2rem);
   font-weight: 800;
-  margin-bottom: 1rem;
-  background: linear-gradient(135deg, #4A90E2, #8B5CF6);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
+  margin-bottom: 0.8rem;
+  color: #FFFFFF;
 }
 .page-header p {
-  font-size: 1.2rem;
-  color: var(--text-gray);
+  font-size: 1.1rem;
+  color: #94A3B8;
 }
 
 /* Content Section */
