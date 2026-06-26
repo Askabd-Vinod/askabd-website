@@ -196,7 +196,7 @@
 }
 .solution-card {
   background: #fff; border: 1.5px solid #E2E8F0; border-radius: 16px; padding: 2.2rem 2rem;
-  transition: all 0.3s; position: relative; overflow: hidden;
+  transition: all 0.3s; position: relative; overflow: hidden; cursor: pointer;
 }
 .solution-card::before {
   content: ''; position: absolute; top: 0; left: 0; right: 0; height: 3px;

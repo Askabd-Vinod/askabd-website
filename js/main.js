@@ -11,6 +11,12 @@
   });
 })();
 
+// Make service/solution/industry cards clickable -> contact page
+document.addEventListener('click', function(e) {
+  const card = e.target.closest('.solution-card, .srv-card, .ind-card');
+  if (card) { window.location.href = 'contact.html'; }
+});
+
 // Mobile Menu Toggle
 const hamburger = document.querySelector('.hamburger');
 const navLinks = document.querySelector('.nav-links');
