@@ -2,11 +2,11 @@
 
 /* Page Header */
 .page-header {
-  min-height: 40vh;
+  min-height: 32vh;
   display: flex;
   align-items: center;
   justify-content: center;
-  background: linear-gradient(135deg, #0A0E27 0%, #1a1f3a 50%, #0A0E27 100%);
+  background: linear-gradient(160deg, #04071A 0%, #0B1130 50%, #04071A 100%);
   position: relative;
   padding-top: 80px;
   overflow: hidden;
@@ -18,7 +18,7 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background: radial-gradient(ellipse at 50% 50%, rgba(74, 144, 226, 0.15), transparent 70%);
+  background: radial-gradient(ellipse at 50% 50%, rgba(37,99,235,0.2), transparent 70%);
   pointer-events: none;
 }
 .page-header-content {

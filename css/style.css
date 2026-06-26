@@ -23,7 +23,9 @@ body {
   color: #F0F4FF;
   line-height: 1.6;
   overflow-x: hidden;
+  animation: pageIn 0.3s ease-out;
 }
+@keyframes pageIn { from { opacity: 0; } to { opacity: 1; } }
 img { max-width: 100%; display: block; }
 a { text-decoration: none; color: inherit; }
 ul { list-style: none; }
