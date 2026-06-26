@@ -48,16 +48,16 @@ nav {
 }
 .brand-name { display: flex; flex-direction: column; line-height: 1; font-weight: 800; font-size: 1.75rem; color: #fff; }
 .brand-name span { font-size: 0.76rem; font-weight: 600; letter-spacing: 0.24em; color: var(--text-gray); margin-top: 5px; }
-.nav-links { display: flex; align-items: center; gap: 1.6rem; }
+.nav-links { display: flex; align-items: center; gap: 1.8rem; }
 .nav-links a {
-  font-size: 0.85rem; font-weight: 500; color: var(--text-light);
+  font-size: 1rem; font-weight: 500; color: var(--text-light);
   transition: color 0.2s;
 }
 .nav-links a:hover { color: var(--blue-bright); }
 .btn-primary {
   background: var(--blue);
-  color: #fff; padding: 0.6rem 1.3rem; border-radius: 8px;
-  font-weight: 600; font-size: 0.85rem;
+  color: #fff; padding: 0.7rem 1.5rem; border-radius: 8px;
+  font-weight: 600; font-size: 0.95rem;
   transition: transform 0.2s, box-shadow 0.2s, background 0.2s;
 }
 .btn-primary:hover {
