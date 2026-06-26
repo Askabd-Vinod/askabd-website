@@ -13,7 +13,7 @@
 
 // Make service/solution/industry cards clickable -> contact page
 document.addEventListener('click', function(e) {
-  const card = e.target.closest('.solution-card, .srv-card, .ind-card');
+  const card = e.target.closest('.solution-card, .srv-card, .ind-card, .fwd');
   if (card) { window.location.href = 'contact.html'; }
 });
 
