@@ -87,8 +87,11 @@ nav {
 .hamburger { display: none; }
 @media (max-width: 900px) {
   .nav-links, .nav-cta { display: none; }
-  .hamburger { display: flex; flex-direction: column; gap: 4px; }
+  .hamburger { display: flex; flex-direction: column; gap: 4px; background: none; padding: 8px; }
   .hamburger span { width: 24px; height: 2px; background: var(--text-light); }
+  .nav-container { padding: 0.5rem 1rem; }
+  .logo img { height: 44px !important; padding: 4px !important; }
+  .brand-name { font-size: 1.2rem !important; }
 }
 
 

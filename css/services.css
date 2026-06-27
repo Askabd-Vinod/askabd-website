@@ -42,6 +42,8 @@
   .srv-card, .srv-card:nth-child(even) { grid-template-columns: 1fr; }
   .srv-card:nth-child(even) .srv-img-wrap { order: 0; }
   .srv-img-wrap img { min-height: 200px; }
+  .srv-body { padding: 1.5rem; }
+  .srv-body ul { grid-template-columns: 1fr; }
 }
 
 
