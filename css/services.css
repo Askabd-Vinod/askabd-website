@@ -43,3 +43,16 @@
   .srv-card:nth-child(even) .srv-img-wrap { order: 0; }
   .srv-img-wrap img { min-height: 200px; }
 }
+
+
+/* Mobile responsive for service cards */
+@media (max-width: 768px) {
+  .srv-section { padding: 2rem 0; }
+  .srv-grid { padding: 0 1rem; gap: 1.5rem; }
+  .srv-card, .srv-card:nth-child(even) { grid-template-columns: 1fr; }
+  .srv-card:nth-child(even) .srv-img-wrap { order: 0; }
+  .srv-img-wrap img { min-height: 180px; height: 180px; }
+  .srv-body { padding: 1.5rem; }
+  .srv-body h3 { font-size: 1.2rem; }
+  .srv-body ul { grid-template-columns: 1fr; }
+}

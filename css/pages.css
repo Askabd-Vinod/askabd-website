@@ -348,3 +348,15 @@
   .content-main, .contact-form-wrapper, .legal-content { padding: 2rem; }
   .page-header { min-height: 30vh; }
 }
+
+
+/* Mobile responsive for pages */
+@media (max-width: 768px) {
+  .page-header { padding-top: 80px; min-height: 20vh; }
+  .page-header h1 { font-size: 1.8rem; }
+  .content-grid { grid-template-columns: 1fr; }
+  .contact-grid { grid-template-columns: 1fr; }
+  .contact-form { grid-template-columns: 1fr; }
+  .content-main, .contact-form-wrapper, .legal-content { padding: 1.5rem; }
+  .highlight-boxes { grid-template-columns: 1fr; }
+}

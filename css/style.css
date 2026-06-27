@@ -90,3 +90,27 @@ nav {
   .hamburger { display: flex; flex-direction: column; gap: 4px; }
   .hamburger span { width: 24px; height: 2px; background: var(--text-light); }
 }
+
+
+/* ===== MOBILE RESPONSIVE ===== */
+@media (max-width: 900px) {
+  .nav-links, .nav-cta { display: none; }
+  .hamburger { display: flex; flex-direction: column; gap: 5px; background: none; padding: 0.5rem; }
+  .hamburger span { width: 26px; height: 2.5px; background: #fff; border-radius: 2px; }
+  .nav-container { padding: 0.6rem 1rem; }
+  .logo img { height: 46px; }
+  .brand-name { font-size: 1.3rem; }
+  .brand-name span { font-size: 0.55rem; }
+}
+
+/* Mobile nav menu when active */
+.nav-links.active {
+  display: flex; flex-direction: column; position: absolute;
+  top: 100%; left: 0; right: 0; background: rgba(7,11,34,0.98);
+  padding: 1.5rem; gap: 1rem; border-bottom: 1px solid rgba(96,165,250,0.2);
+  backdrop-filter: blur(10px);
+}
+
+@media (max-width: 768px) {
+  .btn-large { padding: 0.7rem 1.3rem; font-size: 0.9rem; }
+}
