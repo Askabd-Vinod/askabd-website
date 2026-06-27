@@ -86,13 +86,15 @@ nav {
 
 .hamburger { display: none; }
 @media (max-width: 900px) {
-  .nav-links, .nav-cta, .nav-container > a[href="contact.html"] { display: none; }
+  .nav-links { display: none; }
   .hamburger { display: flex; flex-direction: column; gap: 4px; background: none; padding: 8px; }
   .hamburger span { width: 24px; height: 2px; background: var(--text-light); }
-  .nav-container { padding: 0.5rem 1rem; }
-  .logo img { height: 40px !important; padding: 4px !important; }
-  .brand-name { font-size: 1.1rem !important; }
-  .brand-name span { font-size: 0.48rem !important; }
+  .nav-container { padding: 0.5rem 0.8rem; }
+  .nav-container > a .btn-primary { font-size: 0.65rem; padding: 0.4rem 0.7rem; }
+  .logo img { height: 36px !important; padding: 3px !important; border-radius: 8px !important; }
+  .logo { gap: 0.4rem !important; }
+  .brand-name { font-size: 0.95rem !important; }
+  .brand-name span { font-size: 0.42rem !important; letter-spacing: 0.15em !important; }
 }
 
 
