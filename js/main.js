@@ -65,15 +65,17 @@ window.addEventListener('scroll', () => {
   lastScroll = currentScroll;
 });
 
-// ===== Scroll Reveal Animations (all pages) =====
+// ===== Scroll Reveal Animations (all pages, re-triggers on every scroll) =====
 const revealObserver = new IntersectionObserver((entries) => {
   entries.forEach(entry => {
     if (entry.isIntersecting) {
       const delay = entry.target.dataset.revealDelay || 0;
-      setTimeout(() => {
-        entry.target.classList.add('revealed');
-      }, delay);
-      revealObserver.unobserve(entry.target);
+      entry.target.style.transitionDelay = delay + 'ms';
+      entry.target.classList.add('revealed');
+    } else {
+      // Reset so it animates again next time it enters the viewport
+      entry.target.style.transitionDelay = '0ms';
+      entry.target.classList.remove('revealed');
     }
   });
 }, { threshold: 0.12, rootMargin: '0px 0px -60px 0px' });
@@ -103,8 +105,8 @@ revealStyle.textContent = `
   .reveal-on-scroll {
     opacity: 0;
     transform: translateY(36px);
-    transition: opacity 0.7s cubic-bezier(0.22, 1, 0.36, 1),
-                transform 0.7s cubic-bezier(0.22, 1, 0.36, 1);
+    transition: opacity 0.6s cubic-bezier(0.22, 1, 0.36, 1),
+                transform 0.6s cubic-bezier(0.22, 1, 0.36, 1);
     will-change: opacity, transform;
   }
   .reveal-on-scroll.revealed {
