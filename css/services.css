@@ -1,5 +1,29 @@
 /* Services Page - Visual Rich Cards */
-.srv-section { background: var(--navy-dark); padding: 4rem 0; }
+.srv-section { 
+  background: var(--navy-dark); 
+  padding: 4rem 0; 
+  position: relative;
+}
+.srv-section::before {
+  content: '';
+  position: absolute;
+  top: 20%;
+  left: -10%;
+  width: 40%;
+  height: 60%;
+  background: radial-gradient(ellipse, rgba(59,130,246,0.04) 0%, transparent 70%);
+  pointer-events: none;
+}
+.srv-section::after {
+  content: '';
+  position: absolute;
+  bottom: 10%;
+  right: -10%;
+  width: 35%;
+  height: 50%;
+  background: radial-gradient(ellipse, rgba(139,92,246,0.03) 0%, transparent 70%);
+  pointer-events: none;
+}
 .srv-grid { max-width: 1440px; margin: 0 auto; padding: 0 1.5rem; display: flex; flex-direction: column; gap: 2rem; }
 
 .srv-card {
