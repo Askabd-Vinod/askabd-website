@@ -65,28 +65,57 @@ window.addEventListener('scroll', () => {
   lastScroll = currentScroll;
 });
 
-// Intersection Observer for Fade-in Animations
-const observerOptions = {
-  threshold: 0.1,
-  rootMargin: '0px 0px -50px 0px'
-};
-
-const observer = new IntersectionObserver((entries) => {
+// ===== Scroll Reveal Animations (all pages) =====
+const revealObserver = new IntersectionObserver((entries) => {
   entries.forEach(entry => {
     if (entry.isIntersecting) {
-      entry.target.style.opacity = '1';
-      entry.target.style.transform = 'translateY(0)';
+      const delay = entry.target.dataset.revealDelay || 0;
+      setTimeout(() => {
+        entry.target.classList.add('revealed');
+      }, delay);
+      revealObserver.unobserve(entry.target);
     }
   });
-}, observerOptions);
+}, { threshold: 0.12, rootMargin: '0px 0px -60px 0px' });
 
-// Observe all cards and sections
-document.querySelectorAll('.solution-card, .industry-card, .warning-card, .process-card, .clarity-card, .industry-icon-card').forEach(el => {
-  el.style.opacity = '0';
-  el.style.transform = 'translateY(20px)';
-  el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
-  observer.observe(el);
+// Elements to reveal across all pages (homepage + sub-pages)
+const revealSelectors = [
+  '.solution-card', '.industry-card', '.ind-card', '.srv-card',
+  '.proc-step', '.fwd', '.stat', '.help-item', '.opt-item',
+  '.tech-group', '.clarity-col', '.optimize-col',
+  '.content-main', '.content-sidebar', '.sidebar-card',
+  '.contact-card', '.contact-social', '.contact-form-wrapper',
+  '.legal-content', '.highlight-box', '.section-head-row',
+  '.section-head', '.losing-left', '.losing-right', '.ready-inner'
+];
+
+document.querySelectorAll(revealSelectors.join(',')).forEach((el) => {
+  el.classList.add('reveal-on-scroll');
+  // Stagger items within the same grid for a cascade effect
+  const siblingIndex = Array.from(el.parentElement.children).indexOf(el);
+  el.dataset.revealDelay = (siblingIndex % 6) * 80;
+  revealObserver.observe(el);
 });
+
+// Inject reveal animation styles
+const revealStyle = document.createElement('style');
+revealStyle.textContent = `
+  .reveal-on-scroll {
+    opacity: 0;
+    transform: translateY(36px);
+    transition: opacity 0.7s cubic-bezier(0.22, 1, 0.36, 1),
+                transform 0.7s cubic-bezier(0.22, 1, 0.36, 1);
+    will-change: opacity, transform;
+  }
+  .reveal-on-scroll.revealed {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .reveal-on-scroll { opacity: 1 !important; transform: none !important; transition: none !important; }
+  }
+`;
+document.head.appendChild(revealStyle);
 
 // Button Click Handlers
 document.querySelectorAll('.btn-primary, .btn-outline').forEach(button => {
