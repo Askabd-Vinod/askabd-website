@@ -9,6 +9,7 @@ cd /d "c:\Users\Vinod\OneDrive\.kiro\askabd-website"
 echo Adding files to git...
 git add services.html
 git add js\main.js
+git add .cloudflare-pages
 echo.
 
 echo Committing changes...

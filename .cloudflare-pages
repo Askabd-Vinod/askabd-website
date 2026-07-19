@@ -1,0 +1,9 @@
+# Cloudflare Pages Configuration
+# This file ensures consistent deployment settings across all branches
+
+[build]
+command = ""
+directory = "/"
+
+[build.environment]
+NODE_VERSION = "18"
