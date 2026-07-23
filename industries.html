@@ -5,20 +5,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Industries – AskABD Technologies</title>
   <meta name="description" content="Industry-specific technology solutions from AskABD Technologies">
-<<<<<<< Updated upstream
-  <meta name="author" content="AskABD Technologies">
-  <meta name="robots" content="index, follow">
-  <link rel="canonical" href="https://www.askabd.com/industries">
-  <link rel="icon" type="image/png" href="https://www.askabd.com/assets/logo.png">
-  <link rel="apple-touch-icon" href="https://www.askabd.com/assets/logo.png">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/style.css?v=2">
-  <link rel="stylesheet" href="css/home.css?v=2">
-  <link rel="stylesheet" href="css/pages.css?v=2">
-  <link rel="stylesheet" href="css/services.css?v=2">
-=======
   <meta name="keywords" content="healthcare technology, fintech solutions, retail e-commerce, logistics technology, education technology, real estate technology, AskABD Technologies">
   <meta name="author" content="AskABD Technologies">
   <meta name="robots" content="index, follow">
@@ -32,15 +18,15 @@
   <meta name="twitter:title" content="Industries – AskABD Technologies">
   <meta name="twitter:description" content="Industry-specific technology solutions from AskABD Technologies">
   <link rel="canonical" href="https://www.askabd.com/industries.html">
-  <link rel="icon" href="assets/logo.png">
+  <link rel="icon" type="image/png" href="https://www.askabd.com/assets/logo.png">
+  <link rel="apple-touch-icon" href="https://www.askabd.com/assets/logo.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="css/home.css">
-  <link rel="stylesheet" href="css/pages.css">
-  <link rel="stylesheet" href="css/services.css">
->>>>>>> Stashed changes
+  <link rel="stylesheet" href="css/style.css?v=2">
+  <link rel="stylesheet" href="css/home.css?v=2">
+  <link rel="stylesheet" href="css/pages.css?v=2">
+  <link rel="stylesheet" href="css/services.css?v=3">
 </head>
 <body>
 <nav>
@@ -71,7 +57,7 @@
 <section class="srv-section">
   <div class="srv-grid">
 
-    <div class="srv-card" style="--accent:#2563EB">
+    <div class="srv-card" style="--accent:#2563EB" data-service="ind-healthcare">
       <div class="srv-img-wrap"><img src="assets/img/healthcare.jpg" alt="Healthcare"></div>
       <div class="srv-body">
         <h3>Healthcare</h3>
@@ -80,7 +66,7 @@
       </div>
     </div>
 
-    <div class="srv-card" style="--accent:#10B981">
+    <div class="srv-card" style="--accent:#10B981" data-service="ind-finance">
       <div class="srv-img-wrap"><img src="assets/img/finance.jpg" alt="Finance"></div>
       <div class="srv-body">
         <h3>Finance & FinTech</h3>
@@ -89,7 +75,7 @@
       </div>
     </div>
 
-    <div class="srv-card" style="--accent:#8B5CF6">
+    <div class="srv-card" style="--accent:#8B5CF6" data-service="ind-retail">
       <div class="srv-img-wrap"><img src="assets/img/retail.jpg" alt="Retail"></div>
       <div class="srv-body">
         <h3>Retail & E-Commerce</h3>
@@ -98,7 +84,7 @@
       </div>
     </div>
 
-    <div class="srv-card" style="--accent:#0EA5E9">
+    <div class="srv-card" style="--accent:#0EA5E9" data-service="ind-logistics">
       <div class="srv-img-wrap"><img src="assets/img/logistics.jpg" alt="Logistics"></div>
       <div class="srv-body">
         <h3>Logistics & Transport</h3>
@@ -107,7 +93,7 @@
       </div>
     </div>
 
-    <div class="srv-card" style="--accent:#F59E0B">
+    <div class="srv-card" style="--accent:#F59E0B" data-service="ind-education">
       <div class="srv-img-wrap"><img src="assets/img/education.jpg" alt="Education"></div>
       <div class="srv-body">
         <h3>Education & EdTech</h3>
@@ -116,7 +102,7 @@
       </div>
     </div>
 
-    <div class="srv-card" style="--accent:#EC4899">
+    <div class="srv-card" style="--accent:#EC4899" data-service="ind-realestate">
       <div class="srv-img-wrap"><img src="assets/img/realestate.jpg" alt="Real Estate"></div>
       <div class="srv-body">
         <h3>Real Estate</h3>
@@ -130,6 +116,348 @@
     <a href="contact.html"><button class="btn-primary btn-large">Discuss Your Industry Needs →</button></a>
   </div>
 </section>
+
+<!-- INDUSTRY MODALS -->
+<div id="ind-healthcare-modal" class="service-modal">
+  <div class="modal-content">
+    <button class="modal-close">&times;</button>
+    <div class="modal-hero">
+      <span class="modal-badge">Healthcare</span>
+      <h2>Digital Health Solutions That Improve Patient Outcomes</h2>
+      <p>HIPAA-compliant platforms that streamline care delivery and boost operational efficiency.</p>
+    </div>
+    <div class="modal-stats">
+      <div class="stat-item"><div class="stat-number">40%</div><div class="stat-label">Less Admin Time</div></div>
+      <div class="stat-item"><div class="stat-number">HIPAA</div><div class="stat-label">Compliant</div></div>
+      <div class="stat-item"><div class="stat-number">24/7</div><div class="stat-label">Patient Access</div></div>
+      <div class="stat-item"><div class="stat-number">99.9%</div><div class="stat-label">Uptime</div></div>
+    </div>
+    <div class="modal-section">
+      <h3>Industry Challenges</h3>
+      <div class="challenge-grid">
+        <div class="challenge-card"><div class="challenge-icon">📅</div><h4>Manual Scheduling</h4><p>Phone-based booking overwhelming front-desk staff.</p></div>
+        <div class="challenge-card"><div class="challenge-icon">🏥</div><h4>Fragmented Records</h4><p>Patient data siloed across disconnected systems.</p></div>
+        <div class="challenge-card"><div class="challenge-icon">🔒</div><h4>Compliance Risk</h4><p>Protecting sensitive health data under HIPAA.</p></div>
+        <div class="challenge-card"><div class="challenge-icon">🩺</div><h4>Limited Access</h4><p>Patients unable to reach care remotely.</p></div>
+        <div class="challenge-card"><div class="challenge-icon">📊</div><h4>No Visibility</h4><p>Administrators lacking operational insights.</p></div>
+        <div class="challenge-card"><div class="challenge-icon">🔌</div><h4>Device Silos</h4><p>Medical devices not integrated with systems.</p></div>
+      </div>
+    </div>
+    <div class="modal-section modal-section-alt">
+      <h3>What We Build</h3>
+      <div class="solution-grid">
+        <div class="solution-card"><div class="solution-icon">📅</div><h4>Patient Portals & Booking</h4><p>Self-service scheduling and appointment management.</p></div>
+        <div class="solution-card"><div class="solution-icon">💻</div><h4>Telemedicine Platforms</h4><p>Secure video consults and remote care.</p></div>
+        <div class="solution-card"><div class="solution-icon">🏥</div><h4>EHR/EMR Integrations</h4><p>Unified records across providers and systems.</p></div>
+        <div class="solution-card"><div class="solution-icon">📊</div><h4>Healthcare Dashboards</h4><p>Operational and clinical analytics.</p></div>
+        <div class="solution-card"><div class="solution-icon">🔒</div><h4>HIPAA-Compliant Systems</h4><p>Encrypted, audited, and compliant by design.</p></div>
+        <div class="solution-card"><div class="solution-icon">🔌</div><h4>Medical Device IoT</h4><p>Connected devices feeding real-time data.</p></div>
+      </div>
+    </div>
+    <div class="modal-section">
+      <h3>Our Guarantees</h3>
+      <div class="guarantee-list">
+        <div class="guarantee-item"><span class="guarantee-icon">✓</span><strong>HIPAA Compliant:</strong> Full regulatory adherence.</div>
+        <div class="guarantee-item"><span class="guarantee-icon">✓</span><strong>Interoperable:</strong> HL7/FHIR standards support.</div>
+        <div class="guarantee-item"><span class="guarantee-icon">✓</span><strong>Secure by Design:</strong> Encryption and audit trails.</div>
+        <div class="guarantee-item"><span class="guarantee-icon">✓</span><strong>Ongoing Support:</strong> Maintenance and updates.</div>
+      </div>
+    </div>
+    <div class="modal-cta">
+      <h3>Ready to Digitize Healthcare?</h3>
+      <p>Get a free consultation tailored to your practice.</p>
+      <a href="contact.html"><button class="btn-primary btn-large">Get Free Consultation →</button></a>
+    </div>
+  </div>
+</div>
+<div id="ind-finance-modal" class="service-modal">
+  <div class="modal-content">
+    <button class="modal-close">&times;</button>
+    <div class="modal-hero">
+      <span class="modal-badge">Finance & FinTech</span>
+      <h2>Secure Financial Platforms Built for Trust</h2>
+      <p>Handle transactions, lending, and investments with bank-grade security and compliance.</p>
+    </div>
+    <div class="modal-stats">
+      <div class="stat-item"><div class="stat-number">Bank</div><div class="stat-label">Grade Security</div></div>
+      <div class="stat-item"><div class="stat-number">99.99%</div><div class="stat-label">Uptime</div></div>
+      <div class="stat-item"><div class="stat-number">Real-Time</div><div class="stat-label">Processing</div></div>
+      <div class="stat-item"><div class="stat-number">PCI DSS</div><div class="stat-label">Compliant</div></div>
+    </div>
+    <div class="modal-section">
+      <h3>Industry Challenges</h3>
+      <div class="challenge-grid">
+        <div class="challenge-card"><div class="challenge-icon">🏦</div><h4>Legacy Banking</h4><p>Outdated core systems slowing innovation.</p></div>
+        <div class="challenge-card"><div class="challenge-icon">📝</div><h4>Slow Lending</h4><p>Manual loan processing frustrating customers.</p></div>
+        <div class="challenge-card"><div class="challenge-icon">💳</div><h4>Payment Friction</h4><p>Complex, insecure payment flows.</p></div>
+        <div class="challenge-card"><div class="challenge-icon">📋</div><h4>KYC Burden</h4><p>Manual onboarding and compliance checks.</p></div>
+        <div class="challenge-card"><div class="challenge-icon">🚨</div><h4>Fraud Risk</h4><p>Sophisticated fraud slipping through.</p></div>
+        <div class="challenge-card"><div class="challenge-icon">📊</div><h4>Investment Blind Spots</h4><p>No unified view of portfolios.</p></div>
+      </div>
+    </div>
+    <div class="modal-section modal-section-alt">
+      <h3>What We Build</h3>
+      <div class="solution-grid">
+        <div class="solution-card"><div class="solution-icon">🏦</div><h4>Digital Banking</h4><p>Modern, secure banking platforms.</p></div>
+        <div class="solution-card"><div class="solution-icon">📝</div><h4>Loan Origination</h4><p>Automated, fast lending workflows.</p></div>
+        <div class="solution-card"><div class="solution-icon">💳</div><h4>Payment Processing</h4><p>Secure, seamless transactions.</p></div>
+        <div class="solution-card"><div class="solution-icon">📊</div><h4>Investment Dashboards</h4><p>Real-time portfolio tracking.</p></div>
+        <div class="solution-card"><div class="solution-icon">📋</div><h4>KYC Automation</h4><p>Compliant, automated onboarding.</p></div>
+        <div class="solution-card"><div class="solution-icon">🚨</div><h4>Fraud Prevention</h4><p>AI-powered detection in real time.</p></div>
+      </div>
+    </div>
+    <div class="modal-section">
+      <h3>Our Guarantees</h3>
+      <div class="guarantee-list">
+        <div class="guarantee-item"><span class="guarantee-icon">✓</span><strong>PCI DSS Compliant:</strong> Secure payment handling.</div>
+        <div class="guarantee-item"><span class="guarantee-icon">✓</span><strong>Regulatory Ready:</strong> KYC/AML frameworks built in.</div>
+        <div class="guarantee-item"><span class="guarantee-icon">✓</span><strong>High Availability:</strong> 99.99% uptime SLA.</div>
+        <div class="guarantee-item"><span class="guarantee-icon">✓</span><strong>Audited Security:</strong> Regular penetration testing.</div>
+      </div>
+    </div>
+    <div class="modal-cta">
+      <h3>Ready to Build FinTech?</h3>
+      <p>Get a free consultation for your financial platform.</p>
+      <a href="contact.html"><button class="btn-primary btn-large">Get Free Consultation →</button></a>
+    </div>
+  </div>
+</div>
+<div id="ind-retail-modal" class="service-modal">
+  <div class="modal-content">
+    <button class="modal-close">&times;</button>
+    <div class="modal-hero">
+      <span class="modal-badge">Retail & E-Commerce</span>
+      <h2>Omnichannel Retail From Storefront to Supply Chain</h2>
+      <p>Unified retail solutions that connect online, in-store, and back-office operations.</p>
+    </div>
+    <div class="modal-stats">
+      <div class="stat-item"><div class="stat-number">47%</div><div class="stat-label">More Sales</div></div>
+      <div class="stat-item"><div class="stat-number">Omni</div><div class="stat-label">Channel</div></div>
+      <div class="stat-item"><div class="stat-number">Real-Time</div><div class="stat-label">Inventory</div></div>
+      <div class="stat-item"><div class="stat-number">360°</div><div class="stat-label">Customer View</div></div>
+    </div>
+    <div class="modal-section">
+      <h3>Industry Challenges</h3>
+      <div class="challenge-grid">
+        <div class="challenge-card"><div class="challenge-icon">🏪</div><h4>Disconnected Channels</h4><p>Online and in-store operating in silos.</p></div>
+        <div class="challenge-card"><div class="challenge-icon">📦</div><h4>Inventory Errors</h4><p>Overselling and stockouts hurting sales.</p></div>
+        <div class="challenge-card"><div class="challenge-icon">💳</div><h4>POS Gaps</h4><p>Point-of-sale not synced with online.</p></div>
+        <div class="challenge-card"><div class="challenge-icon">🎁</div><h4>Weak Loyalty</h4><p>No program to retain repeat customers.</p></div>
+        <div class="challenge-card"><div class="challenge-icon">🚚</div><h4>Fulfillment Delays</h4><p>Slow, error-prone order processing.</p></div>
+        <div class="challenge-card"><div class="challenge-icon">📊</div><h4>No Customer Insight</h4><p>Missing data on shopping behavior.</p></div>
+      </div>
+    </div>
+    <div class="modal-section modal-section-alt">
+      <h3>What We Build</h3>
+      <div class="solution-grid">
+        <div class="solution-card"><div class="solution-icon">🛍️</div><h4>Stores & Marketplaces</h4><p>Online storefronts and multi-vendor platforms.</p></div>
+        <div class="solution-card"><div class="solution-icon">📦</div><h4>Inventory Management</h4><p>Real-time stock across all channels.</p></div>
+        <div class="solution-card"><div class="solution-icon">💳</div><h4>POS Integration</h4><p>Unified online and in-store checkout.</p></div>
+        <div class="solution-card"><div class="solution-icon">🎁</div><h4>Loyalty & Rewards</h4><p>Programs that drive repeat purchases.</p></div>
+        <div class="solution-card"><div class="solution-icon">🚚</div><h4>Order Fulfillment</h4><p>Fast, automated order processing.</p></div>
+        <div class="solution-card"><div class="solution-icon">📊</div><h4>Customer Analytics</h4><p>Behavior insights and segmentation.</p></div>
+      </div>
+    </div>
+    <div class="modal-section">
+      <h3>Our Guarantees</h3>
+      <div class="guarantee-list">
+        <div class="guarantee-item"><span class="guarantee-icon">✓</span><strong>Omnichannel Sync:</strong> One view across all channels.</div>
+        <div class="guarantee-item"><span class="guarantee-icon">✓</span><strong>Scales for Peaks:</strong> Handles sale-day traffic.</div>
+        <div class="guarantee-item"><span class="guarantee-icon">✓</span><strong>Secure Payments:</strong> PCI DSS compliant.</div>
+        <div class="guarantee-item"><span class="guarantee-icon">✓</span><strong>Post-Launch Support:</strong> Ongoing maintenance.</div>
+      </div>
+    </div>
+    <div class="modal-cta">
+      <h3>Ready to Transform Retail?</h3>
+      <p>Get a free consultation for your retail business.</p>
+      <a href="contact.html"><button class="btn-primary btn-large">Get Free Consultation →</button></a>
+    </div>
+  </div>
+</div>
+<div id="ind-logistics-modal" class="service-modal">
+  <div class="modal-content">
+    <button class="modal-close">&times;</button>
+    <div class="modal-hero">
+      <span class="modal-badge">Logistics & Transport</span>
+      <h2>End-to-End Supply Chain Digitization</h2>
+      <p>From warehouse to last-mile delivery — full visibility and control over your operations.</p>
+    </div>
+    <div class="modal-stats">
+      <div class="stat-item"><div class="stat-number">30%</div><div class="stat-label">Lower Costs</div></div>
+      <div class="stat-item"><div class="stat-number">Live</div><div class="stat-label">Tracking</div></div>
+      <div class="stat-item"><div class="stat-number">25%</div><div class="stat-label">Faster Delivery</div></div>
+      <div class="stat-item"><div class="stat-number">100%</div><div class="stat-label">Visibility</div></div>
+    </div>
+    <div class="modal-section">
+      <h3>Industry Challenges</h3>
+      <div class="challenge-grid">
+        <div class="challenge-card"><div class="challenge-icon">🚚</div><h4>Fleet Blind Spots</h4><p>No real-time view of vehicles and drivers.</p></div>
+        <div class="challenge-card"><div class="challenge-icon">📍</div><h4>Lost Shipments</h4><p>Customers unable to track deliveries.</p></div>
+        <div class="challenge-card"><div class="challenge-icon">🗺️</div><h4>Inefficient Routes</h4><p>Wasted fuel and time on poor routing.</p></div>
+        <div class="challenge-card"><div class="challenge-icon">🏭</div><h4>Warehouse Chaos</h4><p>Manual, error-prone stock handling.</p></div>
+        <div class="challenge-card"><div class="challenge-icon">📅</div><h4>Delivery Delays</h4><p>Poor scheduling causing missed windows.</p></div>
+        <div class="challenge-card"><div class="challenge-icon">🔗</div><h4>Broken Chain</h4><p>No end-to-end supply chain visibility.</p></div>
+      </div>
+    </div>
+    <div class="modal-section modal-section-alt">
+      <h3>What We Build</h3>
+      <div class="solution-grid">
+        <div class="solution-card"><div class="solution-icon">🚚</div><h4>Fleet Management</h4><p>Track and manage vehicles in real time.</p></div>
+        <div class="solution-card"><div class="solution-icon">📍</div><h4>Real-Time Tracking</h4><p>Live shipment visibility for customers.</p></div>
+        <div class="solution-card"><div class="solution-icon">🗺️</div><h4>Route Optimization</h4><p>AI routing to cut fuel and time.</p></div>
+        <div class="solution-card"><div class="solution-icon">🏭</div><h4>Warehouse Management</h4><p>Automated inventory and picking.</p></div>
+        <div class="solution-card"><div class="solution-icon">📅</div><h4>Delivery Scheduling</h4><p>Smart scheduling and dispatch.</p></div>
+        <div class="solution-card"><div class="solution-icon">🔗</div><h4>Supply Chain Visibility</h4><p>End-to-end tracking dashboards.</p></div>
+      </div>
+    </div>
+    <div class="modal-section">
+      <h3>Our Guarantees</h3>
+      <div class="guarantee-list">
+        <div class="guarantee-item"><span class="guarantee-icon">✓</span><strong>Real-Time Data:</strong> Live GPS and status updates.</div>
+        <div class="guarantee-item"><span class="guarantee-icon">✓</span><strong>Scalable:</strong> From 10 to 10,000 vehicles.</div>
+        <div class="guarantee-item"><span class="guarantee-icon">✓</span><strong>Integrations:</strong> Connects to your ERP and TMS.</div>
+        <div class="guarantee-item"><span class="guarantee-icon">✓</span><strong>Ongoing Support:</strong> Maintenance included.</div>
+      </div>
+    </div>
+    <div class="modal-cta">
+      <h3>Ready to Digitize Logistics?</h3>
+      <p>Get a free consultation for your operations.</p>
+      <a href="contact.html"><button class="btn-primary btn-large">Get Free Consultation →</button></a>
+    </div>
+  </div>
+</div>
+<div id="ind-education-modal" class="service-modal">
+  <div class="modal-content">
+    <button class="modal-close">&times;</button>
+    <div class="modal-hero">
+      <span class="modal-badge">Education & EdTech</span>
+      <h2>Learning Platforms That Engage and Empower</h2>
+      <p>Digital education tools that captivate students and give educators superpowers.</p>
+    </div>
+    <div class="modal-stats">
+      <div class="stat-item"><div class="stat-number">3x</div><div class="stat-label">Engagement</div></div>
+      <div class="stat-item"><div class="stat-number">Any</div><div class="stat-label">Device</div></div>
+      <div class="stat-item"><div class="stat-number">Live</div><div class="stat-label">Classrooms</div></div>
+      <div class="stat-item"><div class="stat-number">100%</div><div class="stat-label">Progress Tracking</div></div>
+    </div>
+    <div class="modal-section">
+      <h3>Industry Challenges</h3>
+      <div class="challenge-grid">
+        <div class="challenge-card"><div class="challenge-icon">📚</div><h4>Scattered Content</h4><p>Course materials spread across tools.</p></div>
+        <div class="challenge-card"><div class="challenge-icon">😴</div><h4>Low Engagement</h4><p>Students disengaged with static content.</p></div>
+        <div class="challenge-card"><div class="challenge-icon">📝</div><h4>Manual Grading</h4><p>Teachers buried in assessment work.</p></div>
+        <div class="challenge-card"><div class="challenge-icon">🏫</div><h4>Remote Barriers</h4><p>No infrastructure for virtual learning.</p></div>
+        <div class="challenge-card"><div class="challenge-icon">💰</div><h4>Hard to Monetize</h4><p>No platform to sell courses online.</p></div>
+        <div class="challenge-card"><div class="challenge-icon">📊</div><h4>No Progress Data</h4><p>Unable to track student outcomes.</p></div>
+      </div>
+    </div>
+    <div class="modal-section modal-section-alt">
+      <h3>What We Build</h3>
+      <div class="solution-grid">
+        <div class="solution-card"><div class="solution-icon">🎓</div><h4>Learning Management</h4><p>Complete LMS for course delivery.</p></div>
+        <div class="solution-card"><div class="solution-icon">👨‍🎓</div><h4>Student Portals</h4><p>One place for classes, grades, and resources.</p></div>
+        <div class="solution-card"><div class="solution-icon">📝</div><h4>Online Assessments</h4><p>Auto-graded quizzes and exams.</p></div>
+        <div class="solution-card"><div class="solution-icon">🏫</div><h4>Virtual Classrooms</h4><p>Live video lessons and collaboration.</p></div>
+        <div class="solution-card"><div class="solution-icon">💰</div><h4>Course Marketplaces</h4><p>Sell and monetize courses online.</p></div>
+        <div class="solution-card"><div class="solution-icon">📊</div><h4>Progress Tracking</h4><p>Analytics on student performance.</p></div>
+      </div>
+    </div>
+    <div class="modal-section">
+      <h3>Our Guarantees</h3>
+      <div class="guarantee-list">
+        <div class="guarantee-item"><span class="guarantee-icon">✓</span><strong>Any Device:</strong> Works on mobile, tablet, desktop.</div>
+        <div class="guarantee-item"><span class="guarantee-icon">✓</span><strong>Scales for Enrollment:</strong> Thousands of learners.</div>
+        <div class="guarantee-item"><span class="guarantee-icon">✓</span><strong>Accessible:</strong> WCAG-aware, inclusive design.</div>
+        <div class="guarantee-item"><span class="guarantee-icon">✓</span><strong>Ongoing Support:</strong> Updates and maintenance.</div>
+      </div>
+    </div>
+    <div class="modal-cta">
+      <h3>Ready to Build EdTech?</h3>
+      <p>Get a free consultation for your learning platform.</p>
+      <a href="contact.html"><button class="btn-primary btn-large">Get Free Consultation →</button></a>
+    </div>
+  </div>
+</div>
+<div id="ind-realestate-modal" class="service-modal">
+  <div class="modal-content">
+    <button class="modal-close">&times;</button>
+    <div class="modal-hero">
+      <span class="modal-badge">Real Estate</span>
+      <h2>PropTech Solutions That Close More Deals</h2>
+      <p>Listings, CRM, and property management tools that modernize how you sell and manage property.</p>
+    </div>
+    <div class="modal-stats">
+      <div class="stat-item"><div class="stat-number">2x</div><div class="stat-label">More Leads</div></div>
+      <div class="stat-item"><div class="stat-number">3D</div><div class="stat-label">Virtual Tours</div></div>
+      <div class="stat-item"><div class="stat-number">Auto</div><div class="stat-label">Contracts</div></div>
+      <div class="stat-item"><div class="stat-number">24/7</div><div class="stat-label">Listings</div></div>
+    </div>
+    <div class="modal-section">
+      <h3>Industry Challenges</h3>
+      <div class="challenge-grid">
+        <div class="challenge-card"><div class="challenge-icon">🏠</div><h4>Static Listings</h4><p>Outdated portals with poor search.</p></div>
+        <div class="challenge-card"><div class="challenge-icon">👀</div><h4>Limited Viewings</h4><p>In-person-only tours limiting reach.</p></div>
+        <div class="challenge-card"><div class="challenge-icon">🤝</div><h4>Lost Leads</h4><p>No system to nurture buyer interest.</p></div>
+        <div class="challenge-card"><div class="challenge-icon">🏢</div><h4>Rental Headaches</h4><p>Manual tenant and payment management.</p></div>
+        <div class="challenge-card"><div class="challenge-icon">📈</div><h4>Weak Lead Gen</h4><p>Few tools to attract new clients.</p></div>
+        <div class="challenge-card"><div class="challenge-icon">📄</div><h4>Paper Contracts</h4><p>Slow, manual document handling.</p></div>
+      </div>
+    </div>
+    <div class="modal-section modal-section-alt">
+      <h3>What We Build</h3>
+      <div class="solution-grid">
+        <div class="solution-card"><div class="solution-icon">🏠</div><h4>Listing Portals</h4><p>Rich, searchable property listings.</p></div>
+        <div class="solution-card"><div class="solution-icon">🎥</div><h4>Virtual Tours & 3D</h4><p>Immersive walkthroughs from anywhere.</p></div>
+        <div class="solution-card"><div class="solution-icon">🤝</div><h4>Agent & Broker CRM</h4><p>Manage leads, deals, and clients.</p></div>
+        <div class="solution-card"><div class="solution-icon">🏢</div><h4>Rental Management</h4><p>Tenants, leases, and payments in one place.</p></div>
+        <div class="solution-card"><div class="solution-icon">📈</div><h4>Lead Generation</h4><p>Tools to capture and convert buyers.</p></div>
+        <div class="solution-card"><div class="solution-icon">📄</div><h4>Contract Automation</h4><p>Digital documents and e-signatures.</p></div>
+      </div>
+    </div>
+    <div class="modal-section">
+      <h3>Our Guarantees</h3>
+      <div class="guarantee-list">
+        <div class="guarantee-item"><span class="guarantee-icon">✓</span><strong>Mobile-First:</strong> Browse and manage on any device.</div>
+        <div class="guarantee-item"><span class="guarantee-icon">✓</span><strong>SEO Optimized:</strong> Listings that rank and get found.</div>
+        <div class="guarantee-item"><span class="guarantee-icon">✓</span><strong>Secure Documents:</strong> Encrypted contracts and data.</div>
+        <div class="guarantee-item"><span class="guarantee-icon">✓</span><strong>Ongoing Support:</strong> Maintenance and updates.</div>
+      </div>
+    </div>
+    <div class="modal-cta">
+      <h3>Ready to Modernize Real Estate?</h3>
+      <p>Get a free consultation for your PropTech project.</p>
+      <a href="contact.html"><button class="btn-primary btn-large">Get Free Consultation →</button></a>
+    </div>
+  </div>
+</div>
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+  function closeAll() {
+    document.querySelectorAll('.service-modal').forEach(function (m) { m.style.display = 'none'; });
+    document.body.style.overflow = 'auto';
+    if (window.location.hash) history.replaceState(null, null, ' ');
+  }
+  document.querySelectorAll('.srv-card[data-service]').forEach(function (card) {
+    card.addEventListener('click', function (e) {
+      e.preventDefault();
+      var modal = document.getElementById(this.getAttribute('data-service') + '-modal');
+      if (modal) { modal.style.display = 'flex'; document.body.style.overflow = 'hidden'; }
+    });
+  });
+  document.querySelectorAll('.service-modal').forEach(function (modal) {
+    var closeBtn = modal.querySelector('.modal-close');
+    if (closeBtn) closeBtn.addEventListener('click', closeAll);
+    modal.addEventListener('click', function (e) { if (e.target === modal) closeAll(); });
+  });
+  document.addEventListener('keydown', function (e) { if (e.key === 'Escape') closeAll(); });
+  var hash = window.location.hash.substring(1);
+  if (hash && hash.endsWith('-modal')) {
+    var m = document.getElementById(hash);
+    if (m) setTimeout(function () { m.style.display = 'flex'; document.body.style.overflow = 'hidden'; }, 500);
+  }
+});
+</script>
+
 
 <footer class="footer">
   <div class="footer-top">
