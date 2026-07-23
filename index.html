@@ -127,7 +127,7 @@
       </div>
       <div class="hero-buttons">
         <a href="contact.html"><button class="btn-primary btn-large">Schedule a Strategy Call →</button></a>
-        <button class="btn-outline btn-large">View Our Work ▷</button>
+        <a href="portfolio.html"><button class="btn-outline btn-large">View Our Work ▷</button></a>
       </div>
     </div>
     <div class="hero-visual">
@@ -449,6 +449,15 @@ document.addEventListener('DOMContentLoaded', function () {
     'education': 'industries.html#ind-education-modal',
     'realestate': 'industries.html#ind-realestate-modal'
   };
+  // "Solutions That Drive Every Industry Forward" tiles (ecommerce maps to Retail industry)
+  var fwdMap = {
+    'healthcare': 'industries.html#ind-healthcare-modal',
+    'finance': 'industries.html#ind-finance-modal',
+    'ecommerce': 'industries.html#ind-retail-modal',
+    'education': 'industries.html#ind-education-modal',
+    'logistics': 'industries.html#ind-logistics-modal',
+    'realestate': 'industries.html#ind-realestate-modal'
+  };
   function baseName(src) { return src.split('/').pop().split('.')[0]; }
   function wire(selector, map) {
     document.querySelectorAll(selector).forEach(function (card) {
@@ -464,6 +473,7 @@ document.addEventListener('DOMContentLoaded', function () {
   }
   wire('.solution-card', svcMap);
   wire('.ind-card', indMap);
+  wire('.fwd', fwdMap);
 });
 </script>
 <script src="js/main.js?v=4"></script>
