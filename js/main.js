@@ -14,7 +14,10 @@
 // Make service/solution/industry cards clickable -> contact page
 document.addEventListener('click', function(e) {
   const card = e.target.closest('.solution-card, .srv-card, .ind-card, .fwd, .proc-step');
-  if (card) { window.location.href = 'contact.html'; }
+  // Exclude cards with data-service attribute (they have custom modals)
+  if (card && !card.hasAttribute('data-service')) {
+    window.location.href = 'contact.html';
+  }
 });
 
 // Mobile Menu Toggle
