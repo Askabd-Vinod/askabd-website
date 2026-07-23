@@ -1,6 +1,7 @@
 @echo off
 echo ================================================
-echo Apply Clear Modal with Consistent Site Animations
+echo Apply Clear Modal with Consistent Animations
+echo (Simple 2-Branch Workflow: Dev then Production)
 echo ================================================
 echo.
 
@@ -8,8 +9,11 @@ cd /d "C:\Users\Vinod\OneDrive\.kiro\askabd-website"
 
 SET GIT="C:\Users\Vinod\AppData\Local\GitHubDesktop\app-3.6.1\resources\app\git\cmd\git.exe"
 
-echo Step 1: Pulling latest from Dev...
+echo Switching to Dev branch...
 %GIT% checkout Dev
+echo.
+
+echo Pulling latest...
 %GIT% pull origin Dev
 echo.
 
@@ -95,6 +99,18 @@ echo   ✨ Consistent site animations
 echo   🚀 Professional polish
 echo   💯 Easy for users to understand
 echo.
-echo When done, run: PUSH-TO-DEV.bat
+echo ================================================
+echo SIMPLE 2-BRANCH WORKFLOW:
+echo ================================================
+echo.
+echo You have 2 branches:
+echo   1. Dev  (testing) - Update this first
+echo   2. main (production) - Live site
+echo.
+echo After editing, run:
+echo   1. 1-PUSH-TO-DEV.bat (test on Dev)
+echo   2. 2-PUSH-TO-PROD.bat (go live)
+echo.
+echo Read: CLEAR-INSTRUCTIONS.txt for details
 echo ================================================
 pause
