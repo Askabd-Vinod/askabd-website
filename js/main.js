@@ -90,7 +90,7 @@ const revealSelectors = [
   '.tech-group', '.clarity-col', '.optimize-col',
   '.content-main', '.content-sidebar', '.sidebar-card',
   '.contact-card', '.contact-social', '.contact-form-wrapper',
-  '.legal-content', '.highlight-box', '.section-head-row',
+  '.highlight-box', '.section-head-row',
   '.section-head', '.losing-left', '.losing-right', '.ready-inner'
 ];
 
