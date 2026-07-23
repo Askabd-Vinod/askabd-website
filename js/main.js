@@ -11,14 +11,10 @@
   });
 })();
 
-// Make solution/industry cards clickable -> contact page (but not srv-card which may have custom behavior)
+// Make service/solution/industry cards clickable -> contact page
 document.addEventListener('click', function(e) {
-  const card = e.target.closest('.solution-card, .ind-card, .fwd, .proc-step');
+  const card = e.target.closest('.solution-card, .srv-card, .ind-card, .fwd, .proc-step');
   if (card) { window.location.href = 'contact.html'; }
-  
-  // srv-cards without data-service attribute go to contact
-  const srvCard = e.target.closest('.srv-card:not([data-service])');
-  if (srvCard) { window.location.href = 'contact.html'; }
 });
 
 // Mobile Menu Toggle
