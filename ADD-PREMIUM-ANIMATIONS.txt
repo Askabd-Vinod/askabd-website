@@ -1,0 +1,32 @@
+==========================================
+HOW TO ADD PREMIUM ANIMATIONS TO YOUR MODAL
+==========================================
+
+Since the modal is already live on your Dev environment, you need to add these premium animation styles.
+
+OPTION 1: Edit services.html directly on GitHub
+------------------------------------------------
+1. Go to: https://github.com/Askabd-Vinod/askabd-website/blob/Dev/services.html
+2. Click "Edit" button (pencil icon)
+3. Find the line that says: </style>
+4. PASTE ALL THE CODE FROM "modal-animations-addon.html" ABOVE that </style> line
+5. Commit changes directly to Dev branch
+6. Wait 1-2 minutes for deployment
+
+OPTION 2: Pull Dev branch, edit locally, and push
+---------------------------------------------------
+Run this batch file: PULL-DEV-AND-ADD-ANIMATIONS.bat
+
+The animations will add:
+✨ Floating badge animation
+💫 Shimmer effects on stats
+🎯 Staggered card entrance animations
+🌟 Glowing borders on hover
+⚡ Icon bounce animations
+🎨 Gradient text animations
+✨ Sparkle effects
+📊 Progress bar animations
+🔮 Ripple effects on click
+🌊 Parallax scrolling effects
+
+==========================================

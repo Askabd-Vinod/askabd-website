@@ -1,0 +1,384 @@
+<!-- ADD THIS TO services.html BEFORE </style> TAG -->
+
+/* ============================================
+   PREMIUM ANIMATIONS & EYE-CATCHING EFFECTS
+   ============================================ */
+
+/* Floating Animation for Badges */
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+.hero-badge {
+  animation: float 3s ease-in-out infinite;
+}
+
+/* Shimmer Effect for Stats */
+@keyframes shimmer {
+  0% {
+    background-position: -1000px 0;
+  }
+  100% {
+    background-position: 1000px 0;
+  }
+}
+
+.stat-number::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255,255,255,0.3), transparent);
+  animation: shimmer 3s infinite;
+}
+
+.stat-card {
+  position: relative;
+  overflow: hidden;
+}
+
+.stat-card::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: conic-gradient(
+    transparent,
+    rgba(59, 130, 246, 0.3),
+    transparent 30%
+  );
+  animation: rotate 4s linear infinite;
+}
+
+@keyframes rotate {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* Card Entrance Animations */
+.info-card {
+  animation: slideInUp 0.6s ease-out backwards;
+}
+
+.info-card:nth-child(1) { animation-delay: 0.1s; }
+.info-card:nth-child(2) { animation-delay: 0.2s; }
+.info-card:nth-child(3) { animation-delay: 0.3s; }
+.info-card:nth-child(4) { animation-delay: 0.4s; }
+.info-card:nth-child(5) { animation-delay: 0.5s; }
+.info-card:nth-child(6) { animation-delay: 0.6s; }
+
+@keyframes slideInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Glowing Border Animation */
+.red-card, .green-card {
+  position: relative;
+}
+
+.red-card::after {
+  content: '';
+  position: absolute;
+  inset: -2px;
+  border-radius: 14px;
+  padding: 2px;
+  background: linear-gradient(45deg, #EF4444, #F87171, #EF4444, #F87171);
+  background-size: 300% 300%;
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  animation: gradientShift 3s ease infinite;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.red-card:hover::after {
+  opacity: 1;
+}
+
+.green-card::after {
+  content: '';
+  position: absolute;
+  inset: -2px;
+  border-radius: 14px;
+  padding: 2px;
+  background: linear-gradient(45deg, #10B981, #34D399, #10B981, #34D399);
+  background-size: 300% 300%;
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  animation: gradientShift 3s ease infinite;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.green-card:hover::after {
+  opacity: 1;
+}
+
+@keyframes gradientShift {
+  0%, 100% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+}
+
+/* Icon Bounce on Hover */
+.card-icon {
+  transition: transform 0.3s ease;
+}
+
+.info-card:hover .card-icon {
+  animation: bounce 0.6s ease;
+}
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+/* Badge Pulse */
+.card-badge {
+  animation: badgePulse 2s ease-in-out infinite;
+}
+
+@keyframes badgePulse {
+  0%, 100% {
+    box-shadow: 0 0 0 0 rgba(16, 185, 129, 0.4);
+  }
+  50% {
+    box-shadow: 0 0 0 8px rgba(16, 185, 129, 0);
+  }
+}
+
+/* Section Header Animation */
+.section-icon-badge {
+  animation: rotate 20s linear infinite;
+}
+
+.section-header h2 {
+  position: relative;
+  display: inline-block;
+}
+
+.section-header h2::after {
+  content: '';
+  position: absolute;
+  bottom: -8px;
+  left: 0;
+  width: 60px;
+  height: 4px;
+  background: linear-gradient(90deg, currentColor, transparent);
+  border-radius: 2px;
+  animation: expandLine 2s ease-out;
+}
+
+@keyframes expandLine {
+  from {
+    width: 0;
+  }
+  to {
+    width: 60px;
+  }
+}
+
+/* Guarantee Items Fade In */
+.guarantee-item {
+  animation: fadeInScale 0.5s ease-out backwards;
+}
+
+.guarantee-item:nth-child(1) { animation-delay: 0.1s; }
+.guarantee-item:nth-child(2) { animation-delay: 0.15s; }
+.guarantee-item:nth-child(3) { animation-delay: 0.2s; }
+.guarantee-item:nth-child(4) { animation-delay: 0.25s; }
+.guarantee-item:nth-child(5) { animation-delay: 0.3s; }
+.guarantee-item:nth-child(6) { animation-delay: 0.35s; }
+
+@keyframes fadeInScale {
+  from {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* Guarantee Icon Rotation on Hover */
+.guarantee-icon {
+  transition: transform 0.4s ease;
+}
+
+.guarantee-item:hover .guarantee-icon {
+  transform: rotateY(360deg);
+}
+
+/* CTA Button Enhanced Glow */
+.btn-glow {
+  position: relative;
+  overflow: hidden;
+}
+
+.btn-glow::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: conic-gradient(
+    transparent,
+    rgba(255, 255, 255, 0.3),
+    transparent 30%
+  );
+  animation: rotate 2s linear infinite;
+}
+
+.btn-glow:hover {
+  transform: translateY(-3px) scale(1.05);
+  box-shadow: 0 0 50px rgba(59, 130, 246, 0.8);
+}
+
+/* Sparkle Effect for Premium Elements */
+@keyframes sparkle {
+  0%, 100% {
+    opacity: 0;
+    transform: scale(0);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.modal-cta-section::before {
+  content: '✨';
+  position: absolute;
+  font-size: 2rem;
+  top: 20%;
+  left: 10%;
+  animation: sparkle 2s ease-in-out infinite;
+  animation-delay: 0s;
+}
+
+.modal-cta-section::after {
+  content: '✨';
+  position: absolute;
+  font-size: 1.5rem;
+  top: 30%;
+  right: 15%;
+  animation: sparkle 2s ease-in-out infinite;
+  animation-delay: 1s;
+}
+
+/* Progress Bar Animation for Stats */
+.stat-card {
+  position: relative;
+}
+
+.stat-card::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 3px;
+  background: linear-gradient(90deg, #3B82F6, #8B5CF6);
+  width: 0;
+  transition: width 1s ease;
+}
+
+.stat-card:hover::after {
+  width: 100%;
+}
+
+/* Text Gradient Animation */
+.modal-hero-content h1 {
+  background: linear-gradient(45deg, #FFF, #60A5FA, #FFF, #A78BFA);
+  background-size: 300% 300%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  animation: gradientText 5s ease infinite;
+}
+
+@keyframes gradientText {
+  0%, 100% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+}
+
+/* Parallax Effect on Scroll */
+.modal-container {
+  transform-style: preserve-3d;
+  perspective: 1000px;
+}
+
+.modal-hero-content {
+  transform: translateZ(50px);
+}
+
+/* Loading Animation for Images */
+.modal-hero-new img {
+  animation: imageLoad 1s ease-out;
+}
+
+@keyframes imageLoad {
+  from {
+    opacity: 0;
+    transform: scale(1.1);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* Ripple Effect on Click */
+@keyframes ripple {
+  to {
+    transform: scale(4);
+    opacity: 0;
+  }
+}
+
+.info-card:active::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.5);
+  transform: translate(-50%, -50%);
+  animation: ripple 0.6s ease-out;
+}
