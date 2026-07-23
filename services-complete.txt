@@ -1,0 +1,783 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Services – AskABD Technologies</title>
+  <meta name="description" content="Full-stack software development services from AskABD Technologies">
+  <meta name="author" content="AskABD Technologies">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://www.askabd.com/services">
+  <link rel="icon" type="image/png" href="https://www.askabd.com/assets/logo.png">
+  <link rel="apple-touch-icon" href="https://www.askabd.com/assets/logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css?v=2">
+  <link rel="stylesheet" href="css/home.css?v=2">
+  <link rel="stylesheet" href="css/pages.css?v=2">
+  <link rel="stylesheet" href="css/services.css?v=2">
+</head>
+<body>
+
+<nav>
+  <div class="nav-container">
+    <div class="logo">
+      <a href="index.html"><img src="assets/logo.png" alt="AskABD Technologies"><span class="brand-name">AskABD<span>TECHNOLOGIES</span></span></a>
+    </div>
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="services.html">Services</a>
+      <a href="solutions.html">Solutions</a>
+      <a href="industries.html">Industries</a>
+      <a href="portfolio.html">Portfolio</a>
+      <a href="about.html">About Us</a>
+      <a href="contact.html">Resources</a>
+    </div>
+    <a href="contact.html"><button class="btn-primary">Get Free Consultation &rarr;</button></a>
+    <button class="hamburger"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+
+<section class="page-header">
+  <div class="page-grid"></div>
+  <div class="page-header-content">
+    <h1>Our Services</h1>
+    <p>End-to-end technology solutions for modern businesses</p>
+  </div>
+</section>
+
+<section class="srv-section">
+  <div class="srv-grid">
+
+    <div class="srv-card" style="--accent:#2563EB" data-service="ecommerce">
+      <div class="srv-img-wrap"><img src="assets/img/ecommerce.jpg" alt="E-Commerce"></div>
+      <div class="srv-body">
+        <h3>E-Commerce Development</h3>
+        <p>We build scalable online stores with seamless shopping experiences and payment integrations.</p>
+        <ul><li>Custom platforms (Shopify, WooCommerce, custom)</li><li>Multi-vendor marketplaces</li><li>Payment gateway integration (Stripe, Razorpay)</li><li>Cart solutions & recommendation engines</li><li>Inventory & order management</li></ul>
+      </div>
+    </div>
+
+    <div class="srv-card" style="--accent:#0EA5E9" data-service="mobile">
+      <div class="srv-img-wrap"><img src="assets/img/mobileapps.jpg" alt="Mobile Apps"></div>
+      <div class="srv-body">
+        <h3>Mobile App Development</h3>
+        <p>High-performance native and cross-platform mobile applications with intuitive UX.</p>
+        <ul><li>Native iOS (Swift) & Android (Kotlin)</li><li>Cross-platform: React Native, Flutter</li><li>App Store Optimization (ASO)</li><li>Push notifications, offline-first</li><li>Wearable & IoT companion apps</li></ul>
+      </div>
+    </div>
+
+    <div class="srv-card" style="--accent:#8B5CF6" data-service="ai">
+      <div class="srv-img-wrap"><img src="assets/img/ai.jpg" alt="AI"></div>
+      <div class="srv-body">
+        <h3>AI & Machine Learning</h3>
+        <p>Intelligent automation and data-driven insights for smarter decisions.</p>
+        <ul><li>NLP & chatbots</li><li>Computer vision & image recognition</li><li>Predictive analytics & forecasting</li><li>Recommendation engines</li><li>MLOps & model deployment</li></ul>
+      </div>
+    </div>
+
+    <div class="srv-card" style="--accent:#10B981" data-service="bi">
+      <div class="srv-img-wrap"><img src="assets/img/dashboards.jpg" alt="BI"></div>
+      <div class="srv-body">
+        <h3>Business Intelligence & Analytics</h3>
+        <p>Transform raw data into actionable insights with custom dashboards.</p>
+        <ul><li>Real-time dashboards & visualizations</li><li>Data warehouse & ETL pipelines</li><li>Custom reporting & KPI tracking</li><li>Self-service analytics platforms</li></ul>
+      </div>
+    </div>
+
+    <div class="srv-card" style="--accent:#F59E0B" data-service="enterprise">
+      <div class="srv-img-wrap"><img src="assets/img/enterprise.jpg" alt="Enterprise"></div>
+      <div class="srv-body">
+        <h3>Enterprise Solutions</h3>
+        <p>Custom ERP, CRM, and enterprise software tailored to your workflows.</p>
+        <ul><li>Custom ERP systems</li><li>CRM & customer management</li><li>Workflow automation & BPM</li><li>Document management</li><li>Enterprise integration (SAP, Salesforce)</li></ul>
+      </div>
+    </div>
+
+    <div class="srv-card" style="--accent:#06B6D4" data-service="saas">
+      <div class="srv-img-wrap"><img src="assets/img/saas.jpg" alt="SaaS"></div>
+      <div class="srv-body">
+        <h3>SaaS Platform Development</h3>
+        <p>Build scalable multi-tenant SaaS products with subscription billing.</p>
+        <ul><li>Multi-tenancy architecture</li><li>Subscription & billing management</li><li>API-first development</li><li>Usage metering & analytics</li><li>White-labeling frameworks</li></ul>
+      </div>
+    </div>
+
+    <div class="srv-card" style="--accent:#6366F1" data-service="api">
+      <div class="srv-img-wrap"><img src="assets/img/api.jpg" alt="API"></div>
+      <div class="srv-body">
+        <h3>API & Custom Integrations</h3>
+        <p>RESTful APIs, microservices, and integrations to connect your ecosystem.</p>
+        <ul><li>REST & GraphQL APIs</li><li>Microservices architecture</li><li>Third-party integrations</li><li>Webhooks & event-driven systems</li><li>API gateway & rate limiting</li></ul>
+      </div>
+    </div>
+
+    <div class="srv-card" style="--accent:#EF4444" data-service="security">
+      <div class="srv-img-wrap"><img src="assets/img/security.jpg" alt="Security"></div>
+      <div class="srv-body">
+        <h3>Cyber Security & DevSecOps</h3>
+        <p>Protect your digital assets with comprehensive security solutions.</p>
+        <ul><li>Penetration testing & vulnerability assessment</li><li>Security audit & compliance (GDPR, HIPAA)</li><li>DevSecOps pipeline integration</li><li>IAM & access management</li><li>Incident response planning</li></ul>
+      </div>
+    </div>
+
+    <div class="srv-card" style="--accent:#14B8A6" data-service="documentation">
+      <div class="srv-img-wrap"><img src="assets/img/documentation.jpg" alt="Docs"></div>
+      <div class="srv-body">
+        <h3>Documentation & Architecture</h3>
+        <p>Comprehensive technical documentation and architecture blueprints.</p>
+        <ul><li>API documentation (Swagger/OpenAPI)</li><li>System architecture & design docs</li><li>Technical specs & PRDs</li><li>Developer onboarding guides</li><li>Knowledge base & wiki setup</li></ul>
+      </div>
+    </div>
+
+  </div>
+
+  <div style="text-align:center;padding:3rem 0">
+    <a href="contact.html"><button class="btn-primary btn-large">Discuss Your Project →</button></a>
+  </div>
+</section>
+
+<!-- E-Commerce Modal -->
+<div id="ecommerce-modal" class="service-modal">
+  <div class="modal-content">
+    <button class="modal-close">&times;</button>
+    <div class="modal-hero">
+      <span class="modal-badge">E-Commerce Development</span>
+      <h2>Build a Digital Store That Converts Browsers Into Buyers</h2>
+      <p>Transform your retail vision into a high-performance online platform that drives revenue and customer loyalty.</p>
+    </div>
+    <div class="modal-stats">
+      <div class="stat-item"><div class="stat-number">47%</div><div class="stat-label">Higher Conversion</div></div>
+      <div class="stat-item"><div class="stat-number">3.2x</div><div class="stat-label">Faster Checkout</div></div>
+      <div class="stat-item"><div class="stat-number">99.9%</div><div class="stat-label">Uptime SLA</div></div>
+      <div class="stat-item"><div class="stat-number">24/7</div><div class="stat-label">Support</div></div>
+    </div>
+    <div class="modal-section">
+      <h3>Common E-Commerce Challenges</h3>
+      <div class="challenge-grid">
+        <div class="challenge-card"><div class="challenge-icon">🛒</div><h4>Cart Abandonment</h4><p>Losing customers at checkout due to complex processes or payment issues.</p></div>
+        <div class="challenge-card"><div class="challenge-icon">📦</div><h4>Inventory Chaos</h4><p>Stock discrepancies causing overselling, delays, and customer dissatisfaction.</p></div>
+        <div class="challenge-card"><div class="challenge-icon">💳</div><h4>Payment Friction</h4><p>Limited payment options or security concerns blocking transactions.</p></div>
+        <div class="challenge-card"><div class="challenge-icon">📱</div><h4>Mobile Experience</h4><p>Clunky mobile shopping that drives customers to competitors.</p></div>
+        <div class="challenge-card"><div class="challenge-icon">🔍</div><h4>Product Discovery</h4><p>Poor search and filtering making it hard for customers to find what they need.</p></div>
+        <div class="challenge-card"><div class="challenge-icon">📊</div><h4>Data Blindness</h4><p>Lack of insights into customer behavior, trends, and sales performance.</p></div>
+      </div>
+    </div>
+    <div class="modal-section modal-section-alt">
+      <h3>Our E-Commerce Solutions</h3>
+      <div class="solution-grid">
+        <div class="solution-card"><div class="solution-icon">⚡</div><h4>Optimized Checkout</h4><p>One-click purchases, guest checkout, and smart form auto-fill to reduce friction.</p></div>
+        <div class="solution-card"><div class="solution-icon">🔄</div><h4>Real-Time Inventory</h4><p>Centralized stock management synced across all channels to prevent overselling.</p></div>
+        <div class="solution-card"><div class="solution-icon">💰</div><h4>Multi-Payment Gateways</h4><p>Stripe, PayPal, Razorpay, and local payment methods for global reach.</p></div>
+        <div class="solution-card"><div class="solution-icon">📲</div><h4>Mobile-First Design</h4><p>Responsive, fast, and intuitive shopping experience on any device.</p></div>
+        <div class="solution-card"><div class="solution-icon">🎯</div><h4>Smart Search & Filters</h4><p>AI-powered search, faceted filters, and personalized recommendations.</p></div>
+        <div class="solution-card"><div class="solution-icon">📈</div><h4>Analytics Dashboard</h4><p>Real-time insights into sales, traffic, customer behavior, and inventory.</p></div>
+      </div>
+    </div>
+    <div class="modal-section">
+      <h3>Our Guarantees</h3>
+      <div class="guarantee-list">
+        <div class="guarantee-item"><span class="guarantee-icon">✓</span><strong>PCI DSS Compliant:</strong> Bank-level security for all payment transactions.</div>
+        <div class="guarantee-item"><span class="guarantee-icon">✓</span><strong>Scalable Infrastructure:</strong> Handle traffic spikes during sales without crashes.</div>
+        <div class="guarantee-item"><span class="guarantee-icon">✓</span><strong>SEO Optimized:</strong> Built-in SEO best practices to drive organic traffic.</div>
+        <div class="guarantee-item"><span class="guarantee-icon">✓</span><strong>Post-Launch Support:</strong> 6 months of free maintenance and updates included.</div>
+      </div>
+    </div>
+    <div class="modal-cta">
+      <h3>Ready to Build Your Online Store?</h3>
+      <p>Schedule a free consultation and get a custom roadmap for your e-commerce project.</p>
+      <a href="contact.html"><button class="btn-primary btn-large">Get Free Consultation →</button></a>
+    </div>
+  </div>
+</div>
+
+<!-- Mobile App Modal -->
+<div id="mobile-modal" class="service-modal">
+  <div class="modal-content">
+    <button class="modal-close">&times;</button>
+    <div class="modal-hero">
+      <span class="modal-badge">Mobile App Development</span>
+      <h2>Turn Your Idea Into a High-Performance Mobile App</h2>
+      <p>Build native and cross-platform apps that users love, with seamless UX and blazing-fast performance.</p>
+    </div>
+    <div class="modal-stats">
+      <div class="stat-item"><div class="stat-number">60%</div><div class="stat-label">Faster Launch</div></div>
+      <div class="stat-item"><div class="stat-number">4.8★</div><div class="stat-label">Avg App Rating</div></div>
+      <div class="stat-item"><div class="stat-number">200ms</div><div class="stat-label">Load Time</div></div>
+      <div class="stat-item"><div class="stat-number">100%</div><div class="stat-label">Native Feel</div></div>
+    </div>
+    <div class="modal-section">
+      <h3>Common Mobile App Challenges</h3>
+      <div class="challenge-grid">
+        <div class="challenge-card"><div class="challenge-icon">⏱️</div><h4>Slow Performance</h4><p>Laggy interfaces and poor responsiveness driving users away.</p></div>
+        <div class="challenge-card"><div class="challenge-icon">📱</div><h4>Platform Fragmentation</h4><p>Need to support both iOS and Android with limited budget.</p></div>
+        <div class="challenge-card"><div class="challenge-icon">🔌</div><h4>Offline Access</h4><p>App becomes unusable without internet connection.</p></div>
+        <div class="challenge-card"><div class="challenge-icon">🔔</div><h4>User Engagement</h4><p>Low retention rates and difficulty re-engaging dormant users.</p></div>
+        <div class="challenge-card"><div class="challenge-icon">🔐</div><h4>Data Security</h4><p>Concerns about storing sensitive user data on mobile devices.</p></div>
+        <div class="challenge-card"><div class="challenge-icon">🚀</div><h4>App Store Approval</h4><p>Rejections and delays in getting published on app stores.</p></div>
+      </div>
+    </div>
+    <div class="modal-section modal-section-alt">
+      <h3>Our Mobile App Solutions</h3>
+      <div class="solution-grid">
+        <div class="solution-card"><div class="solution-icon">⚡</div><h4>Optimized Performance</h4><p>Native-level speed with efficient code, lazy loading, and smart caching strategies.</p></div>
+        <div class="solution-card"><div class="solution-icon">🔄</div><h4>Cross-Platform Development</h4><p>React Native & Flutter to deploy on iOS and Android from single codebase.</p></div>
+        <div class="solution-card"><div class="solution-icon">📴</div><h4>Offline-First Architecture</h4><p>Local data storage, background sync, and seamless offline functionality.</p></div>
+        <div class="solution-card"><div class="solution-icon">🔔</div><h4>Push Notifications</h4><p>Smart, personalized notifications to boost engagement and retention.</p></div>
+        <div class="solution-card"><div class="solution-icon">🔒</div><h4>End-to-End Encryption</h4><p>Secure data storage, biometric auth, and encrypted communication channels.</p></div>
+        <div class="solution-card"><div class="solution-icon">✅</div><h4>App Store Optimization</h4><p>ASO best practices and compliance guidance for quick approval.</p></div>
+      </div>
+    </div>
+    <div class="modal-section">
+      <h3>Our Guarantees</h3>
+      <div class="guarantee-list">
+        <div class="guarantee-item"><span class="guarantee-icon">✓</span><strong>Native Performance:</strong> 60 FPS animations and instant response times.</div>
+        <div class="guarantee-item"><span class="guarantee-icon">✓</span><strong>App Store Success:</strong> We handle submission and resolve rejection issues.</div>
+        <div class="guarantee-item"><span class="guarantee-icon">✓</span><strong>Device Coverage:</strong> Tested on 50+ device models and OS versions.</div>
+        <div class="guarantee-item"><span class="guarantee-icon">✓</span><strong>Post-Launch Updates:</strong> 3 months of free bug fixes and performance tuning.</div>
+      </div>
+    </div>
+    <div class="modal-cta">
+      <h3>Ready to Launch Your Mobile App?</h3>
+      <p>Get a free technical consultation and project roadmap tailored to your requirements.</p>
+      <a href="contact.html"><button class="btn-primary btn-large">Get Free Consultation →</button></a>
+    </div>
+  </div>
+</div>
+
+<!-- AI & Machine Learning Modal -->
+<div id="ai-modal" class="service-modal">
+  <div class="modal-content">
+    <button class="modal-close">&times;</button>
+    <div class="modal-hero">
+      <span class="modal-badge">AI & Machine Learning</span>
+      <h2>Automate Decisions and Unlock Data-Driven Intelligence</h2>
+      <p>Leverage AI and ML to automate workflows, predict outcomes, and gain competitive advantages.</p>
+    </div>
+    <div class="modal-stats">
+      <div class="stat-item"><div class="stat-number">85%</div><div class="stat-label">Task Automation</div></div>
+      <div class="stat-item"><div class="stat-number">93%</div><div class="stat-label">Prediction Accuracy</div></div>
+      <div class="stat-item"><div class="stat-number">40%</div><div class="stat-label">Cost Reduction</div></div>
+      <div class="stat-item"><div class="stat-number">10x</div><div class="stat-label">Faster Insights</div></div>
+    </div>
+    <div class="modal-section">
+      <h3>Common AI/ML Challenges</h3>
+      <div class="challenge-grid">
+        <div class="challenge-card"><div class="challenge-icon">🗂️</div><h4>Data Silos</h4><p>Fragmented data across systems preventing unified ML models.</p></div>
+        <div class="challenge-card"><div class="challenge-icon">🎯</div><h4>Low Model Accuracy</h4><p>Poor predictions due to insufficient training data or wrong algorithms.</p></div>
+        <div class="challenge-card"><div class="challenge-icon">⚙️</div><h4>Deployment Complexity</h4><p>Difficulty moving ML models from notebooks to production systems.</p></div>
+        <div class="challenge-card"><div class="challenge-icon">💰</div><h4>High Infrastructure Costs</h4><p>Expensive GPU resources and cloud compute for training and inference.</p></div>
+        <div class="challenge-card"><div class="challenge-icon">🔍</div><h4>Black Box Models</h4><p>Lack of explainability making it hard to trust AI decisions.</p></div>
+        <div class="challenge-card"><div class="challenge-icon">📉</div><h4>Model Drift</h4><p>Degrading performance over time as real-world data changes.</p></div>
+      </div>
+    </div>
+    <div class="modal-section modal-section-alt">
+      <h3>Our AI/ML Solutions</h3>
+      <div class="solution-grid">
+        <div class="solution-card"><div class="solution-icon">🔗</div><h4>Data Pipeline Integration</h4><p>Unified ETL workflows connecting all your data sources for ML training.</p></div>
+        <div class="solution-card"><div class="solution-icon">🎯</div><h4>Custom Model Development</h4><p>Tailored algorithms for classification, regression, NLP, and computer vision.</p></div>
+        <div class="solution-card"><div class="solution-icon">🚀</div><h4>MLOps & Deployment</h4><p>Automated pipelines for training, testing, and deploying models at scale.</p></div>
+        <div class="solution-card"><div class="solution-icon">⚡</div><h4>Cost-Optimized Infrastructure</h4><p>Smart resource allocation and model compression to reduce cloud costs.</p></div>
+        <div class="solution-card"><div class="solution-icon">📊</div><h4>Explainable AI</h4><p>SHAP, LIME, and feature importance tools for transparent decision-making.</p></div>
+        <div class="solution-card"><div class="solution-icon">🔄</div><h4>Continuous Monitoring</h4><p>Real-time drift detection and automated retraining to maintain accuracy.</p></div>
+      </div>
+    </div>
+    <div class="modal-section">
+      <h3>Our Guarantees</h3>
+      <div class="guarantee-list">
+        <div class="guarantee-item"><span class="guarantee-icon">✓</span><strong>Production-Ready Models:</strong> Fully tested and optimized for real-world deployment.</div>
+        <div class="guarantee-item"><span class="guarantee-icon">✓</span><strong>Scalable Architecture:</strong> Handle millions of predictions per day with auto-scaling.</div>
+        <div class="guarantee-item"><span class="guarantee-icon">✓</span><strong>Data Privacy Compliance:</strong> GDPR, HIPAA, and SOC 2 compliant data handling.</div>
+        <div class="guarantee-item"><span class="guarantee-icon">✓</span><strong>Ongoing Model Maintenance:</strong> 6 months of monitoring and retraining support.</div>
+      </div>
+    </div>
+    <div class="modal-cta">
+      <h3>Ready to Harness AI for Your Business?</h3>
+      <p>Schedule a free AI strategy session and discover automation opportunities.</p>
+      <a href="contact.html"><button class="btn-primary btn-large">Get Free Consultation →</button></a>
+    </div>
+  </div>
+</div>
+
+<!-- Business Intelligence Modal -->
+<div id="bi-modal" class="service-modal">
+  <div class="modal-content">
+    <button class="modal-close">&times;</button>
+    <div class="modal-hero">
+      <span class="modal-badge">Business Intelligence & Analytics</span>
+      <h2>Transform Raw Data Into Strategic Business Insights</h2>
+      <p>Build powerful dashboards and analytics systems that drive data-informed decisions across your organization.</p>
+    </div>
+    <div class="modal-stats">
+      <div class="stat-item"><div class="stat-number">5x</div><div class="stat-label">Faster Reporting</div></div>
+      <div class="stat-item"><div class="stat-number">100+</div><div class="stat-label">Data Sources</div></div>
+      <div class="stat-item"><div class="stat-number">Real-Time</div><div class="stat-label">Updates</div></div>
+      <div class="stat-item"><div class="stat-number">95%</div><div class="stat-label">Data Accuracy</div></div>
+    </div>
+    <div class="modal-section">
+      <h3>Common BI & Analytics Challenges</h3>
+      <div class="challenge-grid">
+        <div class="challenge-card"><div class="challenge-icon">📂</div><h4>Data Fragmentation</h4><p>Critical business data scattered across multiple systems and spreadsheets.</p></div>
+        <div class="challenge-card"><div class="challenge-icon">⏰</div><h4>Delayed Insights</h4><p>Outdated reports that arrive too late for timely decision-making.</p></div>
+        <div class="challenge-card"><div class="challenge-icon">🤷</div><h4>Lack of Visibility</h4><p>No clear view of KPIs, trends, or performance across departments.</p></div>
+        <div class="challenge-card"><div class="challenge-icon">📊</div><h4>Complex Reporting</h4><p>Technical barriers preventing non-technical teams from accessing data.</p></div>
+        <div class="challenge-card"><div class="challenge-icon">🔍</div><h4>Data Quality Issues</h4><p>Inconsistent, duplicate, or inaccurate data leading to wrong conclusions.</p></div>
+        <div class="challenge-card"><div class="challenge-icon">💸</div><h4>Expensive BI Tools</h4><p>High licensing costs for enterprise BI platforms with limited customization.</p></div>
+      </div>
+    </div>
+    <div class="modal-section modal-section-alt">
+      <h3>Our BI & Analytics Solutions</h3>
+      <div class="solution-grid">
+        <div class="solution-card"><div class="solution-icon">🔗</div><h4>Unified Data Warehouse</h4><p>Centralized ETL pipelines connecting databases, APIs, and third-party tools.</p></div>
+        <div class="solution-card"><div class="solution-icon">⚡</div><h4>Real-Time Dashboards</h4><p>Live KPI tracking with automatic updates and drill-down capabilities.</p></div>
+        <div class="solution-card"><div class="solution-icon">👁️</div><h4>Executive Insights</h4><p>Custom views for C-suite, managers, and teams with role-based access.</p></div>
+        <div class="solution-card"><div class="solution-icon">🎨</div><h4>Self-Service Analytics</h4><p>Drag-and-drop report builders empowering non-technical users.</p></div>
+        <div class="solution-card"><div class="solution-icon">✅</div><h4>Data Quality Framework</h4><p>Automated validation, deduplication, and cleansing workflows.</p></div>
+        <div class="solution-card"><div class="solution-icon">💰</div><h4>Cost-Effective Platform</h4><p>Custom-built solutions with lower TCO than enterprise BI licenses.</p></div>
+      </div>
+    </div>
+    <div class="modal-section">
+      <h3>Our Guarantees</h3>
+      <div class="guarantee-list">
+        <div class="guarantee-item"><span class="guarantee-icon">✓</span><strong>Sub-Second Query Performance:</strong> Optimized data models for lightning-fast insights.</div>
+        <div class="guarantee-item"><span class="guarantee-icon">✓</span><strong>Unlimited Customization:</strong> Dashboards and reports tailored to your exact needs.</div>
+        <div class="guarantee-item"><span class="guarantee-icon">✓</span><strong>Data Security & Compliance:</strong> SOC 2, GDPR-compliant data handling and encryption.</div>
+        <div class="guarantee-item"><span class="guarantee-icon">✓</span><strong>Training & Onboarding:</strong> Comprehensive user training and documentation included.</div>
+      </div>
+    </div>
+    <div class="modal-cta">
+      <h3>Ready to Make Data-Driven Decisions?</h3>
+      <p>Get a free BI assessment and discover insights hidden in your data.</p>
+      <a href="contact.html"><button class="btn-primary btn-large">Get Free Consultation →</button></a>
+    </div>
+  </div>
+</div>
+
+<!-- Enterprise Solutions Modal -->
+<div id="enterprise-modal" class="service-modal">
+  <div class="modal-content">
+    <button class="modal-close">&times;</button>
+    <div class="modal-hero">
+      <span class="modal-badge">Enterprise Solutions</span>
+      <h2>Custom Enterprise Software That Scales With Your Business</h2>
+      <p>Build ERP, CRM, and workflow automation systems tailored to your unique processes and requirements.</p>
+    </div>
+    <div class="modal-stats">
+      <div class="stat-item"><div class="stat-number">60%</div><div class="stat-label">Process Efficiency</div></div>
+      <div class="stat-item"><div class="stat-number">1000+</div><div class="stat-label">Concurrent Users</div></div>
+      <div class="stat-item"><div class="stat-number">99.95%</div><div class="stat-label">Uptime</div></div>
+      <div class="stat-item"><div class="stat-number">50%</div><div class="stat-label">Cost Savings</div></div>
+    </div>
+    <div class="modal-section">
+      <h3>Common Enterprise Software Challenges</h3>
+      <div class="challenge-grid">
+        <div class="challenge-card"><div class="challenge-icon">🏢</div><h4>Legacy System Lock-In</h4><p>Outdated software with high licensing costs and limited flexibility.</p></div>
+        <div class="challenge-card"><div class="challenge-icon">🔗</div><h4>Integration Gaps</h4><p>Disconnected tools creating data silos and manual workarounds.</p></div>
+        <div class="challenge-card"><div class="challenge-icon">📋</div><h4>Manual Workflows</h4><p>Time-consuming processes draining productivity and increasing errors.</p></div>
+        <div class="challenge-card"><div class="challenge-icon">📈</div><h4>Scalability Limits</h4><p>Systems that can't handle growing user base or transaction volume.</p></div>
+        <div class="challenge-card"><div class="challenge-icon">👥</div><h4>User Adoption Issues</h4><p>Complex interfaces that employees resist using.</p></div>
+        <div class="challenge-card"><div class="challenge-icon">🔐</div><h4>Security & Compliance</h4><p>Difficulty meeting regulatory requirements and protecting sensitive data.</p></div>
+      </div>
+    </div>
+    <div class="modal-section modal-section-alt">
+      <h3>Our Enterprise Solutions</h3>
+      <div class="solution-grid">
+        <div class="solution-card"><div class="solution-icon">🔄</div><h4>Custom ERP Development</h4><p>Tailored resource planning systems for finance, HR, supply chain, and operations.</p></div>
+        <div class="solution-card"><div class="solution-icon">🤝</div><h4>CRM & Customer Management</h4><p>Unified customer data, sales pipelines, and relationship tracking.</p></div>
+        <div class="solution-card"><div class="solution-icon">⚙️</div><h4>Workflow Automation</h4><p>BPM tools to automate approvals, document routing, and business logic.</p></div>
+        <div class="solution-card"><div class="solution-icon">🔗</div><h4>System Integration</h4><p>Connect SAP, Salesforce, NetSuite, and other enterprise platforms seamlessly.</p></div>
+        <div class="solution-card"><div class="solution-icon">👥</div><h4>Intuitive User Interfaces</h4><p>Modern, role-based UX designed for high adoption and productivity.</p></div>
+        <div class="solution-card"><div class="solution-icon">🔒</div><h4>Enterprise Security</h4><p>SSO, RBAC, audit logs, and compliance frameworks built-in.</p></div>
+      </div>
+    </div>
+    <div class="modal-section">
+      <h3>Our Guarantees</h3>
+      <div class="guarantee-list">
+        <div class="guarantee-item"><span class="guarantee-icon">✓</span><strong>High Availability:</strong> 99.95% uptime SLA with redundancy and failover.</div>
+        <div class="guarantee-item"><span class="guarantee-icon">✓</span><strong>Unlimited Scalability:</strong> Architecture supports growth from 100 to 100,000 users.</div>
+        <div class="guarantee-item"><span class="guarantee-icon">✓</span><strong>Regulatory Compliance:</strong> SOX, GDPR, HIPAA compliance built into the platform.</div>
+        <div class="guarantee-item"><span class="guarantee-icon">✓</span><strong>Change Management Support:</strong> Training, documentation, and adoption strategies included.</div>
+      </div>
+    </div>
+    <div class="modal-cta">
+      <h3>Ready to Modernize Your Enterprise Systems?</h3>
+      <p>Schedule a free enterprise software consultation and digital transformation roadmap.</p>
+      <a href="contact.html"><button class="btn-primary btn-large">Get Free Consultation →</button></a>
+    </div>
+  </div>
+</div>
+
+<!-- SaaS Platform Modal -->
+<div id="saas-modal" class="service-modal">
+  <div class="modal-content">
+    <button class="modal-close">&times;</button>
+    <div class="modal-hero">
+      <span class="modal-badge">SaaS Platform Development</span>
+      <h2>Build and Launch Your SaaS Product Faster</h2>
+      <p>Turn your SaaS vision into a scalable, multi-tenant platform with subscription billing and enterprise features.</p>
+    </div>
+    <div class="modal-stats">
+      <div class="stat-item"><div class="stat-number">6 Months</div><div class="stat-label">To Market</div></div>
+      <div class="stat-item"><div class="stat-number">10K+</div><div class="stat-label">Concurrent Users</div></div>
+      <div class="stat-item"><div class="stat-number">99.99%</div><div class="stat-label">Uptime</div></div>
+      <div class="stat-item"><div class="stat-number">API-First</div><div class="stat-label">Architecture</div></div>
+    </div>
+    <div class="modal-section">
+      <h3>Common SaaS Development Challenges</h3>
+      <div class="challenge-grid">
+        <div class="challenge-card"><div class="challenge-icon">🏗️</div><h4>Multi-Tenancy Complexity</h4><p>Isolating customer data while maintaining performance and security.</p></div>
+        <div class="challenge-card"><div class="challenge-icon">💳</div><h4>Billing & Subscriptions</h4><p>Managing complex pricing tiers, trials, upgrades, and payment failures.</p></div>
+        <div class="challenge-card"><div class="challenge-icon">📈</div><h4>Scaling Costs</h4><p>Infrastructure expenses growing faster than revenue as users increase.</p></div>
+        <div class="challenge-card"><div class="challenge-icon">🔌</div><h4>API Design</h4><p>Building developer-friendly APIs that support extensibility and integrations.</p></div>
+        <div class="challenge-card"><div class="challenge-icon">📊</div><h4>Usage Tracking</h4><p>Metering feature usage for tiered pricing and cost attribution.</p></div>
+        <div class="challenge-card"><div class="challenge-icon">🎨</div><h4>White-Labeling</h4><p>Enabling partners to rebrand and customize the platform for their clients.</p></div>
+      </div>
+    </div>
+    <div class="modal-section modal-section-alt">
+      <h3>Our SaaS Platform Solutions</h3>
+      <div class="solution-grid">
+        <div class="solution-card"><div class="solution-icon">🏢</div><h4>Multi-Tenant Architecture</h4><p>Secure tenant isolation with shared infrastructure for cost efficiency.</p></div>
+        <div class="solution-card"><div class="solution-icon">💰</div><h4>Subscription Management</h4><p>Stripe/Paddle integration with automated billing, invoicing, and dunning.</p></div>
+        <div class="solution-card"><div class="solution-icon">⚡</div><h4>Auto-Scaling Infrastructure</h4><p>Elastic cloud architecture that scales with demand to control costs.</p></div>
+        <div class="solution-card"><div class="solution-icon">🔗</div><h4>Developer-Friendly APIs</h4><p>RESTful & GraphQL APIs with webhooks, SDKs, and comprehensive docs.</p></div>
+        <div class="solution-card"><div class="solution-icon">📈</div><h4>Usage Metering</h4><p>Track API calls, storage, compute, and custom metrics for pricing tiers.</p></div>
+        <div class="solution-card"><div class="solution-icon">🎨</div><h4>White-Label Framework</h4><p>Custom domains, branding, themes, and configuration for resellers.</p></div>
+      </div>
+    </div>
+    <div class="modal-section">
+      <h3>Our Guarantees</h3>
+      <div class="guarantee-list">
+        <div class="guarantee-item"><span class="guarantee-icon">✓</span><strong>Production-Ready in 6 Months:</strong> Accelerated development with reusable SaaS components.</div>
+        <div class="guarantee-item"><span class="guarantee-icon">✓</span><strong>SOC 2 Compliance Path:</strong> Security controls and audit documentation included.</div>
+        <div class="guarantee-item"><span class="guarantee-icon">✓</span><strong>Cost-Optimized Cloud:</strong> Architecture designed to maximize profit margins.</div>
+        <div class="guarantee-item"><span class="guarantee-icon">✓</span><strong>Go-to-Market Support:</strong> Launch strategy, onboarding flows, and analytics setup.</div>
+      </div>
+    </div>
+    <div class="modal-cta">
+      <h3>Ready to Build Your SaaS Platform?</h3>
+      <p>Schedule a free SaaS strategy session and product roadmap consultation.</p>
+      <a href="contact.html"><button class="btn-primary btn-large">Get Free Consultation →</button></a>
+    </div>
+  </div>
+</div>
+
+<!-- API & Integrations Modal -->
+<div id="api-modal" class="service-modal">
+  <div class="modal-content">
+    <button class="modal-close">&times;</button>
+    <div class="modal-hero">
+      <span class="modal-badge">API & Custom Integrations</span>
+      <h2>Connect Your Digital Ecosystem Seamlessly</h2>
+      <p>Build robust APIs and integrations that enable your systems to communicate and share data effortlessly.</p>
+    </div>
+    <div class="modal-stats">
+      <div class="stat-item"><div class="stat-number">10K+</div><div class="stat-label">Requests/Sec</div></div>
+      <div class="stat-item"><div class="stat-number">50ms</div><div class="stat-label">Avg Response</div></div>
+      <div class="stat-item"><div class="stat-number">99.99%</div><div class="stat-label">API Uptime</div></div>
+      <div class="stat-item"><div class="stat-number">100+</div><div class="stat-label">Integrations</div></div>
+    </div>
+    <div class="modal-section">
+      <h3>Common API & Integration Challenges</h3>
+      <div class="challenge-grid">
+        <div class="challenge-card"><div class="challenge-icon">🔌</div><h4>System Silos</h4><p>Applications that can't talk to each other, forcing manual data entry.</p></div>
+        <div class="challenge-card"><div class="challenge-icon">🐌</div><h4>Slow Performance</h4><p>Inefficient API design causing timeouts and poor user experience.</p></div>
+        <div class="challenge-card"><div class="challenge-icon">🔐</div><h4>Security Vulnerabilities</h4><p>APIs exposed to injection attacks, unauthorized access, or data leaks.</p></div>
+        <div class="challenge-card"><div class="challenge-icon">📚</div><h4>Poor Documentation</h4><p>Lack of clear API docs frustrating developers and partners.</p></div>
+        <div class="challenge-card"><div class="challenge-icon">🔄</div><h4>Data Sync Issues</h4><p>Inconsistencies when syncing data between multiple systems.</p></div>
+        <div class="challenge-card"><div class="challenge-icon">📈</div><h4>No Rate Limiting</h4><p>APIs getting overwhelmed by traffic spikes or abusive usage.</p></div>
+      </div>
+    </div>
+    <div class="modal-section modal-section-alt">
+      <h3>Our API & Integration Solutions</h3>
+      <div class="solution-grid">
+        <div class="solution-card"><div class="solution-icon">🔗</div><h4>RESTful & GraphQL APIs</h4><p>Modern API design following industry best practices and standards.</p></div>
+        <div class="solution-card"><div class="solution-icon">⚡</div><h4>High-Performance Architecture</h4><p>Caching, load balancing, and optimization for sub-50ms response times.</p></div>
+        <div class="solution-card"><div class="solution-icon">🔒</div><h4>Enterprise Security</h4><p>OAuth 2.0, JWT, API keys, rate limiting, and input validation.</p></div>
+        <div class="solution-card"><div class="solution-icon">📖</div><h4>Auto-Generated Documentation</h4><p>Swagger/OpenAPI specs with interactive API explorers.</p></div>
+        <div class="solution-card"><div class="solution-icon">🔄</div><h4>Real-Time Sync</h4><p>Webhooks, event-driven architecture, and conflict resolution strategies.</p></div>
+        <div class="solution-card"><div class="solution-icon">⚙️</div><h4>API Gateway & Management</h4><p>Centralized gateway with analytics, versioning, and rate limiting.</p></div>
+      </div>
+    </div>
+    <div class="modal-section">
+      <h3>Our Guarantees</h3>
+      <div class="guarantee-list">
+        <div class="guarantee-item"><span class="guarantee-icon">✓</span><strong>99.99% API Uptime:</strong> Highly available infrastructure with automatic failover.</div>
+        <div class="guarantee-item"><span class="guarantee-icon">✓</span><strong>Comprehensive Testing:</strong> Unit, integration, and load testing for all endpoints.</div>
+        <div class="guarantee-item"><span class="guarantee-icon">✓</span><strong>Seamless Integrations:</strong> Pre-built connectors for Salesforce, SAP, QuickBooks, and more.</div>
+        <div class="guarantee-item"><span class="guarantee-icon">✓</span><strong>Developer Support:</strong> 3 months of free API support and troubleshooting.</div>
+      </div>
+    </div>
+    <div class="modal-cta">
+      <h3>Ready to Integrate Your Systems?</h3>
+      <p>Get a free integration assessment and API architecture consultation.</p>
+      <a href="contact.html"><button class="btn-primary btn-large">Get Free Consultation →</button></a>
+    </div>
+  </div>
+</div>
+
+<!-- Cyber Security Modal -->
+<div id="security-modal" class="service-modal">
+  <div class="modal-content">
+    <button class="modal-close">&times;</button>
+    <div class="modal-hero">
+      <span class="modal-badge">Cyber Security & DevSecOps</span>
+      <h2>Protect Your Digital Assets From Evolving Threats</h2>
+      <p>Comprehensive security assessments, penetration testing, and DevSecOps integration to safeguard your business.</p>
+    </div>
+    <div class="modal-stats">
+      <div class="stat-item"><div class="stat-number">Zero</div><div class="stat-label">Breaches</div></div>
+      <div class="stat-item"><div class="stat-number">24/7</div><div class="stat-label">Monitoring</div></div>
+      <div class="stat-item"><div class="stat-number">100%</div><div class="stat-label">Compliance</div></div>
+      <div class="stat-item"><div class="stat-number">&lt;1hr</div><div class="stat-label">Incident Response</div></div>
+    </div>
+    <div class="modal-section">
+      <h3>Common Security Challenges</h3>
+      <div class="challenge-grid">
+        <div class="challenge-card"><div class="challenge-icon">🎯</div><h4>Vulnerability Exposure</h4><p>Unknown security gaps leaving systems open to attacks and data breaches.</p></div>
+        <div class="challenge-card"><div class="challenge-icon">🚨</div><h4>Compliance Gaps</h4><p>Failing to meet GDPR, HIPAA, SOC 2, or industry regulatory requirements.</p></div>
+        <div class="challenge-card"><div class="challenge-icon">🔓</div><h4>Weak Access Controls</h4><p>Poor authentication and authorization allowing unauthorized access.</p></div>
+        <div class="challenge-card"><div class="challenge-icon">⚠️</div><h4>No Security Testing</h4><p>Pushing code to production without security scans or penetration testing.</p></div>
+        <div class="challenge-card"><div class="challenge-icon">📡</div><h4>Lack of Monitoring</h4><p>No real-time threat detection or incident response capabilities.</p></div>
+        <div class="challenge-card"><div class="challenge-icon">🏢</div><h4>Insecure Infrastructure</h4><p>Cloud misconfigurations exposing sensitive data and services.</p></div>
+      </div>
+    </div>
+    <div class="modal-section modal-section-alt">
+      <h3>Our Cyber Security Solutions</h3>
+      <div class="solution-grid">
+        <div class="solution-card"><div class="solution-icon">🔍</div><h4>Penetration Testing</h4><p>Comprehensive vulnerability assessments and ethical hacking to find weaknesses.</p></div>
+        <div class="solution-card"><div class="solution-icon">✅</div><h4>Compliance Audits</h4><p>GDPR, HIPAA, PCI DSS, SOC 2 assessments and remediation guidance.</p></div>
+        <div class="solution-card"><div class="solution-icon">🔐</div><h4>Identity & Access Management</h4><p>SSO, MFA, RBAC, and zero-trust architecture implementation.</p></div>
+        <div class="solution-card"><div class="solution-icon">⚙️</div><h4>DevSecOps Integration</h4><p>Automated security scanning in CI/CD pipelines with SAST & DAST tools.</p></div>
+        <div class="solution-card"><div class="solution-icon">🛡️</div><h4>Security Monitoring</h4><p>24/7 SIEM, intrusion detection, and threat intelligence feeds.</p></div>
+        <div class="solution-card"><div class="solution-icon">☁️</div><h4>Cloud Security</h4><p>AWS/Azure/GCP hardening, encryption, and infrastructure security audits.</p></div>
+      </div>
+    </div>
+    <div class="modal-section">
+      <h3>Our Guarantees</h3>
+      <div class="guarantee-list">
+        <div class="guarantee-item"><span class="guarantee-icon">✓</span><strong>Certified Security Experts:</strong> CISSP, CEH, and OSCP certified professionals.</div>
+        <div class="guarantee-item"><span class="guarantee-icon">✓</span><strong>Detailed Reporting:</strong> Comprehensive vulnerability reports with prioritized remediation steps.</div>
+        <div class="guarantee-item"><span class="guarantee-icon">✓</span><strong>Incident Response Plan:</strong> Documented playbooks for security incidents and data breaches.</div>
+        <div class="guarantee-item"><span class="guarantee-icon">✓</span><strong>Ongoing Support:</strong> Quarterly security reviews and continuous monitoring services.</div>
+      </div>
+    </div>
+    <div class="modal-cta">
+      <h3>Ready to Secure Your Systems?</h3>
+      <p>Schedule a free security assessment and vulnerability scan.</p>
+      <a href="contact.html"><button class="btn-primary btn-large">Get Free Consultation →</button></a>
+    </div>
+  </div>
+</div>
+
+<!-- Documentation & Architecture Modal -->
+<div id="documentation-modal" class="service-modal">
+  <div class="modal-content">
+    <button class="modal-close">&times;</button>
+    <div class="modal-hero">
+      <span class="modal-badge">Documentation & Architecture</span>
+      <h2>Crystal-Clear Documentation That Accelerates Development</h2>
+      <p>Comprehensive technical documentation, system architecture blueprints, and knowledge bases for seamless collaboration.</p>
+    </div>
+    <div class="modal-stats">
+      <div class="stat-item"><div class="stat-number">70%</div><div class="stat-label">Faster Onboarding</div></div>
+      <div class="stat-item"><div class="stat-number">50%</div><div class="stat-label">Fewer Support Tickets</div></div>
+      <div class="stat-item"><div class="stat-number">100%</div><div class="stat-label">Coverage</div></div>
+      <div class="stat-item"><div class="stat-number">Always</div><div class="stat-label">Up-to-Date</div></div>
+    </div>
+    <div class="modal-section">
+      <h3>Common Documentation Challenges</h3>
+      <div class="challenge-grid">
+        <div class="challenge-card"><div class="challenge-icon">❓</div><h4>Tribal Knowledge</h4><p>Critical system information trapped in developers' heads, not documented.</p></div>
+        <div class="challenge-card"><div class="challenge-icon">📆</div><h4>Outdated Documentation</h4><p>Docs that don't reflect current code, causing confusion and errors.</p></div>
+        <div class="challenge-card"><div class="challenge-icon">🐌</div><h4>Slow Developer Onboarding</h4><p>New team members taking weeks to understand complex systems.</p></div>
+        <div class="challenge-card"><div class="challenge-icon">🔍</div><h4>Missing Architecture Docs</h4><p>No clear system design documentation for scaling or troubleshooting decisions.</p></div>
+        <div class="challenge-card"><div class="challenge-icon">🤝</div><h4>Poor API Documentation</h4><p>External partners struggling to integrate due to unclear API specs.</p></div>
+        <div class="challenge-card"><div class="challenge-icon">🧩</div><h4>Fragmented Information</h4><p>Documentation scattered across wikis, Slack, emails, and code comments.</p></div>
+      </div>
+    </div>
+    <div class="modal-section modal-section-alt">
+      <h3>Our Documentation Solutions</h3>
+      <div class="solution-grid">
+        <div class="solution-card"><div class="solution-icon">📖</div><h4>Technical Documentation</h4><p>Complete system documentation including setup, deployment, and troubleshooting guides.</p></div>
+        <div class="solution-card"><div class="solution-icon">🏗️</div><h4>Architecture Diagrams</h4><p>C4 models, data flow diagrams, and infrastructure blueprints for clarity.</p></div>
+        <div class="solution-card"><div class="solution-icon">🚀</div><h4>Onboarding Guides</h4><p>Developer quickstart guides, code walkthroughs, and environment setup docs.</p></div>
+        <div class="solution-card"><div class="solution-icon">🔌</div><h4>API Documentation</h4><p>OpenAPI/Swagger specs with interactive examples and SDKs.</p></div>
+        <div class="solution-card"><div class="solution-icon">🎓</div><h4>Knowledge Base</h4><p>Searchable wikis with FAQs, best practices, and troubleshooting procedures.</p></div>
+        <div class="solution-card"><div class="solution-icon">🔄</div><h4>Living Documentation</h4><p>Automated doc generation from code annotations and CI/CD integration.</p></div>
+      </div>
+    </div>
+    <div class="modal-section">
+      <h3>Our Guarantees</h3>
+      <div class="guarantee-list">
+        <div class="guarantee-item"><span class="guarantee-icon">✓</span><strong>Comprehensive Coverage:</strong> Every component, API, and process documented thoroughly.</div>
+        <div class="guarantee-item"><span class="guarantee-icon">✓</span><strong>Developer-Friendly:</strong> Clear, concise writing with code examples and diagrams.</div>
+        <div class="guarantee-item"><span class="guarantee-icon">✓</span><strong>Version Control:</strong> Documentation tracked alongside code for consistency.</div>
+        <div class="guarantee-item"><span class="guarantee-icon">✓</span><strong>Maintenance Plan:</strong> Quarterly documentation reviews and updates included.</div>
+      </div>
+    </div>
+    <div class="modal-cta">
+      <h3>Ready to Document Your Systems?</h3>
+      <p>Get a free documentation audit and improvement roadmap.</p>
+      <a href="contact.html"><button class="btn-primary btn-large">Get Free Consultation →</button></a>
+    </div>
+  </div>
+</div>
+
+<footer class="footer">
+  <div class="footer-top">
+    <div class="footer-brand">
+      <img src="assets/logo.png" alt="AskABD Technologies">
+      <p>We help businesses analyze, build, optimize and scale digital solutions to achieve sustainable growth.</p>
+      <div class="footer-social"><a href="https://www.linkedin.com/in/ask-abd-9721b241a/" target="_blank">in</a><a href="https://x.com/askabd18" target="_blank">X</a><a href="https://www.facebook.com/profile.php?id=61591543676003" target="_blank">f</a><a href="#">&#9889;</a></div>
+    </div>
+    <div class="footer-col">
+      <h4>Services</h4>
+      <ul>
+        <li><a href="services.html">Web Development</a></li>
+        <li><a href="services.html">Mobile App Development</a></li>
+        <li><a href="services.html">AI Solutions</a></li>
+        <li><a href="services.html">Business Analysis</a></li>
+        <li><a href="services.html">Cloud Solutions</a></li>
+        <li><a href="services.html">Defect Resolution</a></li>
+        <li><a href="services.html">Documentation Services</a></li>
+        <li><a href="services.html">System Integration</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Solutions</h4>
+      <ul>
+        <li><a href="services.html#ecommerce-modal">E-Commerce Solutions</a></li>
+        <li><a href="solutions.html">SaaS Platforms</a></li>
+        <li><a href="solutions.html">Enterprise Applications</a></li>
+        <li><a href="solutions.html">Dashboard Solutions</a></li>
+        <li><a href="solutions.html">Data Migration</a></li>
+        <li><a href="solutions.html">API Integrations</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Industries</h4>
+      <ul>
+        <li><a href="industries.html">Healthcare</a></li>
+        <li><a href="industries.html">Finance &amp; E-Commerce</a></li>
+        <li><a href="industries.html">Logistics &amp; Transport</a></li>
+        <li><a href="industries.html">Education</a></li>
+        <li><a href="industries.html">Real Estate</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Company</h4>
+      <ul>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="index.html#process">Our Process</a></li>
+        <li><a href="#">Careers</a></li>
+        <li><a href="index.html">Blog</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Contact Us</h4>
+      <ul class="footer-contact">
+        <li>&#128205; Hyderabad, Telangana, India</li>
+        <li>&#128222; +91 83090 78107</li>
+        <li>&#9993;&#65039; hello@askabd.com</li>
+        <li>&#127760; <a href="https://www.askabd.com">www.askabd.com</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom-bar">
+    <p>&copy; 2024 AskABD Technologies. All rights reserved.</p>
+    <div class="footer-legal"><a href="privacy.html">Privacy Policy</a><a href="terms.html">Terms &amp; Conditions</a></div>
+  </div>
+</footer>
+
+<script>
+// Modal functionality for all 9 services
+document.addEventListener('DOMContentLoaded', function() {
+  const serviceCards = document.querySelectorAll('.srv-card[data-service]');
+  const modals = {
+    'ecommerce': document.getElementById('ecommerce-modal'),
+    'mobile': document.getElementById('mobile-modal'),
+    'ai': document.getElementById('ai-modal'),
+    'bi': document.getElementById('bi-modal'),
+    'enterprise': document.getElementById('enterprise-modal'),
+    'saas': document.getElementById('saas-modal'),
+    'api': document.getElementById('api-modal'),
+    'security': document.getElementById('security-modal'),
+    'documentation': document.getElementById('documentation-modal')
+  };
+
+  // Open modal when clicking service card
+  serviceCards.forEach(card => {
+    card.addEventListener('click', function(e) {
+      e.preventDefault();
+      const serviceType = this.getAttribute('data-service');
+      const modal = modals[serviceType];
+      if (modal) {
+        modal.style.display = 'flex';
+        document.body.style.overflow = 'hidden';
+      }
+    });
+  });
+
+  // Close modal functionality
+  Object.values(modals).forEach(modal => {
+    if (modal) {
+      const closeBtn = modal.querySelector('.modal-close');
+      
+      closeBtn.addEventListener('click', function() {
+        modal.style.display = 'none';
+        document.body.style.overflow = 'auto';
+        // Remove hash from URL when closing modal
+        if (window.location.hash) {
+          history.replaceState(null, null, ' ');
+        }
+      });
+
+      modal.addEventListener('click', function(e) {
+        if (e.target === modal) {
+          modal.style.display = 'none';
+          document.body.style.overflow = 'auto';
+          // Remove hash from URL when closing modal
+          if (window.location.hash) {
+            history.replaceState(null, null, ' ');
+          }
+        }
+      });
+    }
+  });
+
+  // Auto-open modal from URL hash
+  const hash = window.location.hash.substring(1); // Remove the '#'
+  if (hash && hash.endsWith('-modal')) {
+    const serviceType = hash.replace('-modal', '');
+    const modal = modals[serviceType];
+    if (modal) {
+      setTimeout(function() {
+        modal.style.display = 'flex';
+        document.body.style.overflow = 'hidden';
+      }, 500);
+    }
+  }
+
+  // ESC key to close modal
+  document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape') {
+      Object.values(modals).forEach(modal => {
+        if (modal && modal.style.display === 'flex') {
+          modal.style.display = 'none';
+          document.body.style.overflow = 'auto';
+          // Remove hash from URL
+          if (window.location.hash) {
+            history.replaceState(null, null, ' ');
+          }
+        }
+      });
+    }
+  });
+});
+</script>
+<script src="js/main.js?v=3"></script>
+</body>
+</html>
+
