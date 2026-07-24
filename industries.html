@@ -453,7 +453,7 @@ document.addEventListener('DOMContentLoaded', function () {
   var hash = window.location.hash.substring(1);
   if (hash && hash.endsWith('-modal')) {
     var m = document.getElementById(hash);
-    if (m) setTimeout(function () { m.style.display = 'flex'; document.body.style.overflow = 'hidden'; }, 500);
+    if (m) setTimeout(function () { m.style.display = 'flex'; document.body.style.overflow = 'hidden'; }, 0);
   }
 });
 </script>
