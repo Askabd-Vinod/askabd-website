@@ -367,3 +367,30 @@
   .service-modal { padding: 0; }
   .modal-content { border-radius: 0; min-height: 100vh; }
 }
+
+
+/* ============================================
+   ICON-BASED SERVICE DETAIL CARDS (dedicated pages)
+   Cards that use .srv-icon instead of an image get a clean,
+   consistent icon-panel layout (not the alternating image layout).
+   ============================================ */
+.srv-card:has(.srv-icon) { grid-template-columns: 150px 1fr; }
+.srv-card:has(.srv-icon):nth-child(even) { grid-template-columns: 150px 1fr; }
+.srv-card:has(.srv-icon):nth-child(even) .srv-body { order: 0; }
+.srv-card .srv-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2.8rem;
+  background: rgba(96, 165, 250, 0.06);
+  border-right: 1px solid rgba(96, 165, 250, 0.15);
+}
+@media (max-width: 900px) {
+  .srv-card:has(.srv-icon),
+  .srv-card:has(.srv-icon):nth-child(even) { grid-template-columns: 1fr; }
+  .srv-card .srv-icon {
+    border-right: none;
+    border-bottom: 1px solid rgba(96, 165, 250, 0.15);
+    padding: 1.25rem 0;
+  }
+}
