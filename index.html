@@ -25,6 +25,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css?v=2">
   <link rel="stylesheet" href="css/home.css?v=2">
+  <link rel="stylesheet" href="css/home-modals.css?v=1">
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -427,55 +428,7 @@
   </div>
 </footer>
 
-<script>
-// Make homepage service & industry cards open the matching modal on their page
-document.addEventListener('DOMContentLoaded', function () {
-  var svcMap = {
-    'ecommerce': 'services.html#ecommerce-modal',
-    'mobileapps': 'services.html#mobile-modal',
-    'ai': 'services.html#ai-modal',
-    'dashboards': 'services.html#bi-modal',
-    'enterprise': 'services.html#enterprise-modal',
-    'saas': 'services.html#saas-modal',
-    'api': 'services.html#api-modal',
-    'security': 'services.html#qa-modal',
-    'documentation': 'services.html#documentation-modal'
-  };
-  var indMap = {
-    'healthcare': 'industries.html#ind-healthcare-modal',
-    'finance': 'industries.html#ind-finance-modal',
-    'retail': 'industries.html#ind-retail-modal',
-    'logistics': 'industries.html#ind-logistics-modal',
-    'education': 'industries.html#ind-education-modal',
-    'realestate': 'industries.html#ind-realestate-modal'
-  };
-  // "Solutions That Drive Every Industry Forward" tiles (ecommerce maps to Retail industry)
-  var fwdMap = {
-    'healthcare': 'industries.html#ind-healthcare-modal',
-    'finance': 'industries.html#ind-finance-modal',
-    'ecommerce': 'industries.html#ind-retail-modal',
-    'education': 'industries.html#ind-education-modal',
-    'logistics': 'industries.html#ind-logistics-modal',
-    'realestate': 'industries.html#ind-realestate-modal'
-  };
-  function baseName(src) { return src.split('/').pop().split('.')[0]; }
-  function wire(selector, map) {
-    document.querySelectorAll(selector).forEach(function (card) {
-      var img = card.querySelector('img');
-      if (!img) return;
-      var link = map[baseName(img.getAttribute('src'))];
-      if (!link) return;
-      card.style.cursor = 'pointer';
-      card.addEventListener('click', function () { window.location.href = link; });
-      var a = card.querySelector('a');
-      if (a) a.setAttribute('href', link);
-    });
-  }
-  wire('.solution-card', svcMap);
-  wire('.ind-card', indMap);
-  wire('.fwd', fwdMap);
-});
-</script>
+<script src="js/home-modals.js?v=1"></script>
 <script src="js/main.js?v=4"></script>
 </body>
 </html>

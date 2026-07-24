@@ -1,0 +1,147 @@
+/* Homepage modal styles - scoped under .service-modal to avoid clashing with home.css */
+.service-modal {
+  display: none;
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: rgba(2, 6, 23, 0.85);
+  backdrop-filter: blur(8px);
+  z-index: 9999;
+  justify-content: center;
+  align-items: flex-start;
+  overflow-y: auto;
+  padding: 2rem 1rem;
+  animation: hmFade 0.3s ease;
+}
+@keyframes hmFade { from { opacity: 0; } to { opacity: 1; } }
+.service-modal .modal-content {
+  position: relative;
+  background: #0f172a;
+  max-width: 1000px;
+  width: 100%;
+  border-radius: 20px;
+  border: 1px solid rgba(148, 163, 184, 0.15);
+  box-shadow: 0 25px 80px rgba(0, 0, 0, 0.6);
+  overflow: hidden;
+  margin: auto;
+  animation: hmUp 0.4s ease;
+}
+@keyframes hmUp { from { transform: translateY(40px); opacity: 0; } to { transform: translateY(0); opacity: 1; } }
+.service-modal .modal-close {
+  position: absolute;
+  top: 1.25rem; right: 1.5rem;
+  width: 42px; height: 42px;
+  border-radius: 50%;
+  background: rgba(148, 163, 184, 0.15);
+  border: none; color: #fff;
+  font-size: 1.75rem; line-height: 1;
+  cursor: pointer; z-index: 10;
+  transition: all 0.2s ease;
+  display: flex; align-items: center; justify-content: center;
+}
+.service-modal .modal-close:hover { background: #ef4444; transform: rotate(90deg); }
+.service-modal .modal-hero {
+  background: linear-gradient(135deg, #1e3a8a 0%, #2563eb 50%, #7c3aed 100%);
+  padding: 3rem 2.5rem 2.5rem;
+  text-align: center;
+}
+.service-modal .modal-badge {
+  display: inline-block;
+  background: rgba(255, 255, 255, 0.15);
+  color: #fff;
+  padding: 0.4rem 1.2rem;
+  border-radius: 50px;
+  font-size: 0.8rem; font-weight: 600;
+  letter-spacing: 0.5px; text-transform: uppercase;
+  margin-bottom: 1.25rem;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+}
+.service-modal .modal-hero h2 {
+  color: #fff; font-size: 2rem; font-weight: 800;
+  line-height: 1.2; margin: 0 auto 1rem; max-width: 700px;
+}
+.service-modal .modal-hero p {
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 1.1rem; line-height: 1.6;
+  margin: 0 auto; max-width: 600px;
+}
+.service-modal .modal-stats {
+  display: grid; grid-template-columns: repeat(4, 1fr); gap: 1rem;
+  padding: 2rem 2.5rem;
+  background: rgba(37, 99, 235, 0.08);
+  border-bottom: 1px solid rgba(148, 163, 184, 0.12);
+}
+.service-modal .stat-item { text-align: center; }
+.service-modal .stat-number { font-size: 2rem; font-weight: 800; color: #3b82f6; line-height: 1; margin-bottom: 0.4rem; }
+.service-modal .stat-label { font-size: 0.85rem; color: #94a3b8; font-weight: 500; }
+.service-modal .modal-section { padding: 2.5rem; }
+.service-modal .modal-section-alt { background: rgba(148, 163, 184, 0.03); }
+.service-modal .modal-section h3 { color: #fff; font-size: 1.5rem; font-weight: 700; margin: 0 0 1.75rem; text-align: center; }
+.service-modal .challenge-grid,
+.service-modal .solution-grid {
+  display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.25rem;
+}
+.service-modal .challenge-card,
+.service-modal .solution-card {
+  background: rgba(148, 163, 184, 0.06);
+  border: 1px solid rgba(148, 163, 184, 0.12);
+  border-radius: 14px;
+  padding: 1.5rem;
+  transition: all 0.25s ease;
+  cursor: default;
+}
+.service-modal .challenge-card:hover { border-color: rgba(239, 68, 68, 0.4); transform: translateY(-4px); }
+.service-modal .solution-card:hover { border-color: rgba(59, 130, 246, 0.5); transform: translateY(-4px); background: rgba(37, 99, 235, 0.08); }
+.service-modal .challenge-icon,
+.service-modal .solution-icon { font-size: 2rem; margin-bottom: 0.75rem; }
+.service-modal .challenge-card h4,
+.service-modal .solution-card h4 { color: #fff; font-size: 1.05rem; font-weight: 700; margin: 0 0 0.5rem; }
+.service-modal .challenge-card p,
+.service-modal .solution-card p { color: #94a3b8; font-size: 0.9rem; line-height: 1.55; margin: 0; }
+.service-modal .guarantee-list { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1rem; max-width: 850px; margin: 0 auto; }
+.service-modal .guarantee-item {
+  display: flex; align-items: flex-start; gap: 0.75rem;
+  background: rgba(16, 185, 129, 0.06);
+  border: 1px solid rgba(16, 185, 129, 0.15);
+  border-radius: 12px; padding: 1.1rem 1.25rem;
+  color: #cbd5e1; font-size: 0.92rem; line-height: 1.5;
+}
+.service-modal .guarantee-item strong { color: #fff; }
+.service-modal .guarantee-icon {
+  flex-shrink: 0; width: 24px; height: 24px; border-radius: 50%;
+  background: #10b981; color: #fff;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 0.85rem; font-weight: 700;
+}
+.service-modal .modal-cta { background: linear-gradient(135deg, #1e3a8a 0%, #7c3aed 100%); padding: 3rem 2.5rem; text-align: center; }
+.service-modal .modal-cta h3 { color: #fff; font-size: 1.6rem; font-weight: 800; margin: 0 0 0.75rem; }
+.service-modal .modal-cta p { color: rgba(255, 255, 255, 0.9); font-size: 1.05rem; margin: 0 0 1.75rem; }
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+  .service-modal { padding: 0; }
+  .service-modal .modal-content { border-radius: 0; min-height: 100vh; }
+  .service-modal .modal-hero { padding: 2.5rem 1.5rem 2rem; }
+  .service-modal .modal-hero h2 { font-size: 1.5rem; }
+  .service-modal .modal-hero p { font-size: 1rem; }
+  .service-modal .modal-stats { grid-template-columns: repeat(2, 1fr); gap: 1.25rem; padding: 1.5rem; }
+  .service-modal .stat-number { font-size: 1.6rem; }
+  .service-modal .modal-section { padding: 1.75rem 1.5rem; }
+  .service-modal .modal-section h3 { font-size: 1.3rem; }
+  .service-modal .challenge-grid,
+  .service-modal .solution-grid { grid-template-columns: 1fr; }
+  .service-modal .guarantee-list { grid-template-columns: 1fr; }
+  .service-modal .modal-cta { padding: 2.5rem 1.5rem; }
+  .service-modal .modal-cta h3 { font-size: 1.35rem; }
+}
+@media (max-width: 480px) {
+  .service-modal .modal-close { top: 0.75rem; right: 0.75rem; width: 38px; height: 38px; }
+  .service-modal .modal-hero h2 { font-size: 1.3rem; }
+}
+
+/* Neutralize home.css .solution-card decorations inside modals */
+.service-modal .solution-card::before { display: none; }
+.service-modal .solution-card h3 { color: #fff; }
+
+/* Ensure modal contents are never hidden by the scroll-reveal system */
+.service-modal .reveal-on-scroll { opacity: 1 !important; transform: none !important; }
