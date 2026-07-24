@@ -120,3 +120,7 @@ nav {
 @media (max-width: 768px) {
   .btn-large { padding: 0.7rem 1.3rem; font-size: 0.9rem; }
 }
+
+
+/* Offset anchor landings so section headings are not hidden under the fixed nav */
+section[id], [id].proc-step, .legal-content h2, .legal-content h3 { scroll-margin-top: 90px; }
