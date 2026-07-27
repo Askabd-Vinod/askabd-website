@@ -7,6 +7,24 @@
   <url><loc>https://www.askabd.com/industries</loc><priority>0.8</priority><changefreq>monthly</changefreq></url>
   <url><loc>https://www.askabd.com/portfolio</loc><priority>0.8</priority><changefreq>monthly</changefreq></url>
   <url><loc>https://www.askabd.com/about</loc><priority>0.7</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://www.askabd.com/web-development</loc><priority>0.8</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://www.askabd.com/mobile-app-development</loc><priority>0.8</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://www.askabd.com/ai-solutions</loc><priority>0.8</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://www.askabd.com/business-intelligence</loc><priority>0.8</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://www.askabd.com/cloud-solutions</loc><priority>0.8</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://www.askabd.com/defect-resolution</loc><priority>0.7</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://www.askabd.com/documentation-services</loc><priority>0.7</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://www.askabd.com/api-integration</loc><priority>0.7</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://www.askabd.com/ecommerce-development</loc><priority>0.8</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://www.askabd.com/saas-development</loc><priority>0.8</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://www.askabd.com/enterprise-solutions</loc><priority>0.8</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://www.askabd.com/healthcare-solutions</loc><priority>0.7</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://www.askabd.com/fintech-solutions</loc><priority>0.7</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://www.askabd.com/logistics-solutions</loc><priority>0.7</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://www.askabd.com/education-solutions</loc><priority>0.7</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://www.askabd.com/realestate-solutions</loc><priority>0.7</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://www.askabd.com/retail-solutions</loc><priority>0.7</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://www.askabd.com/process</loc><priority>0.7</priority><changefreq>monthly</changefreq></url>
   <url><loc>https://www.askabd.com/privacy</loc><priority>0.3</priority><changefreq>yearly</changefreq></url>
   <url><loc>https://www.askabd.com/terms</loc><priority>0.3</priority><changefreq>yearly</changefreq></url>
 </urlset>

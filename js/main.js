@@ -15,7 +15,10 @@
 document.addEventListener('click', function(e) {
   const card = e.target.closest('.solution-card, .srv-card, .ind-card, .fwd, .proc-step');
   // Exclude cards with data-service attribute (they have custom modals)
-  if (card && !card.hasAttribute('data-service')) {
+  // Exclude cards inside modals
+  // Exclude product cards and timeline items (handled by their own JS)
+  // Exclude cards inside content-section (informational content, not navigational)
+  if (card && !card.hasAttribute('data-service') && !card.closest('.service-modal') && !card.closest('.product-card') && !card.closest('.timeline-item') && !card.closest('.content-section')) {
     window.location.href = 'contact.html';
   }
 });
@@ -91,7 +94,8 @@ const revealSelectors = [
   '.content-main', '.content-sidebar', '.sidebar-card',
   '.contact-card', '.contact-social', '.contact-form-wrapper',
   '.highlight-box', '.section-head-row',
-  '.section-head', '.losing-left', '.losing-right', '.ready-inner'
+  '.section-head', '.losing-left', '.losing-right', '.ready-inner',
+  '.product-card', '.timeline-item', '.journey-stat-card'
 ];
 
 document.querySelectorAll(revealSelectors.join(',')).forEach((el) => {

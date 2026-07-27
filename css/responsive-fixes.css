@@ -1,0 +1,122 @@
+/* ============================================
+   RESPONSIVE FIXES & IMPROVEMENTS
+   Addresses edge cases and improves mobile UX
+   ============================================ */
+
+/* Process section: prevent overflow on tablets */
+@media (max-width: 900px) and (min-width: 601px) {
+  .process-row {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+  }
+  .process-row::before {
+    display: none;
+  }
+}
+
+/* Footer: tighter on small screens */
+@media (max-width: 768px) {
+  .footer-top {
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+  }
+  .footer-brand {
+    grid-column: 1 / -1;
+  }
+}
+@media (max-width: 480px) {
+  .footer-top {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Hero features: wrap on small screens */
+@media (max-width: 600px) {
+  .hero-features {
+    flex-wrap: wrap;
+  }
+  .hero-features span {
+    white-space: normal;
+  }
+  .hero h1 {
+    font-size: 2rem;
+  }
+  .hero-strip span {
+    font-size: 0.8rem;
+    padding: 0.75rem 1.2rem;
+  }
+}
+
+/* Stats row: prevent text overflow */
+.stat strong {
+  word-break: break-word;
+}
+
+/* Service cards grid: consistent on medium screens */
+@media (max-width: 1200px) and (min-width: 901px) {
+  .srv-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+/* Modal: full-screen on mobile */
+@media (max-width: 480px) {
+  .service-modal {
+    padding: 0;
+  }
+  .modal-content {
+    border-radius: 0;
+    min-height: 100vh;
+    max-height: 100vh;
+  }
+}
+
+/* Ready section: stack on mobile */
+@media (max-width: 600px) {
+  .ready-inner {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+  .ready-left {
+    display: none;
+  }
+  .ready-actions {
+    justify-content: center;
+  }
+}
+
+/* Highlight boxes: single column on very small screens */
+@media (max-width: 480px) {
+  .highlight-boxes {
+    grid-template-columns: 1fr !important;
+  }
+}
+
+/* Losing section: improve readability on mobile */
+@media (max-width: 600px) {
+  .losing-left h2 {
+    font-size: 1.6rem;
+  }
+  .losing-right {
+    padding: 1.5rem;
+  }
+}
+
+/* Dash phone: hide on very small screens */
+@media (max-width: 480px) {
+  .dash-phone {
+    display: none;
+  }
+  .dash-main {
+    transform: none;
+    margin-right: 0;
+  }
+}
+
+/* Ensure no horizontal overflow */
+html, body {
+  overflow-x: hidden;
+}
+section, .content-container {
+  overflow-x: hidden;
+}
