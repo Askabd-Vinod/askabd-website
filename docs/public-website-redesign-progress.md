@@ -108,7 +108,18 @@ A separate, adversarial final-release-gate pass was run after the tracker above 
 
 Also re-confirmed via this pass: security/private-platform boundary clean (no client data, no login links, no internal infra references); no `.html` file has a duplicate title; 0 broken internal links across all 40 files; 0 unbalanced `<section>` tags; keyboard focus (`:focus-visible`) correctly shows a visible outline on real Tab-key navigation (an earlier JS-`.focus()`-based test had false-positived "no outline" — corrected via a real `key: Tab` press); skip-to-main-content link present and first in tab order on every page; contact form's required-field validation, email-format validation, and network-failure error path (with a real, working `mailto:` fallback, and the button correctly re-enabling) all verified live without sending a real production lead; total sitewide JS payload 76KB / CSS 96KB uncompressed, no heavy frameworks, no unnecessary dependencies; all 39 pages re-verified with 0 console errors and 0 horizontal overflow at 1440px, plus 1280px and 1024px spot-checks on the 5 most complex pages (Home, Services, Solutions, Industries, Contact — including live modal/tab interaction at 1280px), plus a 375px mobile sanity check confirming smaller screens don't break.
 
-**Not done — requires your explicit approval, per this session's opening and closing instructions:** committing and pushing to `origin/Dev` (which would trigger Cloudflare Pages' Dev/Preview auto-build) has not been done. 53 files are modified/added locally, uncommitted, nothing pushed. Say the word and I'll commit, push, and then re-run the full Playwright-equivalent sweep against the live Cloudflare DEV URL to confirm it matches local before handing you that URL for approval.
+**UPDATE — Cloudflare DEV deployment complete (2026-08-22, later same day):** Approval granted. Committed and pushed to `origin/Dev` in 3 commits:
+- `ae84e94` — the full redesign (53 files)
+- `d82d962` — fixed 2 PCI-DSS/HIPAA overclaims found by a fetch-based fabrication sweep run directly against the live Cloudflare DEV site (missed in the local-only pass — `ecommerce-development.html`'s payment-integration card, `index.html`'s homepage healthcare card)
+- `c9f54ed` — an exhaustive grep for every remaining named-framework compliance phrase turned up 3 more instances (`healthcare-solutions.html` meta+card, `industries.html` modal card, `portfolio.html` telemedicine example) — all fixed
+
+**Live Cloudflare DEV URL:** `https://dev-ncsy.askabd-website.pages.dev` (branch preview, stable across deploys)
+**Deployed commit:** `c9f54ed`, verified via Cloudflare's GitHub check-run (not guessed)
+**Clean-URL question resolved empirically:** Cloudflare Pages does serve extensionless URLs (`/services` → 200, `/services.html` → 308 redirect to `/services`) — confirms the earlier canonical-tag decision was correct.
+
+Full Playwright-equivalent sweep re-run against the live Cloudflare DEV site (not just local): all 39 pages — 0 console errors, 0 failed network requests, 0 fabrication matches (after the 2 follow-up fixes), 0 SEO issues, 0 duplicate titles, sitemap has all 39 URLs live, contact form validation + failure-path verified with no real lead sent, clean at 1440/1280/1024/375. Security scan against live deployed HTML: 0 matches for any client/credential/internal-infrastructure pattern.
+
+**READY FOR USER REVIEW.** Production still untouched — main unchanged at `d911065`, no production deployment attempted.
 
 ## ALL 39 PAGES COMPLETE — final regression summary (this session)
 
