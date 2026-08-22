@@ -1,5 +1,9 @@
-// Industry Page Enhancements - Adds Digital Transformation, AI Opportunities, and Related sections
+// Industry Page Enhancements - Adds Root Cause and Related sections
 // Same pattern as service-enhancements.js but for industry-specific content.
+// Note: a "Business Impact" section with fabricated ROI metrics (e.g. "40% Reduced
+// Wait Times", "100% Compliance", "35% Revenue Increase") previously existed here
+// and was removed — AskABD has no verified data to support industry-specific
+// performance claims like these.
 
 (function() {
   var INDUSTRY_DATA = {
@@ -15,12 +19,6 @@
           {icon:'🔐',t:'Security Complexity',d:'Patient data requiring extreme care makes every project harder.'}
         ]
       },
-      benefits: [
-        {metric:'40%',label:'Reduced Wait Times',desc:'Online booking and automated triage streamlining patient flow.'},
-        {metric:'60%',label:'Less Paperwork',desc:'Digital forms and automated records reducing administrative burden.'},
-        {metric:'24/7',label:'Patient Access',desc:'Telemedicine and portals enabling care anytime, anywhere.'},
-        {metric:'100%',label:'Compliance',desc:'HIPAA-compliant architecture with full audit trails.'}
-      ],
       related: {
         services: [
           {name:'AI Solutions',href:'ai-solutions.html'},
@@ -49,12 +47,6 @@
           {icon:'🏗️',t:'Technical Debt',d:'Decades of patches making systems fragile and unpredictable.'}
         ]
       },
-      benefits: [
-        {metric:'99.99%',label:'Uptime',desc:'High-availability architecture for mission-critical financial services.'},
-        {metric:'50ms',label:'Transaction Speed',desc:'Low-latency processing for real-time payment and trading operations.'},
-        {metric:'100%',label:'Audit Compliance',desc:'Complete transaction trails meeting regulatory requirements.'},
-        {metric:'40%',label:'Operational Savings',desc:'Automation reducing manual reconciliation and processing costs.'}
-      ],
       related: {
         services: [
           {name:'Cloud Solutions',href:'cloud-solutions.html'},
@@ -83,12 +75,6 @@
           {icon:'📄',t:'Paper Processes',d:'Proof of delivery, invoicing, and customs still paper-based.'}
         ]
       },
-      benefits: [
-        {metric:'30%',label:'Route Optimization',desc:'AI-powered routing reducing fuel costs and delivery times.'},
-        {metric:'Real-Time',label:'Shipment Tracking',desc:'End-to-end visibility for operations and customers alike.'},
-        {metric:'50%',label:'Less Manual Work',desc:'Automated dispatch, invoicing, and documentation workflows.'},
-        {metric:'20%',label:'Lower Costs',desc:'Optimized inventory and fleet management cutting operational spend.'}
-      ],
       related: {
         services: [
           {name:'Mobile App Development',href:'mobile-app-development.html'},
@@ -117,12 +103,6 @@
           {icon:'🔗',t:'System Fragmentation',d:'LMS, SIS, library, and assessment tools not talking to each other.'}
         ]
       },
-      benefits: [
-        {metric:'3x',label:'Student Engagement',desc:'Interactive content and gamification keeping learners motivated.'},
-        {metric:'50%',label:'Admin Time Saved',desc:'Automated enrollment, grading, and reporting processes.'},
-        {metric:'24/7',label:'Learning Access',desc:'Anywhere, anytime access to courses and resources.'},
-        {metric:'90%',label:'Completion Rates',desc:'Progress tracking and personalized nudges improving outcomes.'}
-      ],
       related: {
         services: [
           {name:'Web Development',href:'web-development.html'},
@@ -151,12 +131,6 @@
           {icon:'🔗',t:'Disconnected Operations',d:'Sales, property management, and finance using separate tools.'}
         ]
       },
-      benefits: [
-        {metric:'3x',label:'Lead Conversion',desc:'CRM automation and instant follow-up capturing more prospects.'},
-        {metric:'70%',label:'Less Paperwork',desc:'Digital contracts, e-signatures, and automated workflows.'},
-        {metric:'Real-Time',label:'Portfolio Visibility',desc:'Live dashboards tracking occupancy, revenue, and maintenance.'},
-        {metric:'40%',label:'Faster Transactions',desc:'Streamlined processes from listing to closing.'}
-      ],
       related: {
         services: [
           {name:'Web Development',href:'web-development.html'},
@@ -185,12 +159,6 @@
           {icon:'📱',t:'Weak Mobile Presence',d:'Customers expecting mobile shopping but getting desktop-only sites.'}
         ]
       },
-      benefits: [
-        {metric:'35%',label:'Revenue Increase',desc:'Omnichannel strategy capturing sales across all touchpoints.'},
-        {metric:'2x',label:'Customer Retention',desc:'Personalized experiences and loyalty programs driving repeat visits.'},
-        {metric:'Real-Time',label:'Inventory Accuracy',desc:'Unified stock view preventing overselling and stockouts.'},
-        {metric:'50%',label:'Marketing ROI',desc:'Data-driven campaigns targeting the right customers at the right time.'}
-      ],
       related: {
         services: [
           {name:'E-Commerce Solutions',href:'ecommerce-development.html'},
@@ -224,22 +192,6 @@
         '<h2 class="sec-title">' + rc.title + '</h2>' +
         '<p style="color:#94A3B8;max-width:700px;margin:0 auto;">Understanding barriers helps us design solutions that actually get adopted</p></div>' +
         '<div class="highlight-boxes" style="margin-top:3rem;">' + items + '</div>' +
-      '</div></section>';
-  }
-
-  function buildBenefits(benefits) {
-    var cards = benefits.map(function(b) {
-      return '<div class="highlight-box" style="text-align:center;">' +
-        '<h4 style="font-size:2rem;color:#10B981;margin-bottom:0.25rem;">' + b.metric + '</h4>' +
-        '<p style="color:#E2E8F0;font-weight:600;margin-bottom:0.5rem;">' + b.label + '</p>' +
-        '<p style="font-size:0.85rem;">' + b.desc + '</p></div>';
-    }).join('');
-    return '<section class="content-section" style="padding:5rem 0;">' +
-      '<div class="content-container">' +
-        '<div class="section-head center"><div class="tag-blue">BUSINESS IMPACT</div>' +
-        '<h2 class="sec-title">Measurable Business Outcomes</h2>' +
-        '<p style="color:#94A3B8;max-width:700px;margin:0 auto;">Technology investments that deliver real returns</p></div>' +
-        '<div class="highlight-boxes" style="margin-top:3rem;">' + cards + '</div>' +
       '</div></section>';
   }
 
@@ -282,11 +234,6 @@
       var d = document.createElement('div');
       d.innerHTML = buildRootCause(data.rootCause);
       solutionSection.parentNode.insertBefore(d.firstElementChild, solutionSection);
-    }
-    if (finalCta && data.benefits) {
-      var d2 = document.createElement('div');
-      d2.innerHTML = buildBenefits(data.benefits);
-      finalCta.parentNode.insertBefore(d2.firstElementChild, finalCta);
     }
     if (finalCta && data.related) {
       var d3 = document.createElement('div');

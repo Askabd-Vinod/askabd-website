@@ -10,14 +10,19 @@
   <link rel="canonical" href="https://www.askabd.com/services">
   <link rel="icon" type="image/png" href="https://www.askabd.com/assets/logo.png">
   <link rel="apple-touch-icon" href="https://www.askabd.com/assets/logo.png">
+  <meta property="og:title" content="Services – AskABD Technologies">
+  <meta property="og:description" content="Full-stack software development services from AskABD Technologies">
+  <meta property="og:image" content="https://www.askabd.com/assets/logo.png">
+  <meta property="og:type" content="website">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css?v=3">
-  <link rel="stylesheet" href="css/home.css?v=2">
+  <link rel="stylesheet" href="css/home.css?v=3">
   <link rel="stylesheet" href="css/pages.css?v=3">
   <link rel="stylesheet" href="css/services.css?v=3">
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"Organization","name":"AskABD Technologies","url":"https://www.askabd.com","logo":"https://www.askabd.com/assets/logo.png","description":"Business transformation and technology consulting. Web development, mobile apps, AI solutions, and digital transformation services.","address":{"@type":"PostalAddress","addressLocality":"Hyderabad","addressRegion":"Telangana","addressCountry":"IN"},"contactPoint":{"@type":"ContactPoint","telephone":"+91-83090-78107","contactType":"sales","email":"hello@askabd.com"},"sameAs":["https://www.linkedin.com/in/ask-abd-9721b241a/","https://x.com/askabd18","https://www.facebook.com/profile.php?id=61591543676003"]}</script>
+  <link rel="stylesheet" href="css/components.css?v=1">
 </head>
 <body>
 
@@ -34,12 +39,13 @@
       <a href="industries.html">Industries</a>
       <a href="portfolio.html">Portfolio</a>
       <a href="about.html">About Us</a>
-      <a href="contact.html">Resources</a>
+      <a href="contact.html">Contact</a>
     </div>
     <a href="contact.html"><button class="btn-primary">Get Free Consultation &rarr;</button></a>
     <button class="hamburger"><span></span><span></span><span></span></button>
   </div>
 </nav>
+<nav class="breadcrumb" aria-label="Breadcrumb"><a href="index.html">Home</a><span class="crumb-sep">/</span><span class="crumb-current">Services</span></nav>
 
 <section class="page-header">
   <div class="page-grid"></div>
@@ -50,116 +56,183 @@
 </section>
 
 <section class="srv-section">
-  <div class="srv-grid">
+  <div class="content-container" style="margin-bottom: 2.5rem;">
+    <p style="text-align:center; color:#94A3B8; max-width:720px; margin:0 auto 1rem; font-size:1.02rem;">Every capability below is something AskABD genuinely delivers today — organized by the kind of problem it solves, so you can find the right starting point without needing to already know our internal service names.</p>
+  </div>
 
-    <div class="srv-card" style="--accent:#2563EB" data-service="ecommerce">
-      <div class="srv-img-wrap"><img src="assets/img/ecommerce.jpg" alt="E-Commerce"></div>
-      <div class="srv-body">
-        <h3>E-Commerce Development</h3>
-        <p>We build scalable online stores with seamless shopping experiences and payment integrations.</p>
-        <ul><li>Custom platforms (Shopify, WooCommerce, custom)</li><li>Multi-vendor marketplaces</li><li>Payment gateway integration (Stripe, Razorpay)</li><li>Cart solutions & recommendation engines</li><li>Inventory & order management</li></ul>
+  <div class="content-container">
+    <div class="tabs" id="services-tabs">
+      <div class="tabs-nav" role="tablist" aria-label="Service categories">
+        <button class="active" data-tab="cat-business">Business &amp; Analysis</button>
+        <button data-tab="cat-dev">Software Development</button>
+        <button data-tab="cat-quality">Quality</button>
+        <button data-tab="cat-data">Data</button>
+        <button data-tab="cat-transform">Digital Transformation</button>
+        <button data-tab="cat-ai">Smart / AI</button>
+        <button data-tab="cat-cloud">Cloud &amp; Infrastructure</button>
+        <button data-tab="cat-support">Post-Delivery</button>
+      </div>
+
+      <div id="cat-business" class="tab-panel active">
+        <p class="cat-intro">Before we write a line of code, we make sure we understand your business problem — not just the feature request.</p>
+        <div class="srv-grid">
+          <div class="srv-card" style="--accent:#14B8A6" data-service="documentation">
+            <div class="srv-img-wrap"><img src="assets/img/documentation.jpg" alt="Business Analysis &amp; Documentation"></div>
+            <div class="srv-body">
+              <h3>Business Analysis &amp; Documentation</h3>
+              <p>Requirements engineering, process analysis, and technical documentation that give every stakeholder a shared, accurate picture of the system.</p>
+              <ul><li>Business requirements &amp; functional specs</li><li>Process modeling &amp; solution discovery</li><li>System architecture &amp; design docs</li><li>API documentation &amp; developer onboarding guides</li></ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="cat-dev" class="tab-panel">
+        <p class="cat-intro">New applications, built the right way from the start — or extended safely on top of what you already run.</p>
+        <div class="srv-grid">
+          <div class="srv-card" style="--accent:#3B82F6" data-service="web">
+            <div class="srv-img-wrap"><img src="assets/img/optimize.jpg" alt="Web Development"></div>
+            <div class="srv-body">
+              <h3>Web Application Development</h3>
+              <p>Fast, responsive, and scalable websites and web apps built with modern frameworks.</p>
+              <ul><li>Progressive web apps (PWA)</li><li>React, Vue &amp; Angular SPAs</li><li>Headless CMS &amp; Jamstack</li><li>Performance &amp; Core Web Vitals</li></ul>
+            </div>
+          </div>
+          <div class="srv-card" style="--accent:#0EA5E9" data-service="mobile">
+            <div class="srv-img-wrap"><img src="assets/img/mobileapps.jpg" alt="Mobile Apps"></div>
+            <div class="srv-body">
+              <h3>Mobile App Development</h3>
+              <p>High-performance native and cross-platform mobile applications with intuitive UX.</p>
+              <ul><li>Native iOS (Swift) &amp; Android (Kotlin)</li><li>Cross-platform: React Native, Flutter</li><li>Push notifications, offline-first</li><li>App store submission support</li></ul>
+            </div>
+          </div>
+          <div class="srv-card" style="--accent:#06B6D4" data-service="saas">
+            <div class="srv-img-wrap"><img src="assets/img/saas.jpg" alt="SaaS"></div>
+            <div class="srv-body">
+              <h3>SaaS Platform Development</h3>
+              <p>Multi-tenant SaaS products with subscription billing, built API-first.</p>
+              <ul><li>Multi-tenancy architecture</li><li>Subscription &amp; billing management</li><li>Usage metering &amp; analytics</li><li>White-labeling frameworks</li></ul>
+            </div>
+          </div>
+          <div class="srv-card" style="--accent:#F59E0B" data-service="enterprise">
+            <div class="srv-img-wrap"><img src="assets/img/enterprise.jpg" alt="Enterprise"></div>
+            <div class="srv-body">
+              <h3>Enterprise Applications</h3>
+              <p>Custom ERP, CRM, and workflow software tailored to your actual processes.</p>
+              <ul><li>Custom ERP systems</li><li>CRM &amp; customer management</li><li>Workflow automation &amp; BPM</li><li>Enterprise integration (SAP, Salesforce)</li></ul>
+            </div>
+          </div>
+          <div class="srv-card" style="--accent:#6366F1" data-service="api">
+            <div class="srv-img-wrap"><img src="assets/img/api.jpg" alt="API"></div>
+            <div class="srv-body">
+              <h3>APIs &amp; Backend Development</h3>
+              <p>RESTful and GraphQL APIs, microservices, and the backend systems behind them.</p>
+              <ul><li>REST &amp; GraphQL APIs</li><li>Microservices architecture</li><li>Third-party integrations</li><li>API gateway &amp; rate limiting</li></ul>
+            </div>
+          </div>
+          <div class="srv-card" style="--accent:#2563EB" data-service="ecommerce">
+            <div class="srv-img-wrap"><img src="assets/img/ecommerce.jpg" alt="E-Commerce"></div>
+            <div class="srv-body">
+              <h3>E-Commerce Platforms</h3>
+              <p>Scalable online stores with seamless shopping experiences and payment integrations. <a href="ecommerce-development.html" style="color:var(--blue-bright)">See the full breakdown →</a></p>
+              <ul><li>Custom platforms (Shopify, WooCommerce, custom-built)</li><li>Payment gateway integration</li><li>Cart &amp; checkout optimization</li><li>Inventory &amp; order management</li></ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="cat-quality" class="tab-panel">
+        <p class="cat-intro">Defects found before your customers find them, and existing defects resolved at the root cause — not just patched.</p>
+        <div class="srv-grid">
+          <div class="srv-card" style="--accent:#DB2777" data-service="qa">
+            <div class="srv-img-wrap"><img src="assets/img/security.jpg" alt="QA &amp; Defect Resolution"></div>
+            <div class="srv-body">
+              <h3>QA &amp; Defect Resolution</h3>
+              <p>Functional, integration, API, regression, and performance testing, plus rapid root-cause defect resolution.</p>
+              <ul><li>Manual &amp; automated testing</li><li>Regression &amp; performance testing</li><li>Bug triage &amp; root-cause analysis</li><li>Test automation frameworks in CI/CD</li></ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="cat-data" class="tab-panel">
+        <p class="cat-intro">Getting your data into one trustworthy place, moved safely, and turned into something people can actually use.</p>
+        <div class="srv-grid">
+          <div class="srv-card" style="--accent:#10B981" data-service="bi">
+            <div class="srv-img-wrap"><img src="assets/img/dashboards.jpg" alt="BI"></div>
+            <div class="srv-body">
+              <h3>Business Intelligence &amp; Data</h3>
+              <p>Data migration, integration, validation, and warehousing — turned into dashboards people trust.</p>
+              <ul><li>Data migration &amp; integration between systems</li><li>Data warehouse &amp; ETL pipelines</li><li>Real-time dashboards &amp; visualizations</li><li>Data quality &amp; validation checks</li></ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="cat-transform" class="tab-panel">
+        <p class="cat-intro">Modernizing what already exists and connecting systems that were never designed to talk to each other.</p>
+        <div class="srv-grid">
+          <div class="srv-card" style="--accent:#6366F1" data-service="api">
+            <div class="srv-img-wrap"><img src="assets/img/api.jpg" alt="Integration"></div>
+            <div class="srv-body">
+              <h3>System Integration &amp; Automation</h3>
+              <p>Connecting disconnected systems and automating the manual work between them.</p>
+              <ul><li>Legacy system modernization</li><li>Workflow &amp; process automation</li><li>Webhooks &amp; event-driven architecture</li><li>Third-party &amp; enterprise integrations</li></ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="cat-ai" class="tab-panel">
+        <p class="cat-intro">Real automation and decision support built into your applications — not AI for its own sake.</p>
+        <div class="srv-grid">
+          <div class="srv-card" style="--accent:#8B5CF6" data-service="ai">
+            <div class="srv-img-wrap"><img src="assets/img/ai.jpg" alt="AI"></div>
+            <div class="srv-body">
+              <h3>AI &amp; Intelligent Automation</h3>
+              <p>Intelligent automation, recommendations, and decision support built into your applications.</p>
+              <ul><li>NLP &amp; chatbots</li><li>Predictive analytics &amp; forecasting</li><li>Recommendation engines</li><li>Workflow automation with AI-assisted decisions</li></ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="cat-cloud" class="tab-panel">
+        <p class="cat-intro">Infrastructure that scales with real traffic and stays secure — without a blank-check cloud bill.</p>
+        <div class="srv-grid">
+          <div class="srv-card" style="--accent:#0891B2" data-service="cloud">
+            <div class="srv-img-wrap"><img src="assets/img/clarity.jpg" alt="Cloud Solutions"></div>
+            <div class="srv-body">
+              <h3>Cloud &amp; Infrastructure</h3>
+              <p>Cloud architecture, migration, deployment, and monitoring — sized to actual usage.</p>
+              <ul><li>AWS, Azure &amp; GCP architecture</li><li>Cloud migration &amp; modernization</li><li>Containers &amp; CI/CD pipelines</li><li>Cost monitoring &amp; optimization</li></ul>
+            </div>
+          </div>
+          <div class="srv-card" style="--accent:#EF4444" data-service="security">
+            <div class="srv-img-wrap"><img src="assets/img/security.jpg" alt="Security"></div>
+            <div class="srv-body">
+              <h3>Security &amp; DevSecOps</h3>
+              <p>Security built into the deployment pipeline, not bolted on afterward.</p>
+              <ul><li>Vulnerability assessment</li><li>Security scanning in CI/CD</li><li>Access management (IAM, RBAC)</li><li>Cloud configuration hardening</li></ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="cat-support" class="tab-panel">
+        <p class="cat-intro">Software doesn't stop needing attention at launch. We stay involved after go-live.</p>
+        <div class="srv-grid">
+          <div class="srv-card" style="--accent:#DB2777" data-service="qa">
+            <div class="srv-img-wrap"><img src="assets/img/security.jpg" alt="Production support"></div>
+            <div class="srv-body">
+              <h3>Production Support &amp; Optimization</h3>
+              <p>Reducing defect backlogs, stabilizing production systems, and improving performance on applications already live.</p>
+              <ul><li>Production stabilization</li><li>Defect backlog reduction</li><li>Performance tuning</li><li>Continuous improvement cycles</li></ul>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
-
-    <div class="srv-card" style="--accent:#0EA5E9" data-service="mobile">
-      <div class="srv-img-wrap"><img src="assets/img/mobileapps.jpg" alt="Mobile Apps"></div>
-      <div class="srv-body">
-        <h3>Mobile App Development</h3>
-        <p>High-performance native and cross-platform mobile applications with intuitive UX.</p>
-        <ul><li>Native iOS (Swift) & Android (Kotlin)</li><li>Cross-platform: React Native, Flutter</li><li>App Store Optimization (ASO)</li><li>Push notifications, offline-first</li><li>Wearable & IoT companion apps</li></ul>
-      </div>
-    </div>
-
-    <div class="srv-card" style="--accent:#8B5CF6" data-service="ai">
-      <div class="srv-img-wrap"><img src="assets/img/ai.jpg" alt="AI"></div>
-      <div class="srv-body">
-        <h3>AI & Machine Learning</h3>
-        <p>Intelligent automation and data-driven insights for smarter decisions.</p>
-        <ul><li>NLP & chatbots</li><li>Computer vision & image recognition</li><li>Predictive analytics & forecasting</li><li>Recommendation engines</li><li>MLOps & model deployment</li></ul>
-      </div>
-    </div>
-
-    <div class="srv-card" style="--accent:#10B981" data-service="bi">
-      <div class="srv-img-wrap"><img src="assets/img/dashboards.jpg" alt="BI"></div>
-      <div class="srv-body">
-        <h3>Business Intelligence & Analytics</h3>
-        <p>Transform raw data into actionable insights with custom dashboards.</p>
-        <ul><li>Real-time dashboards & visualizations</li><li>Data warehouse & ETL pipelines</li><li>Custom reporting & KPI tracking</li><li>Self-service analytics platforms</li></ul>
-      </div>
-    </div>
-
-    <div class="srv-card" style="--accent:#F59E0B" data-service="enterprise">
-      <div class="srv-img-wrap"><img src="assets/img/enterprise.jpg" alt="Enterprise"></div>
-      <div class="srv-body">
-        <h3>Enterprise Solutions</h3>
-        <p>Custom ERP, CRM, and enterprise software tailored to your workflows.</p>
-        <ul><li>Custom ERP systems</li><li>CRM & customer management</li><li>Workflow automation & BPM</li><li>Document management</li><li>Enterprise integration (SAP, Salesforce)</li></ul>
-      </div>
-    </div>
-
-    <div class="srv-card" style="--accent:#06B6D4" data-service="saas">
-      <div class="srv-img-wrap"><img src="assets/img/saas.jpg" alt="SaaS"></div>
-      <div class="srv-body">
-        <h3>SaaS Platform Development</h3>
-        <p>Build scalable multi-tenant SaaS products with subscription billing.</p>
-        <ul><li>Multi-tenancy architecture</li><li>Subscription & billing management</li><li>API-first development</li><li>Usage metering & analytics</li><li>White-labeling frameworks</li></ul>
-      </div>
-    </div>
-
-    <div class="srv-card" style="--accent:#6366F1" data-service="api">
-      <div class="srv-img-wrap"><img src="assets/img/api.jpg" alt="API"></div>
-      <div class="srv-body">
-        <h3>API & Custom Integrations</h3>
-        <p>RESTful APIs, microservices, and integrations to connect your ecosystem.</p>
-        <ul><li>REST & GraphQL APIs</li><li>Microservices architecture</li><li>Third-party integrations</li><li>Webhooks & event-driven systems</li><li>API gateway & rate limiting</li></ul>
-      </div>
-    </div>
-
-    <div class="srv-card" style="--accent:#EF4444" data-service="security">
-      <div class="srv-img-wrap"><img src="assets/img/security.jpg" alt="Security"></div>
-      <div class="srv-body">
-        <h3>Cyber Security & DevSecOps</h3>
-        <p>Protect your digital assets with comprehensive security solutions.</p>
-        <ul><li>Penetration testing & vulnerability assessment</li><li>Security audit & compliance (GDPR, HIPAA)</li><li>DevSecOps pipeline integration</li><li>IAM & access management</li><li>Incident response planning</li></ul>
-      </div>
-    </div>
-
-    <div class="srv-card" style="--accent:#14B8A6" data-service="documentation">
-      <div class="srv-img-wrap"><img src="assets/img/documentation.jpg" alt="Docs"></div>
-      <div class="srv-body">
-        <h3>Documentation & Architecture</h3>
-        <p>Comprehensive technical documentation and architecture blueprints.</p>
-        <ul><li>API documentation (Swagger/OpenAPI)</li><li>System architecture & design docs</li><li>Technical specs & PRDs</li><li>Developer onboarding guides</li><li>Knowledge base & wiki setup</li></ul>
-      </div>
-    </div>
-
-    <div class="srv-card" style="--accent:#3B82F6" data-service="web">
-      <div class="srv-img-wrap"><img src="assets/img/optimize.jpg" alt="Web Development"></div>
-      <div class="srv-body">
-        <h3>Web Development</h3>
-        <p>Fast, responsive, and scalable websites and web apps built with modern frameworks.</p>
-        <ul><li>Progressive web apps (PWA)</li><li>React, Vue & Angular SPAs</li><li>Headless CMS & Jamstack</li><li>Performance & Core Web Vitals</li><li>Accessibility (WCAG) compliance</li></ul>
-      </div>
-    </div>
-
-    <div class="srv-card" style="--accent:#0891B2" data-service="cloud">
-      <div class="srv-img-wrap"><img src="assets/img/clarity.jpg" alt="Cloud Solutions"></div>
-      <div class="srv-body">
-        <h3>Cloud Solutions</h3>
-        <p>Cloud architecture, migration, and DevOps to scale reliably and cut infrastructure costs.</p>
-        <ul><li>AWS, Azure & GCP architecture</li><li>Cloud migration & modernization</li><li>Containers & Kubernetes</li><li>CI/CD & infrastructure as code</li><li>Cost optimization & monitoring</li></ul>
-      </div>
-    </div>
-
-    <div class="srv-card" style="--accent:#DB2777" data-service="qa">
-      <div class="srv-img-wrap"><img src="assets/img/security.jpg" alt="QA & Defect Resolution"></div>
-      <div class="srv-body">
-        <h3>QA & Defect Resolution</h3>
-        <p>Comprehensive testing and rapid defect resolution to ship reliable, bug-free software.</p>
-        <ul><li>Manual & automated testing</li><li>Regression & performance testing</li><li>Bug triage & root-cause analysis</li><li>Test automation frameworks</li><li>QA process & CI integration</li></ul>
-      </div>
-    </div>
-
   </div>
 
   <div style="text-align:center;padding:3rem 0">
@@ -175,12 +248,6 @@
       <span class="modal-badge">E-Commerce Development</span>
       <h2>Build a Digital Store That Converts Browsers Into Buyers</h2>
       <p>Transform your retail vision into a high-performance online platform that drives revenue and customer loyalty.</p>
-    </div>
-    <div class="modal-stats">
-      <div class="stat-item"><div class="stat-number">47%</div><div class="stat-label">Higher Conversion</div></div>
-      <div class="stat-item"><div class="stat-number">3.2x</div><div class="stat-label">Faster Checkout</div></div>
-      <div class="stat-item"><div class="stat-number">99.9%</div><div class="stat-label">Uptime SLA</div></div>
-      <div class="stat-item"><div class="stat-number">24/7</div><div class="stat-label">Support</div></div>
     </div>
     <div class="modal-section">
       <h3>Common E-Commerce Challenges</h3>
@@ -207,7 +274,7 @@
     <div class="modal-section">
       <h3>Our Guarantees</h3>
       <div class="guarantee-list">
-        <div class="guarantee-item"><span class="guarantee-icon">✓</span><strong>PCI DSS Compliant:</strong> Bank-level security for all payment transactions.</div>
+        <div class="guarantee-item"><span class="guarantee-icon">✓</span><strong>PCI DSS-Aligned:</strong> Bank-level security for all payment transactions.</div>
         <div class="guarantee-item"><span class="guarantee-icon">✓</span><strong>Scalable Infrastructure:</strong> Handle traffic spikes during sales without crashes.</div>
         <div class="guarantee-item"><span class="guarantee-icon">✓</span><strong>SEO Optimized:</strong> Built-in SEO best practices to drive organic traffic.</div>
         <div class="guarantee-item"><span class="guarantee-icon">✓</span><strong>Post-Launch Support:</strong> 6 months of free maintenance and updates included.</div>
@@ -229,12 +296,6 @@
       <span class="modal-badge">Mobile App Development</span>
       <h2>Turn Your Idea Into a High-Performance Mobile App</h2>
       <p>Build native and cross-platform apps that users love, with seamless UX and blazing-fast performance.</p>
-    </div>
-    <div class="modal-stats">
-      <div class="stat-item"><div class="stat-number">60%</div><div class="stat-label">Faster Launch</div></div>
-      <div class="stat-item"><div class="stat-number">4.8★</div><div class="stat-label">Avg App Rating</div></div>
-      <div class="stat-item"><div class="stat-number">200ms</div><div class="stat-label">Load Time</div></div>
-      <div class="stat-item"><div class="stat-number">100%</div><div class="stat-label">Native Feel</div></div>
     </div>
     <div class="modal-section">
       <h3>Common Mobile App Challenges</h3>
@@ -263,7 +324,7 @@
       <div class="guarantee-list">
         <div class="guarantee-item"><span class="guarantee-icon">✓</span><strong>Native Performance:</strong> 60 FPS animations and instant response times.</div>
         <div class="guarantee-item"><span class="guarantee-icon">✓</span><strong>App Store Success:</strong> We handle submission and resolve rejection issues.</div>
-        <div class="guarantee-item"><span class="guarantee-icon">✓</span><strong>Device Coverage:</strong> Tested on 50+ device models and OS versions.</div>
+        <div class="guarantee-item"><span class="guarantee-icon">✓</span><strong>Device Coverage:</strong> Tested across a wide range of real devices and OS versions.</div>
         <div class="guarantee-item"><span class="guarantee-icon">✓</span><strong>Post-Launch Updates:</strong> 3 months of free bug fixes and performance tuning.</div>
       </div>
     </div>
@@ -283,12 +344,6 @@
       <span class="modal-badge">AI & Machine Learning</span>
       <h2>Automate Decisions and Unlock Data-Driven Intelligence</h2>
       <p>Leverage AI and ML to automate workflows, predict outcomes, and gain competitive advantages.</p>
-    </div>
-    <div class="modal-stats">
-      <div class="stat-item"><div class="stat-number">85%</div><div class="stat-label">Task Automation</div></div>
-      <div class="stat-item"><div class="stat-number">93%</div><div class="stat-label">Prediction Accuracy</div></div>
-      <div class="stat-item"><div class="stat-number">40%</div><div class="stat-label">Cost Reduction</div></div>
-      <div class="stat-item"><div class="stat-number">10x</div><div class="stat-label">Faster Insights</div></div>
     </div>
     <div class="modal-section">
       <h3>Common AI/ML Challenges</h3>
@@ -317,7 +372,7 @@
       <div class="guarantee-list">
         <div class="guarantee-item"><span class="guarantee-icon">✓</span><strong>Production-Ready Models:</strong> Fully tested and optimized for real-world deployment.</div>
         <div class="guarantee-item"><span class="guarantee-icon">✓</span><strong>Scalable Architecture:</strong> Handle millions of predictions per day with auto-scaling.</div>
-        <div class="guarantee-item"><span class="guarantee-icon">✓</span><strong>Data Privacy Compliance:</strong> GDPR, HIPAA, and SOC 2 compliant data handling.</div>
+        <div class="guarantee-item"><span class="guarantee-icon">✓</span><strong>Data Privacy Focus:</strong> Data handling built to GDPR-, HIPAA-, and SOC 2-aligned standards.</div>
         <div class="guarantee-item"><span class="guarantee-icon">✓</span><strong>Ongoing Model Maintenance:</strong> 6 months of monitoring and retraining support.</div>
       </div>
     </div>
@@ -337,12 +392,6 @@
       <span class="modal-badge">Business Intelligence & Analytics</span>
       <h2>Transform Raw Data Into Strategic Business Insights</h2>
       <p>Build powerful dashboards and analytics systems that drive data-informed decisions across your organization.</p>
-    </div>
-    <div class="modal-stats">
-      <div class="stat-item"><div class="stat-number">5x</div><div class="stat-label">Faster Reporting</div></div>
-      <div class="stat-item"><div class="stat-number">100+</div><div class="stat-label">Data Sources</div></div>
-      <div class="stat-item"><div class="stat-number">Real-Time</div><div class="stat-label">Updates</div></div>
-      <div class="stat-item"><div class="stat-number">95%</div><div class="stat-label">Data Accuracy</div></div>
     </div>
     <div class="modal-section">
       <h3>Common BI & Analytics Challenges</h3>
@@ -371,7 +420,7 @@
       <div class="guarantee-list">
         <div class="guarantee-item"><span class="guarantee-icon">✓</span><strong>Sub-Second Query Performance:</strong> Optimized data models for lightning-fast insights.</div>
         <div class="guarantee-item"><span class="guarantee-icon">✓</span><strong>Unlimited Customization:</strong> Dashboards and reports tailored to your exact needs.</div>
-        <div class="guarantee-item"><span class="guarantee-icon">✓</span><strong>Data Security & Compliance:</strong> SOC 2, GDPR-compliant data handling and encryption.</div>
+        <div class="guarantee-item"><span class="guarantee-icon">✓</span><strong>Data Security Focus:</strong> Data handling and encryption built to SOC 2- and GDPR-aligned standards.</div>
         <div class="guarantee-item"><span class="guarantee-icon">✓</span><strong>Training & Onboarding:</strong> Comprehensive user training and documentation included.</div>
       </div>
     </div>
@@ -391,12 +440,6 @@
       <span class="modal-badge">Enterprise Solutions</span>
       <h2>Custom Enterprise Software That Scales With Your Business</h2>
       <p>Build ERP, CRM, and workflow automation systems tailored to your unique processes and requirements.</p>
-    </div>
-    <div class="modal-stats">
-      <div class="stat-item"><div class="stat-number">60%</div><div class="stat-label">Process Efficiency</div></div>
-      <div class="stat-item"><div class="stat-number">1000+</div><div class="stat-label">Concurrent Users</div></div>
-      <div class="stat-item"><div class="stat-number">99.95%</div><div class="stat-label">Uptime</div></div>
-      <div class="stat-item"><div class="stat-number">50%</div><div class="stat-label">Cost Savings</div></div>
     </div>
     <div class="modal-section">
       <h3>Common Enterprise Software Challenges</h3>
@@ -423,9 +466,9 @@
     <div class="modal-section">
       <h3>Our Guarantees</h3>
       <div class="guarantee-list">
-        <div class="guarantee-item"><span class="guarantee-icon">✓</span><strong>High Availability:</strong> 99.95% uptime SLA with redundancy and failover.</div>
-        <div class="guarantee-item"><span class="guarantee-icon">✓</span><strong>Unlimited Scalability:</strong> Architecture supports growth from 100 to 100,000 users.</div>
-        <div class="guarantee-item"><span class="guarantee-icon">✓</span><strong>Regulatory Compliance:</strong> SOX, GDPR, HIPAA compliance built into the platform.</div>
+        <div class="guarantee-item"><span class="guarantee-icon">✓</span><strong>High Availability:</strong> Redundant, failover-ready architecture.</div>
+        <div class="guarantee-item"><span class="guarantee-icon">✓</span><strong>Built to Scale:</strong> Architecture designed to grow from your first users to large-scale traffic.</div>
+        <div class="guarantee-item"><span class="guarantee-icon">✓</span><strong>Regulatory Awareness:</strong> Built with SOX, GDPR, and HIPAA requirements in mind.</div>
         <div class="guarantee-item"><span class="guarantee-icon">✓</span><strong>Change Management Support:</strong> Training, documentation, and adoption strategies included.</div>
       </div>
     </div>
@@ -445,12 +488,6 @@
       <span class="modal-badge">SaaS Platform Development</span>
       <h2>Build and Launch Your SaaS Product Faster</h2>
       <p>Turn your SaaS vision into a scalable, multi-tenant platform with subscription billing and enterprise features.</p>
-    </div>
-    <div class="modal-stats">
-      <div class="stat-item"><div class="stat-number">6 Months</div><div class="stat-label">To Market</div></div>
-      <div class="stat-item"><div class="stat-number">10K+</div><div class="stat-label">Concurrent Users</div></div>
-      <div class="stat-item"><div class="stat-number">99.99%</div><div class="stat-label">Uptime</div></div>
-      <div class="stat-item"><div class="stat-number">API-First</div><div class="stat-label">Architecture</div></div>
     </div>
     <div class="modal-section">
       <h3>Common SaaS Development Challenges</h3>
@@ -478,7 +515,7 @@
       <h3>Our Guarantees</h3>
       <div class="guarantee-list">
         <div class="guarantee-item"><span class="guarantee-icon">✓</span><strong>Production-Ready in 6 Months:</strong> Accelerated development with reusable SaaS components.</div>
-        <div class="guarantee-item"><span class="guarantee-icon">✓</span><strong>SOC 2 Compliance Path:</strong> Security controls and audit documentation included.</div>
+        <div class="guarantee-item"><span class="guarantee-icon">✓</span><strong>SOC 2-Aligned Practices:</strong> Security controls and audit-ready documentation included.</div>
         <div class="guarantee-item"><span class="guarantee-icon">✓</span><strong>Cost-Optimized Cloud:</strong> Architecture designed to maximize profit margins.</div>
         <div class="guarantee-item"><span class="guarantee-icon">✓</span><strong>Go-to-Market Support:</strong> Launch strategy, onboarding flows, and analytics setup.</div>
       </div>
@@ -499,12 +536,6 @@
       <span class="modal-badge">API & Custom Integrations</span>
       <h2>Connect Your Digital Ecosystem Seamlessly</h2>
       <p>Build robust APIs and integrations that enable your systems to communicate and share data effortlessly.</p>
-    </div>
-    <div class="modal-stats">
-      <div class="stat-item"><div class="stat-number">10K+</div><div class="stat-label">Requests/Sec</div></div>
-      <div class="stat-item"><div class="stat-number">50ms</div><div class="stat-label">Avg Response</div></div>
-      <div class="stat-item"><div class="stat-number">99.99%</div><div class="stat-label">API Uptime</div></div>
-      <div class="stat-item"><div class="stat-number">100+</div><div class="stat-label">Integrations</div></div>
     </div>
     <div class="modal-section">
       <h3>Common API & Integration Challenges</h3>
@@ -531,7 +562,7 @@
     <div class="modal-section">
       <h3>Our Guarantees</h3>
       <div class="guarantee-list">
-        <div class="guarantee-item"><span class="guarantee-icon">✓</span><strong>99.99% API Uptime:</strong> Highly available infrastructure with automatic failover.</div>
+        <div class="guarantee-item"><span class="guarantee-icon">✓</span><strong>High API Availability:</strong> Highly available infrastructure with automatic failover.</div>
         <div class="guarantee-item"><span class="guarantee-icon">✓</span><strong>Comprehensive Testing:</strong> Unit, integration, and load testing for all endpoints.</div>
         <div class="guarantee-item"><span class="guarantee-icon">✓</span><strong>Seamless Integrations:</strong> Pre-built connectors for Salesforce, SAP, QuickBooks, and more.</div>
         <div class="guarantee-item"><span class="guarantee-icon">✓</span><strong>Developer Support:</strong> 3 months of free API support and troubleshooting.</div>
@@ -553,12 +584,6 @@
       <span class="modal-badge">Cyber Security & DevSecOps</span>
       <h2>Protect Your Digital Assets From Evolving Threats</h2>
       <p>Comprehensive security assessments, penetration testing, and DevSecOps integration to safeguard your business.</p>
-    </div>
-    <div class="modal-stats">
-      <div class="stat-item"><div class="stat-number">Zero</div><div class="stat-label">Breaches</div></div>
-      <div class="stat-item"><div class="stat-number">24/7</div><div class="stat-label">Monitoring</div></div>
-      <div class="stat-item"><div class="stat-number">100%</div><div class="stat-label">Compliance</div></div>
-      <div class="stat-item"><div class="stat-number">&lt;1hr</div><div class="stat-label">Incident Response</div></div>
     </div>
     <div class="modal-section">
       <h3>Common Security Challenges</h3>
@@ -585,7 +610,7 @@
     <div class="modal-section">
       <h3>Our Guarantees</h3>
       <div class="guarantee-list">
-        <div class="guarantee-item"><span class="guarantee-icon">✓</span><strong>Certified Security Experts:</strong> CISSP, CEH, and OSCP certified professionals.</div>
+        <div class="guarantee-item"><span class="guarantee-icon">✓</span><strong>Security-First Engineering:</strong> Security review built into how we design and build, not added as an afterthought.</div>
         <div class="guarantee-item"><span class="guarantee-icon">✓</span><strong>Detailed Reporting:</strong> Comprehensive vulnerability reports with prioritized remediation steps.</div>
         <div class="guarantee-item"><span class="guarantee-icon">✓</span><strong>Incident Response Plan:</strong> Documented playbooks for security incidents and data breaches.</div>
         <div class="guarantee-item"><span class="guarantee-icon">✓</span><strong>Ongoing Support:</strong> Quarterly security reviews and continuous monitoring services.</div>
@@ -607,12 +632,6 @@
       <span class="modal-badge">Documentation & Architecture</span>
       <h2>Crystal-Clear Documentation That Accelerates Development</h2>
       <p>Comprehensive technical documentation, system architecture blueprints, and knowledge bases for seamless collaboration.</p>
-    </div>
-    <div class="modal-stats">
-      <div class="stat-item"><div class="stat-number">70%</div><div class="stat-label">Faster Onboarding</div></div>
-      <div class="stat-item"><div class="stat-number">50%</div><div class="stat-label">Fewer Support Tickets</div></div>
-      <div class="stat-item"><div class="stat-number">100%</div><div class="stat-label">Coverage</div></div>
-      <div class="stat-item"><div class="stat-number">Always</div><div class="stat-label">Up-to-Date</div></div>
     </div>
     <div class="modal-section">
       <h3>Common Documentation Challenges</h3>
@@ -662,12 +681,6 @@
       <h2>Fast, Scalable Websites and Web Apps That Convert</h2>
       <p>Modern, responsive web experiences built for speed, accessibility, and growth.</p>
     </div>
-    <div class="modal-stats">
-      <div class="stat-item"><div class="stat-number">90+</div><div class="stat-label">Lighthouse Score</div></div>
-      <div class="stat-item"><div class="stat-number">&lt;1s</div><div class="stat-label">Load Time</div></div>
-      <div class="stat-item"><div class="stat-number">100%</div><div class="stat-label">Responsive</div></div>
-      <div class="stat-item"><div class="stat-number">WCAG</div><div class="stat-label">Accessible</div></div>
-    </div>
     <div class="modal-section">
       <h3>Challenges We Solve</h3>
       <div class="challenge-grid">
@@ -716,12 +729,6 @@
       <h2>Scale Reliably and Cut Infrastructure Costs</h2>
       <p>Cloud architecture, migration, and DevOps that make your systems resilient and cost-efficient.</p>
     </div>
-    <div class="modal-stats">
-      <div class="stat-item"><div class="stat-number">40%</div><div class="stat-label">Cost Savings</div></div>
-      <div class="stat-item"><div class="stat-number">99.99%</div><div class="stat-label">Uptime</div></div>
-      <div class="stat-item"><div class="stat-number">Auto</div><div class="stat-label">Scaling</div></div>
-      <div class="stat-item"><div class="stat-number">Zero</div><div class="stat-label">Downtime Deploys</div></div>
-    </div>
     <div class="modal-section">
       <h3>Challenges We Solve</h3>
       <div class="challenge-grid">
@@ -747,7 +754,7 @@
     <div class="modal-section">
       <h3>Our Guarantees</h3>
       <div class="guarantee-list">
-        <div class="guarantee-item"><span class="guarantee-icon">✓</span><strong>High Availability:</strong> 99.99% uptime architecture.</div>
+        <div class="guarantee-item"><span class="guarantee-icon">✓</span><strong>High-Availability Architecture:</strong> Built for demanding uptime requirements.</div>
         <div class="guarantee-item"><span class="guarantee-icon">✓</span><strong>Zero-Downtime Deploys:</strong> Blue-green and canary releases.</div>
         <div class="guarantee-item"><span class="guarantee-icon">✓</span><strong>Secure by Design:</strong> Hardened, compliant infrastructure.</div>
         <div class="guarantee-item"><span class="guarantee-icon">✓</span><strong>Cost Transparency:</strong> Clear reporting and optimization.</div>
@@ -769,12 +776,6 @@
       <span class="modal-badge">QA & Defect Resolution</span>
       <h2>Ship Reliable, Bug-Free Software With Confidence</h2>
       <p>Comprehensive testing and rapid defect resolution that protect your users and reputation.</p>
-    </div>
-    <div class="modal-stats">
-      <div class="stat-item"><div class="stat-number">90%</div><div class="stat-label">Test Coverage</div></div>
-      <div class="stat-item"><div class="stat-number">70%</div><div class="stat-label">Fewer Bugs</div></div>
-      <div class="stat-item"><div class="stat-number">&lt;24h</div><div class="stat-label">Critical Fixes</div></div>
-      <div class="stat-item"><div class="stat-number">Auto</div><div class="stat-label">Regression</div></div>
     </div>
     <div class="modal-section">
       <h3>Challenges We Solve</h3>
@@ -802,7 +803,7 @@
       <h3>Our Guarantees</h3>
       <div class="guarantee-list">
         <div class="guarantee-item"><span class="guarantee-icon">✓</span><strong>High Coverage:</strong> Thorough automated and manual testing.</div>
-        <div class="guarantee-item"><span class="guarantee-icon">✓</span><strong>Fast Turnaround:</strong> Critical defects fixed within 24 hours.</div>
+        <div class="guarantee-item"><span class="guarantee-icon">✓</span><strong>Fast Turnaround:</strong> Critical defects prioritized and fixed quickly.</div>
         <div class="guarantee-item"><span class="guarantee-icon">✓</span><strong>CI Integration:</strong> Quality gates in your pipeline.</div>
         <div class="guarantee-item"><span class="guarantee-icon">✓</span><strong>Clear Reporting:</strong> Transparent test and defect reports.</div>
       </div>
@@ -972,5 +973,5 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 </script>
 <script src="js/main.js?v=4"></script>
-<script src="js/seo-performance.js?v=1"></script><script src="js/accessibility.js?v=1"></script></body>
+<script src="js/seo-performance.js?v=1"></script><script src="js/accessibility.js?v=1"></script><script src="js/components.js?v=1"></script></body>
 </html>

@@ -191,6 +191,9 @@
   position: relative;
   padding: 2rem 0;
 }
+.journey-timeline.is-empty::before {
+  content: none;
+}
 .journey-timeline::before {
   content: '';
   position: absolute;

@@ -24,10 +24,11 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css?v=3">
-  <link rel="stylesheet" href="css/home.css?v=2">
+  <link rel="stylesheet" href="css/home.css?v=3">
   <link rel="stylesheet" href="css/pages.css?v=3">
   <link rel="stylesheet" href="css/services.css?v=3">
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"Organization","name":"AskABD Technologies","url":"https://www.askabd.com","logo":"https://www.askabd.com/assets/logo.png","description":"Business transformation and technology consulting. Web development, mobile apps, AI solutions, and digital transformation services.","address":{"@type":"PostalAddress","addressLocality":"Hyderabad","addressRegion":"Telangana","addressCountry":"IN"},"contactPoint":{"@type":"ContactPoint","telephone":"+91-83090-78107","contactType":"sales","email":"hello@askabd.com"},"sameAs":["https://www.linkedin.com/in/ask-abd-9721b241a/","https://x.com/askabd18","https://www.facebook.com/profile.php?id=61591543676003"]}</script>
+  <link rel="stylesheet" href="css/components.css?v=1">
 </head>
 <body>
 
@@ -44,12 +45,13 @@
       <a href="industries.html">Industries</a>
       <a href="portfolio.html">Portfolio</a>
       <a href="about.html">About Us</a>
-      <a href="contact.html">Resources</a>
+      <a href="contact.html">Contact</a>
     </div>
     <a href="contact.html"><button class="btn-primary">Get Free Consultation &rarr;</button></a>
     <button class="hamburger"><span></span><span></span><span></span></button>
   </div>
 </nav>
+<nav class="breadcrumb" aria-label="Breadcrumb"><a href="index.html">Home</a><span class="crumb-sep">/</span><a href="solutions.html">Solutions</a><span class="crumb-sep">/</span><span class="crumb-current">E-Commerce Development</span></nav>
 
 <!-- Page Header -->
 <section class="page-header">
@@ -126,7 +128,7 @@
         <div class="srv-icon" style="font-size: 3rem;">⚡</div>
         <div class="srv-body">
           <h3 style="color: #10B981;">Optimized Checkout Flow</h3>
-          <p>We design streamlined, one-page checkouts with guest checkout options, progress indicators, and auto-fill features to reduce cart abandonment by up to 35%.</p>
+          <p>We design streamlined, one-page checkouts with guest checkout options, progress indicators, and auto-fill features to keep customers moving toward purchase instead of dropping off.</p>
           <ul>
             <li>One-page & guest checkout</li>
             <li>Multiple payment options</li>
@@ -136,7 +138,8 @@
         </div>
       </a>
 
-      <div class="srv-card" style="--accent:#3B82F6;" data-service="ecom-payment">
+
+      <a href="ecommerce-payments.html" class="srv-card" style="--accent:#3B82F6; text-decoration:none;">
         <div class="srv-icon" style="font-size: 3rem;">💳</div>
         <div class="srv-body">
           <h3 style="color: #3B82F6;">Secure Payment Integration</h3>
@@ -148,9 +151,9 @@
             <li>Digital wallets (Apple Pay, Google Pay)</li>
           </ul>
         </div>
-      </div>
+      </a>
 
-      <div class="srv-card" style="--accent:#8B5CF6;" data-service="ecom-mobile">
+      <a href="ecommerce-mobile.html" class="srv-card" style="--accent:#8B5CF6; text-decoration:none;">
         <div class="srv-icon" style="font-size: 3rem;">📱</div>
         <div class="srv-body">
           <h3 style="color: #8B5CF6;">Mobile-First Design</h3>
@@ -162,9 +165,9 @@
             <li>App-like experience</li>
           </ul>
         </div>
-      </div>
+      </a>
 
-      <div class="srv-card" style="--accent:#F59E0B;" data-service="ecom-inventory">
+      <a href="ecommerce-inventory.html" class="srv-card" style="--accent:#F59E0B; text-decoration:none;">
         <div class="srv-icon" style="font-size: 3rem;">📦</div>
         <div class="srv-body">
           <h3 style="color: #F59E0B;">Smart Inventory Management</h3>
@@ -176,9 +179,9 @@
             <li>Supplier integration</li>
           </ul>
         </div>
-      </div>
+      </a>
 
-      <div class="srv-card" style="--accent:#EC4899;" data-service="ecom-ai">
+      <a href="ecommerce-personalization.html" class="srv-card" style="--accent:#EC4899; text-decoration:none;">
         <div class="srv-icon" style="font-size: 3rem;">🤖</div>
         <div class="srv-body">
           <h3 style="color: #EC4899;">AI-Powered Personalization</h3>
@@ -190,9 +193,9 @@
             <li>Behavior-based marketing</li>
           </ul>
         </div>
-      </div>
+      </a>
 
-      <div class="srv-card" style="--accent:#06B6D4;" data-service="ecom-performance">
+      <a href="ecommerce-performance.html" class="srv-card" style="--accent:#06B6D4; text-decoration:none;">
         <div class="srv-icon" style="font-size: 3rem;">🚀</div>
         <div class="srv-body">
           <h3 style="color: #06B6D4;">Performance Optimization</h3>
@@ -204,7 +207,7 @@
             <li>Caching strategies</li>
           </ul>
         </div>
-      </div>
+      </a>
     </div>
   </div>
 </section>
@@ -221,10 +224,10 @@
     <div class="content-grid" style="margin-top: 3rem;">
       <div class="content-main">
         <h3>🛡️ Security First</h3>
-        <p>Your customers' data is protected with SSL certificates, encrypted transactions, secure authentication, and regular security audits. We implement OWASP Top 10 protections and comply with GDPR/PCI-DSS standards.</p>
+        <p>Your customers' data is protected with SSL certificates, encrypted transactions, secure authentication, and regular security reviews. We implement OWASP Top 10 protections and build to GDPR- and PCI-DSS-aligned standards.</p>
 
         <h3>📈 Scalability Built-In</h3>
-        <p>Your store can handle traffic spikes during sales events. We build on cloud infrastructure (AWS/Azure) with auto-scaling, load balancing, and CDN integration to ensure smooth performance from 100 to 100,000 concurrent users.</p>
+        <p>Your store can handle traffic spikes during sales events. We build on cloud infrastructure (AWS/Azure) with auto-scaling, load balancing, and CDN integration designed to keep performance smooth as your traffic grows.</p>
 
         <h3>🔍 SEO Optimized</h3>
         <p>Every page is optimized for search engines with clean URLs, structured data markup, fast load times, mobile responsiveness, and XML sitemaps. We follow Google's Core Web Vitals for maximum visibility.</p>
@@ -312,7 +315,7 @@
     </div>
 
     <div class="srv-grid" style="margin-top: 3rem; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));">
-      <div class="srv-card" style="--accent:#96BF48;" data-service="ecom-shopify">
+      <a href="ecommerce-shopify.html" class="srv-card" style="--accent:#96BF48; text-decoration:none;">
         <div class="srv-icon" style="font-size: 2.5rem;">🛍️</div>
         <div class="srv-body">
           <h3>Shopify Development</h3>
@@ -324,9 +327,9 @@
             <li>Migration from other platforms</li>
           </ul>
         </div>
-      </div>
+      </a>
 
-      <div class="srv-card" style="--accent:#7F54B3;" data-service="ecom-woocommerce">
+      <a href="ecommerce-woocommerce.html" class="srv-card" style="--accent:#7F54B3; text-decoration:none;">
         <div class="srv-icon" style="font-size: 2.5rem;">🔧</div>
         <div class="srv-body">
           <h3>WooCommerce Development</h3>
@@ -338,9 +341,9 @@
             <li>Performance optimization</li>
           </ul>
         </div>
-      </div>
+      </a>
 
-      <div class="srv-card" style="--accent:#FF6B35;" data-service="ecom-magento">
+      <a href="ecommerce-magento.html" class="srv-card" style="--accent:#FF6B35; text-decoration:none;">
         <div class="srv-icon" style="font-size: 2.5rem;">⚙️</div>
         <div class="srv-body">
           <h3>Magento Development</h3>
@@ -352,9 +355,9 @@
             <li>High-performance optimization</li>
           </ul>
         </div>
-      </div>
+      </a>
 
-      <div class="srv-card" style="--accent:#00D9FF;" data-service="ecom-custom">
+      <a href="ecommerce-custom.html" class="srv-card" style="--accent:#00D9FF; text-decoration:none;">
         <div class="srv-icon" style="font-size: 2.5rem;">💻</div>
         <div class="srv-body">
           <h3>Custom E-Commerce</h3>
@@ -366,37 +369,7 @@
             <li>No platform limitations</li>
           </ul>
         </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- Success Metrics -->
-<section class="content-section" style="padding: 5rem 0;">
-  <div class="content-container">
-    <div class="section-head center">
-      <div class="tag-blue">PROVEN RESULTS</div>
-      <h2 class="sec-title">Success Metrics Our Clients Achieve</h2>
-      <p style="color: #94A3B8; max-width: 700px; margin: 0 auto;">Real outcomes from our e-commerce solutions</p>
-    </div>
-
-    <div class="stats-row" style="margin-top: 3rem; display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 2rem;">
-      <div class="stat">
-        <strong style="color: #10B981;">35%</strong>
-        <span>Lower Cart Abandonment</span>
-      </div>
-      <div class="stat">
-        <strong style="color: #3B82F6;">2.3x</strong>
-        <span>Higher Conversion Rate</span>
-      </div>
-      <div class="stat">
-        <strong style="color: #8B5CF6;">60%</strong>
-        <span>More Mobile Sales</span>
-      </div>
-      <div class="stat">
-        <strong style="color: #F59E0B;">50%</strong>
-        <span>Faster Load Times</span>
-      </div>
+      </a>
     </div>
   </div>
 </section>
@@ -416,18 +389,6 @@
     </div>
   </div>
 </section>
-
-<!-- SOLUTION MODALS -->
-<div id="ecom-checkout-modal" class="service-modal"></div>
-<div id="ecom-payment-modal" class="service-modal"></div>
-<div id="ecom-mobile-modal" class="service-modal"></div>
-<div id="ecom-inventory-modal" class="service-modal"></div>
-<div id="ecom-ai-modal" class="service-modal"></div>
-<div id="ecom-performance-modal" class="service-modal"></div>
-<div id="ecom-shopify-modal" class="service-modal"></div>
-<div id="ecom-woocommerce-modal" class="service-modal"></div>
-<div id="ecom-magento-modal" class="service-modal"></div>
-<div id="ecom-custom-modal" class="service-modal"></div>
 
 <footer class="footer">
   <div class="footer-top">
@@ -496,6 +457,5 @@
   </div>
 </footer>
 <script src="js/main.js?v=4"></script>
-<script src="js/ecommerce-modals.js?v=1"></script>
-<script src="js/seo-performance.js?v=1"></script><script src="js/accessibility.js?v=1"></script></body>
+<script src="js/seo-performance.js?v=1"></script><script src="js/accessibility.js?v=1"></script><script src="js/components.js?v=1"></script></body>
 </html>

@@ -1,5 +1,8 @@
-// Service Page Enhancements - Adds Root Cause, Business Benefits, and Related sections
+// Service Page Enhancements - Adds Root Cause and Related sections
 // This file is loaded on all service pages and dynamically inserts missing consulting sections.
+// Note: a "Business Benefits" section with fabricated ROI metrics (e.g. "40% Faster
+// Time to Market", "93% Prediction Accuracy") previously existed here and was removed —
+// AskABD has no verified data to support page-specific performance claims like these.
 
 (function() {
   var SERVICE_DATA = {
@@ -15,12 +18,6 @@
           {icon:'📱',t:'Desktop-First Thinking',d:'Building for large screens then struggling to retrofit mobile support.'}
         ]
       },
-      benefits: [
-        {metric:'40%',label:'Faster Time to Market',desc:'Modern frameworks and reusable components accelerate development.'},
-        {metric:'3x',label:'More Organic Traffic',desc:'SEO-optimized architecture improves search engine visibility.'},
-        {metric:'60%',label:'Lower Maintenance Cost',desc:'Clean code and modern stack reduce ongoing technical debt.'},
-        {metric:'25%',label:'Higher Conversion Rate',desc:'Performance optimization and UX improvements drive more actions.'}
-      ],
       related: {
         services: [
           {name:'Mobile App Development',href:'mobile-app-development.html'},
@@ -50,12 +47,6 @@
           {icon:'📈',t:'No Growth Strategy',d:'Building the app without planning for user acquisition and retention.'}
         ]
       },
-      benefits: [
-        {metric:'50%',label:'Faster Development',desc:'Cross-platform frameworks reduce build time without sacrificing quality.'},
-        {metric:'4.8★',label:'User Satisfaction',desc:'UX-first design delivers apps users love to use daily.'},
-        {metric:'70%',label:'Code Reuse',desc:'Shared codebase across platforms cuts maintenance in half.'},
-        {metric:'3x',label:'User Engagement',desc:'Push notifications and offline mode keep users coming back.'}
-      ],
       related: {
         services: [
           {name:'Web Development',href:'web-development.html'},
@@ -85,12 +76,6 @@
           {icon:'📏',t:'Wrong Problem Framing',d:'Applying complex ML where simple rules or analytics would suffice.'}
         ]
       },
-      benefits: [
-        {metric:'85%',label:'Task Automation',desc:'Repetitive manual processes handled automatically with high accuracy.'},
-        {metric:'40%',label:'Cost Reduction',desc:'Intelligent automation reducing operational overhead significantly.'},
-        {metric:'10x',label:'Faster Insights',desc:'Pattern recognition that would take humans weeks delivered in minutes.'},
-        {metric:'93%',label:'Prediction Accuracy',desc:'Custom models tuned to your specific data and business context.'}
-      ],
       related: {
         services: [
           {name:'Business Intelligence',href:'business-intelligence.html'},
@@ -120,12 +105,6 @@
           {icon:'🔄',t:'Stale Data',d:'Reports based on batch updates from yesterday rather than real-time feeds.'}
         ]
       },
-      benefits: [
-        {metric:'5x',label:'Faster Reporting',desc:'Self-service analytics eliminating the wait for IT-built reports.'},
-        {metric:'30%',label:'Better Decisions',desc:'Data-driven insights reducing guesswork in strategy and operations.'},
-        {metric:'Real-Time',label:'Data Freshness',desc:'Live dashboards showing current state, not yesterday\'s snapshot.'},
-        {metric:'60%',label:'Lower BI Costs',desc:'Custom solutions with lower TCO than enterprise platform licenses.'}
-      ],
       related: {
         services: [
           {name:'AI Solutions',href:'ai-solutions.html'},
@@ -155,12 +134,6 @@
           {icon:'🔗',t:'Vendor Lock-In',d:'Over-reliance on proprietary services making future flexibility impossible.'}
         ]
       },
-      benefits: [
-        {metric:'99.99%',label:'Uptime',desc:'High-availability architecture eliminating costly downtime events.'},
-        {metric:'40%',label:'Cost Reduction',desc:'Right-sizing, reserved instances, and auto-scaling cutting waste.'},
-        {metric:'10x',label:'Faster Deploys',desc:'CI/CD pipelines enabling multiple releases per day safely.'},
-        {metric:'Zero',label:'Downtime Deploys',desc:'Blue-green and canary strategies for risk-free releases.'}
-      ],
       related: {
         services: [
           {name:'Web Development',href:'web-development.html'},
@@ -190,12 +163,6 @@
           {icon:'📊',t:'No Metrics',d:'No visibility into defect trends, recurrence patterns, or resolution times.'}
         ]
       },
-      benefits: [
-        {metric:'80%',label:'Fewer Regressions',desc:'Root cause fixes and test coverage prevent defects from returning.'},
-        {metric:'3x',label:'Faster Resolution',desc:'Structured triage and debugging processes cut fix time dramatically.'},
-        {metric:'95%',label:'Test Coverage',desc:'Comprehensive automated testing catching issues before production.'},
-        {metric:'50%',label:'Less Firefighting',desc:'Proactive quality improvements reducing emergency fix cycles.'}
-      ],
       related: {
         services: [
           {name:'Web Development',href:'web-development.html'},
@@ -225,12 +192,6 @@
           {icon:'👥',t:'No Ownership',d:'Nobody responsible for keeping documentation accurate and current.'}
         ]
       },
-      benefits: [
-        {metric:'50%',label:'Faster Onboarding',desc:'New team members productive in days instead of weeks.'},
-        {metric:'70%',label:'Fewer Support Tickets',desc:'Self-service documentation reducing repetitive questions.'},
-        {metric:'3x',label:'Development Speed',desc:'Clear API docs and architecture guides preventing rework.'},
-        {metric:'100%',label:'Compliance Ready',desc:'Audit-ready documentation meeting regulatory requirements.'}
-      ],
       related: {
         services: [
           {name:'API Integration',href:'api-integration.html'},
@@ -260,12 +221,6 @@
           {icon:'🔧',t:'Manual Processes',d:'Human intervention required for data sync, retry, and error handling.'}
         ]
       },
-      benefits: [
-        {metric:'90%',label:'Less Manual Data Entry',desc:'Automated sync eliminating error-prone manual transfers.'},
-        {metric:'Real-Time',label:'Data Availability',desc:'Systems connected with event-driven, near-instant updates.'},
-        {metric:'99.9%',label:'API Uptime',desc:'Reliable, monitored integrations with automatic failover.'},
-        {metric:'5x',label:'Faster Integrations',desc:'Reusable patterns and middleware accelerating new connections.'}
-      ],
       related: {
         services: [
           {name:'Cloud Solutions',href:'cloud-solutions.html'},
@@ -295,12 +250,6 @@
           {icon:'📈',t:'Cannot Scale',d:'Architecture that works for 10 customers but breaks at 1,000.'}
         ]
       },
-      benefits: [
-        {metric:'6 Mo',label:'Time to Market',desc:'Reusable platform components accelerate initial launch.'},
-        {metric:'80%',label:'Lower Infra Cost',desc:'Multi-tenant architecture sharing resources efficiently.'},
-        {metric:'Zero',label:'Revenue Leakage',desc:'Automated billing and usage tracking capturing every transaction.'},
-        {metric:'10x',label:'Scale Ready',desc:'Architecture proven to handle 10x growth without redesign.'}
-      ],
       related: {
         services: [
           {name:'Cloud Solutions',href:'cloud-solutions.html'},
@@ -330,12 +279,6 @@
           {icon:'🔐',t:'Compliance Burden',d:'Regulatory requirements discovered mid-project causing costly rework.'}
         ]
       },
-      benefits: [
-        {metric:'60%',label:'Process Efficiency',desc:'Automated workflows eliminating manual steps and bottlenecks.'},
-        {metric:'50%',label:'Cost Savings',desc:'Replacing expensive legacy licenses with custom, owned solutions.'},
-        {metric:'1000+',label:'Concurrent Users',desc:'Architecture built for enterprise-scale user loads from day one.'},
-        {metric:'99.95%',label:'Uptime',desc:'High-availability infrastructure for mission-critical operations.'}
-      ],
       related: {
         services: [
           {name:'Cloud Solutions',href:'cloud-solutions.html'},
@@ -375,23 +318,6 @@
       '</div></section>';
   }
 
-  // Build Business Benefits section HTML
-  function buildBenefits(benefits) {
-    var cards = benefits.map(function(b) {
-      return '<div class="highlight-box" style="text-align:center;">' +
-        '<h4 style="font-size:2rem;color:#10B981;margin-bottom:0.25rem;">' + b.metric + '</h4>' +
-        '<p style="color:#E2E8F0;font-weight:600;margin-bottom:0.5rem;">' + b.label + '</p>' +
-        '<p style="font-size:0.85rem;">' + b.desc + '</p></div>';
-    }).join('');
-    return '<section class="content-section" style="padding:5rem 0;">' +
-      '<div class="content-container">' +
-        '<div class="section-head center"><div class="tag-blue">BUSINESS IMPACT</div>' +
-        '<h2 class="sec-title">Business Benefits You Can Measure</h2>' +
-        '<p style="color:#94A3B8;max-width:700px;margin:0 auto;">Outcomes that impact your bottom line, not just technical deliverables</p></div>' +
-        '<div class="highlight-boxes" style="margin-top:3rem;">' + cards + '</div>' +
-      '</div></section>';
-  }
-
   // Build Related section HTML
   function buildRelated(rel) {
     function linkList(items) {
@@ -421,13 +347,9 @@
 
     // Find the OUR SOLUTION section (insert Root Cause before it)
     var solutionSection = null;
-    var ctaSection = null;
     sections.forEach(function(s) {
       var tag = s.querySelector('.tag-blue');
-      if (tag) {
-        if (tag.textContent.trim() === 'OUR SOLUTION') solutionSection = s;
-        if (tag.textContent.trim() === 'PROVEN RESULTS') ctaSection = s;
-      }
+      if (tag && tag.textContent.trim() === 'OUR SOLUTION') solutionSection = s;
     });
 
     // Insert Root Cause before OUR SOLUTION
@@ -445,13 +367,6 @@
         finalCta = s;
       }
     });
-
-    // Insert Benefits before the final CTA
-    if (finalCta && data.benefits) {
-      var bDiv = document.createElement('div');
-      bDiv.innerHTML = buildBenefits(data.benefits);
-      finalCta.parentNode.insertBefore(bDiv.firstElementChild, finalCta);
-    }
 
     // Insert Related section before the final CTA
     if (finalCta && data.related) {

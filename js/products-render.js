@@ -4,8 +4,22 @@ document.addEventListener('DOMContentLoaded', function() {
   var modalsContainer = document.getElementById('product-modals');
   if (!grid || !modalsContainer || typeof ASKABD_PRODUCTS === 'undefined') return;
 
+  // Guard: js/products-data.js ships with a single 'placeholder-product' demo
+  // entry until real, approved product content is added. Never render its
+  // literal "[Placeholder]" / "[TBD]" text to real visitors — show an honest
+  // "coming soon" state instead.
+  var realProducts = ASKABD_PRODUCTS.filter(function(p) { return p.id !== 'placeholder-product'; });
+  if (realProducts.length === 0) {
+    grid.innerHTML = '<div class="highlight-box" style="grid-column:1/-1;text-align:center;padding:3rem 2rem;">' +
+      '<h3 style="margin-bottom:0.75rem;">More Products Coming Soon</h3>' +
+      '<p style="color:#94A3B8;max-width:500px;margin:0 auto;">We\'re preparing details on the platforms we build internally. Check back soon, or ' +
+      '<a href="contact.html" style="color:#60A5FA;">get in touch</a> if you\'d like to discuss similar platform work for your business.</p>' +
+      '</div>';
+    return;
+  }
+
   // Render product cards
-  grid.innerHTML = ASKABD_PRODUCTS.map(function(p) {
+  grid.innerHTML = realProducts.map(function(p) {
     var statusClass = p.status === 'Completed' ? 'status-done' :
                       p.status === 'In Progress' ? 'status-progress' : 'status-planned';
     return '<div class="product-card" data-product="' + p.id + '" style="--accent:' + p.accent + '">' +

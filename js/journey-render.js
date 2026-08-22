@@ -5,6 +5,25 @@ document.addEventListener('DOMContentLoaded', function() {
   var modalsEl = document.getElementById('milestone-modals');
   if (!statsEl || !timelineEl || !modalsEl || typeof ASKABD_MILESTONES === 'undefined') return;
 
+  // Guard: js/products-data.js ships with a single placeholder demo milestone
+  // until real, approved milestone content is added. Never render its
+  // literal "[Placeholder]" text or fabricated-looking progress stats to
+  // real visitors — show an honest "coming soon" state instead.
+  var realMilestones = ASKABD_MILESTONES.filter(function(m) {
+    return typeof m.title === 'string' && m.title.indexOf('[Placeholder]') !== 0;
+  });
+  if (realMilestones.length === 0) {
+    statsEl.style.display = 'none';
+    timelineEl.classList.add('is-empty');
+    timelineEl.innerHTML = '<div class="highlight-box" style="grid-column:1/-1;text-align:center;padding:3rem 2rem;">' +
+      '<h3 style="margin-bottom:0.75rem;">Timeline Coming Soon</h3>' +
+      '<p style="color:#94A3B8;max-width:500px;margin:0 auto;">We\'re preparing details on our engineering milestones. Check back soon, or ' +
+      '<a href="contact.html" style="color:#60A5FA;">get in touch</a> if you\'d like to discuss a similar engineering approach for your business.</p>' +
+      '</div>';
+    return;
+  }
+  ASKABD_MILESTONES = realMilestones;
+
   // Calculate stats
   var total = ASKABD_MILESTONES.length;
   var completed = ASKABD_MILESTONES.filter(function(m) { return m.status === 'Completed'; }).length;

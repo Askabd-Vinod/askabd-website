@@ -1,0 +1,181 @@
+/* ============================================================
+   AskABD Shared Component Library — Phase 2 additions
+   Breadcrumb, Accordion, Tabs. Reuses the existing design tokens
+   from style.css (--navy-dark, --blue, --blue-bright, --text-gray,
+   --text-light) and the existing scroll-reveal animation system in
+   main.js rather than introducing a competing one.
+   ============================================================ */
+
+/* ---------- Breadcrumb ---------- */
+/* Answers "where am I?" — previously present on zero pages. */
+.breadcrumb {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 6.5rem 1.5rem 0;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  font-size: 0.82rem;
+  color: var(--text-gray);
+  position: relative;
+  z-index: 2;
+}
+.breadcrumb a {
+  color: var(--text-gray);
+  transition: color 0.2s;
+}
+.breadcrumb a:hover { color: var(--blue-bright); }
+.breadcrumb .crumb-sep {
+  color: rgba(148, 163, 184, 0.4);
+}
+.breadcrumb .crumb-current {
+  color: var(--text-light);
+  font-weight: 600;
+}
+@media (max-width: 768px) {
+  .breadcrumb { padding-top: 5.5rem; font-size: 0.76rem; }
+}
+
+/* ---------- Accordion ---------- */
+.accordion { display: flex; flex-direction: column; gap: 0.85rem; }
+.accordion-item {
+  background: rgba(20, 27, 62, 0.5);
+  border: 1px solid rgba(74, 144, 226, 0.18);
+  border-radius: 12px;
+  overflow: hidden;
+  transition: border-color 0.25s;
+}
+.accordion-item.open { border-color: rgba(59, 130, 246, 0.45); }
+.accordion-trigger {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  background: transparent;
+  border: none;
+  color: var(--text-light);
+  font-size: 1.02rem;
+  font-weight: 700;
+  text-align: left;
+  padding: 1.25rem 1.5rem;
+  cursor: pointer;
+  font-family: inherit;
+}
+.accordion-trigger:focus-visible {
+  outline: 2px solid var(--blue-bright);
+  outline-offset: -2px;
+}
+.accordion-icon {
+  flex-shrink: 0;
+  width: 22px;
+  height: 22px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  border: 1.5px solid rgba(96, 165, 250, 0.5);
+  color: var(--blue-bright);
+  font-size: 0.85rem;
+  transition: transform 0.3s ease;
+}
+.accordion-item.open .accordion-icon { transform: rotate(45deg); }
+.accordion-panel {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.35s cubic-bezier(0.22, 1, 0.36, 1);
+}
+.accordion-panel-inner {
+  padding: 0 1.5rem 1.5rem;
+  color: var(--text-gray);
+  font-size: 0.95rem;
+  line-height: 1.75;
+}
+@media (prefers-reduced-motion: reduce) {
+  .accordion-panel { transition: none; }
+}
+
+/* ---------- Tabs ---------- */
+.tabs { display: flex; flex-direction: column; gap: 1.75rem; }
+.tabs-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  border-bottom: 1px solid rgba(74, 144, 226, 0.18);
+  padding-bottom: 0;
+}
+.tabs-nav button {
+  background: transparent;
+  border: none;
+  border-bottom: 2px solid transparent;
+  color: var(--text-gray);
+  font-family: inherit;
+  font-size: 0.92rem;
+  font-weight: 600;
+  padding: 0.85rem 1.1rem;
+  cursor: pointer;
+  transition: color 0.2s, border-color 0.2s;
+}
+.tabs-nav button:hover { color: var(--text-light); }
+.tabs-nav button.active {
+  color: var(--blue-bright);
+  border-bottom-color: var(--blue-bright);
+}
+.tabs-nav button:focus-visible {
+  outline: 2px solid var(--blue-bright);
+  outline-offset: 2px;
+}
+.tab-panel { display: none; }
+.tab-panel.active { display: block; }
+
+/* ---------- Form helper text ---------- */
+/* Every field's real explanation of what to enter and why — not just a
+   placeholder, per the global "every field must explain itself" rule. */
+.form-helper {
+  font-size: 0.8rem;
+  color: var(--text-gray);
+  margin: -0.3rem 0 0.5rem;
+  line-height: 1.5;
+}
+.form-group label .optional-tag {
+  font-weight: 500;
+  color: var(--text-gray);
+  font-size: 0.8rem;
+}
+
+/* ---------- Services page category intro ---------- */
+.cat-intro {
+  color: var(--text-gray);
+  font-size: 0.98rem;
+  max-width: 720px;
+  margin: 0 0 1.75rem;
+  line-height: 1.7;
+}
+
+/* ---------- Capability / proof block ---------- */
+/* A legitimate substitute for testimonials/case studies where none
+   exist yet — states real platform capabilities rather than
+   fabricating client quotes or statistics. */
+.capability-block {
+  background: linear-gradient(160deg, rgba(15,25,65,0.7), rgba(8,12,36,0.85));
+  border: 1px solid rgba(74, 144, 226, 0.2);
+  border-radius: 14px;
+  padding: 1.75rem;
+  display: flex;
+  gap: 1rem;
+  align-items: flex-start;
+}
+.capability-block .cap-icon {
+  flex-shrink: 0;
+  width: 44px;
+  height: 44px;
+  border-radius: 10px;
+  background: rgba(59, 130, 246, 0.14);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.3rem;
+}
+.capability-block h4 { font-size: 1rem; font-weight: 700; color: var(--text-light); margin-bottom: 0.4rem; }
+.capability-block p { font-size: 0.9rem; color: var(--text-gray); line-height: 1.65; margin: 0; }

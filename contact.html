@@ -17,7 +17,7 @@
   <meta name="twitter:site" content="@askabd18">
   <meta name="twitter:title" content="Contact Us – AskABD Technologies">
   <meta name="twitter:description" content="Get in touch with AskABD Technologies for your software development needs">
-  <link rel="canonical" href="https://www.askabd.com/contact.html">
+  <link rel="canonical" href="https://www.askabd.com/contact">
   <link rel="icon" href="assets/logo.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -26,6 +26,7 @@
   <link rel="stylesheet" href="css/home.css">
   <link rel="stylesheet" href="css/pages.css">
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"Organization","name":"AskABD Technologies","url":"https://www.askabd.com","logo":"https://www.askabd.com/assets/logo.png","description":"Business transformation and technology consulting. Web development, mobile apps, AI solutions, and digital transformation services.","address":{"@type":"PostalAddress","addressLocality":"Hyderabad","addressRegion":"Telangana","addressCountry":"IN"},"contactPoint":{"@type":"ContactPoint","telephone":"+91-83090-78107","contactType":"sales","email":"hello@askabd.com"},"sameAs":["https://www.linkedin.com/in/ask-abd-9721b241a/","https://x.com/askabd18","https://www.facebook.com/profile.php?id=61591543676003"]}</script>
+  <link rel="stylesheet" href="css/components.css?v=1">
 </head>
 <body>
 
@@ -43,12 +44,13 @@
       <a href="industries.html">Industries</a>
       <a href="portfolio.html">Portfolio</a>
       <a href="about.html">About Us</a>
-      <a href="contact.html">Resources</a>
+      <a href="contact.html">Contact</a>
     </div>
     <a href="contact.html"><button class="btn-primary">Get Free Consultation &rarr;</button></a>
     <button class="hamburger"><span></span><span></span><span></span></button>
   </div>
 </nav>
+<nav class="breadcrumb" aria-label="Breadcrumb"><a href="index.html">Home</a><span class="crumb-sep">/</span><span class="crumb-current">Contact</span></nav>
 
 <!-- Page Header -->
 <section class="page-header">
@@ -71,22 +73,41 @@
           <input type="hidden" name="_subject" value="New Consultation Request - AskABD Website">
           <input type="hidden" name="_captcha" value="false">
           <div class="form-group">
-            <label for="name">Full Name *</label>
-            <input type="text" id="name" name="name" required placeholder="John Doe">
+            <label for="name">Full Name <span aria-hidden="true">*</span></label>
+            <p class="form-helper">Your name, so we know who we're speaking with.</p>
+            <input type="text" id="name" name="name" required placeholder="John Doe" aria-required="true">
           </div>
-          
+
           <div class="form-group">
-            <label for="email">Email Address *</label>
-            <input type="email" id="email" name="email" required placeholder="john@company.com">
+            <label for="email">Business Email <span aria-hidden="true">*</span></label>
+            <p class="form-helper">The email address you use for business communication — this is where we'll reply.</p>
+            <input type="email" id="email" name="email" required placeholder="john@company.com" aria-required="true">
           </div>
-          
+
           <div class="form-group">
-            <label for="company">Company Name</label>
+            <label for="company">Company Name <span class="optional-tag">(optional)</span></label>
+            <p class="form-helper">Helps us understand the context of your request.</p>
             <input type="text" id="company" name="company" placeholder="Your Company">
           </div>
-          
+
           <div class="form-group">
-            <label for="phone">Phone Number</label>
+            <label for="industry">Industry <span class="optional-tag">(optional)</span></label>
+            <p class="form-helper">Helps us bring relevant experience to the conversation.</p>
+            <select id="industry" name="industry">
+              <option value="">Select your industry</option>
+              <option value="healthcare">Healthcare</option>
+              <option value="fintech">Finance &amp; FinTech</option>
+              <option value="retail">Retail &amp; E-Commerce</option>
+              <option value="logistics">Logistics &amp; Transport</option>
+              <option value="education">Education</option>
+              <option value="realestate">Real Estate</option>
+              <option value="other">Other</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="phone">Phone Number <span class="optional-tag">(optional)</span></label>
+            <p class="form-helper">Only if you'd prefer a call — we'll always try email first.</p>
             <div style="display:flex;gap:0.5rem">
               <select name="country_code" id="country_code" style="width:110px;flex-shrink:0">
                 <option value="+1" selected>🇺🇸 +1</option>
@@ -115,9 +136,10 @@
           </div>
           
           <div class="form-group">
-            <label for="service">Service Interested In *</label>
-            <select id="service" name="service" required>
-              <option value="">Select a service</option>
+            <label for="service">What do you need help with? <span aria-hidden="true">*</span></label>
+            <p class="form-helper">Select the area closest to your situation — we'll route your message to the right person.</p>
+            <select id="service" name="service" required aria-required="true">
+              <option value="">Select the type of assistance you need</option>
               <option value="ecommerce">E-Commerce Development</option>
               <option value="mobile">Mobile App Development</option>
               <option value="ai">AI & Machine Learning</option>
@@ -129,9 +151,23 @@
               <option value="other">Other / Not Sure</option>
             </select>
           </div>
-          
+
           <div class="form-group">
-            <label for="budget">Project Budget (USD)</label>
+            <label for="timeline">Expected Timeline <span class="optional-tag">(optional)</span></label>
+            <p class="form-helper">Helps us understand how urgent this is.</p>
+            <select id="timeline" name="timeline">
+              <option value="">Select your expected timeline</option>
+              <option value="asap">As soon as possible</option>
+              <option value="1-3months">1–3 months</option>
+              <option value="3-6months">3–6 months</option>
+              <option value="6months+">6+ months</option>
+              <option value="exploring">Just exploring options</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="budget">Project Budget (USD) <span class="optional-tag">(optional)</span></label>
+            <p class="form-helper">A rough range helps us propose the right scope — this is never binding.</p>
             <select id="budget" name="budget">
               <option value="">Select budget range</option>
               <option value="5k-15k">$5,000 - $15,000</option>
@@ -141,12 +177,13 @@
               <option value="discuss">Prefer to discuss</option>
             </select>
           </div>
-          
+
           <div class="form-group full-width">
-            <label for="message">Project Details *</label>
-            <textarea id="message" name="message" rows="6" required placeholder="Tell us about your project, goals, and timeline..."></textarea>
+            <label for="message">Business Challenge <span aria-hidden="true">*</span></label>
+            <p class="form-helper">Briefly describe the problem you're trying to solve, your goals, and any timeline constraints.</p>
+            <textarea id="message" name="message" rows="6" required aria-required="true" placeholder="Tell us about your project, goals, and timeline..."></textarea>
           </div>
-          
+
           <button type="submit" class="btn-primary btn-large">Send Message →</button>
         </form>
       </div>
@@ -263,24 +300,44 @@
 
 <script src="js/main.js?v=4"></script>
 <script>
+// Previously this handler showed "Request Sent Successfully!" in BOTH the
+// .then() and .catch() branches — i.e. unconditionally, regardless of
+// whether the request to FormSubmit actually succeeded. A real prospect
+// whose message failed to send (network error, ad-blocker, FormSubmit
+// outage, CORS issue) would be told their request went through when it
+// never did, with no way to know or recover. Found during the 2026-08-22
+// public website audit — this is the site's single lead-generation path,
+// so this was the highest-severity bug on the entire site.
 document.getElementById('contactForm').addEventListener('submit', function(e) {
   e.preventDefault();
   const form = this;
   const data = new FormData(form);
-  
-  // Send to FormSubmit in background
+  const submitBtn = form.querySelector('button[type="submit"]');
+  const originalBtnText = submitBtn.textContent;
+  submitBtn.disabled = true;
+  submitBtn.textContent = 'Sending…';
+
   fetch('https://formsubmit.co/ajax/hello@askabd.com', {
     method: 'POST',
+    headers: { 'Accept': 'application/json' },
     body: data
-  }).then(function() {
-    // Show success regardless
+  }).then(function(response) {
+    if (!response.ok) throw new Error('FormSubmit responded with status ' + response.status);
+    document.querySelector('.contact-form-wrapper').innerHTML = '<div style="text-align:center;padding:4rem 2rem"><div style="width:80px;height:80px;margin:0 auto 1.5rem;border-radius:50%;background:linear-gradient(135deg,#10B981,#059669);display:flex;align-items:center;justify-content:center;font-size:2.5rem;box-shadow:0 12px 30px rgba(16,185,129,0.4)">✓</div><h2 style="color:#fff;font-size:1.8rem;margin-bottom:1rem">Request Sent Successfully!</h2><p style="color:#94A3B8;font-size:1.1rem;max-width:450px;margin:0 auto 2rem;line-height:1.7">Your request has been sent to the AskABD team. They will reach out to you as soon as possible.</p><a href="index.html"><button class="btn-primary btn-large">Back to Home →</button></a></div>';
   }).catch(function() {
-    // Still show success - form data was sent
+    submitBtn.disabled = false;
+    submitBtn.textContent = originalBtnText;
+    var existingError = form.querySelector('.form-error-message');
+    if (existingError) existingError.remove();
+    var errorEl = document.createElement('div');
+    errorEl.className = 'form-error-message';
+    errorEl.setAttribute('role', 'alert');
+    errorEl.style.cssText = 'background:rgba(239,68,68,0.1);border:1px solid rgba(239,68,68,0.4);color:#FCA5A5;border-radius:10px;padding:1rem 1.25rem;margin-top:1rem;font-size:0.95rem;line-height:1.6';
+    errorEl.innerHTML = 'We could not send your message — this looks like a network or service issue on our end, not something wrong with what you entered. Please try again, or email us directly at <a href="mailto:hello@askabd.com" style="color:#F87171;text-decoration:underline">hello@askabd.com</a>.';
+    form.appendChild(errorEl);
+    errorEl.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
   });
-  
-  // Show success message immediately
-  document.querySelector('.contact-form-wrapper').innerHTML = '<div style="text-align:center;padding:4rem 2rem"><div style="width:80px;height:80px;margin:0 auto 1.5rem;border-radius:50%;background:linear-gradient(135deg,#10B981,#059669);display:flex;align-items:center;justify-content:center;font-size:2.5rem;box-shadow:0 12px 30px rgba(16,185,129,0.4)">✓</div><h2 style="color:#fff;font-size:1.8rem;margin-bottom:1rem">Request Sent Successfully!</h2><p style="color:#94A3B8;font-size:1.1rem;max-width:450px;margin:0 auto 2rem;line-height:1.7">Your request has been sent to the AskABD team. They will reach out to you as soon as possible.</p><a href="index.html"><button class="btn-primary btn-large">Back to Home →</button></a></div>';
 });
 </script>
-<script src="js/seo-performance.js?v=1"></script><script src="js/accessibility.js?v=1"></script></body>
+<script src="js/seo-performance.js?v=1"></script><script src="js/accessibility.js?v=1"></script><script src="js/components.js?v=1"></script></body>
 </html>
